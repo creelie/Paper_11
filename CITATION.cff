@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "LaTeX source and verification code for the paper The Conjectures of Ashoke Sen"
+abstract: "The complete LaTeX source of the paper of the same name, with its figures and the compiled PDF, the exact-arithmetic computation of the dyon indices that refute the positivity conjecture, and a kernel-checked Lean 4 certificate of the finite arithmetic."
+type: software
+license: MIT
+authors:
+  - family-names: Bhattacharjee
+    given-names: Deep
+    orcid: "https://orcid.org/0000-0003-0466-750X"
+    email: itsdeep@live.com
+keywords:
+  - Ashoke Sen
+  - string theory
+  - dyon counting
+  - Siegel modular forms
+  - tachyon condensation
+  - black hole entropy
+  - Lean 4
+repository-code: "https://github.com/creelie/paper_11"

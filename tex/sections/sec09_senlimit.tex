@@ -1,0 +1,32 @@
+\section{The Sen limit of F-theory}\label{sec:senlimit}
+
+Sen \cite{Sen96ftheory} showed that F-theory on an elliptic K3 surface, at the point of its moduli space where the Weierstrass model $y^2 = x^3 + f(z)x + g(z)$ has constant modulus $\tau$ and four $D_4$ singular fibres, is the type IIB orientifold on $T^2/\ZZ_2$ with four orientifold seven-planes and four D7-branes on each, with gauge group $SO(8)^4$ and constant coupling; and that moving away from this point, in a one-parameter family $f = -3h^2 + \eps\eta$, $g = -2h^3 + \eps h\eta - \tfrac{1}{12}\eps^2\chi$ with $\eps\to0$, the coupling becomes weak away from the loci $h=0$, which are the orientifold planes, while the discriminant $\Delta = -9\eps^2 h^2(\eta^2 - h\chi) + O(\eps^3)$ places the D7-branes on $\eta^2 = h\chi$. In \cite{Sen97orientifold} the same expansion was applied to F-theory on elliptic Calabi--Yau threefolds and fourfolds over a base $B$, with $h,\eta,\chi$ sections of $K_B^{-2}, K_B^{-4}, K_B^{-6}$: the statement is that F-theory on such a Calabi--Yau has a weak coupling limit which is type IIB on the double cover of $B$ branched along $h=0$, with the orientifold projection, O7-planes on $h=0$ and D7-branes on $\eta^2=h\chi$.
+
+\begin{theorem}[claim 22; Sen 1996]\label{thm:senlimitk3}
+F-theory on the elliptic K3 with Weierstrass model $y^2 = x^3 + f x + g$, $f = -3h^2+\eps\eta$, $g = -2h^3 + \eps h\eta - \eps^2\chi/12$, $h$ of degree four in $z$, has, as $\eps\to0$, the modulus $\tau(z)\to i\infty$ away from $h=0$, with $j(\tau)\sim h^4/(\eps^2(\eta^2-h\chi))$, and the monodromy around $h=0$ is $-1\in SL(2,\ZZ)$ at $\eps=0$: the limit is the type IIB orientifold $T^2/\ZZ_2$ with the $\ZZ_2$ acting as $(-1)^{F_L}\Omega$ composed with the reflection of $T^2$, four O7-planes at the zeros of $h$ and sixteen D7-branes at the roots of $\eta^2 = h\chi$, which collide in groups of four with the O7-planes at $\eta=\chi=0$ to give the $SO(8)^4$ point.
+\end{theorem}
+
+\begin{proof}
+\cite{Sen96ftheory}, Sections~2 to~4. The monodromy computation uses that at $\eps=0$ the fibration $y^2 = (x-h)^2(x+2h)$ has $I_0^*$-type degeneration along $h=0$ whose monodromy is $-1$, and that for $\eps\ne0$ this splits into the $-1$ of the orientifold plane (two $I_1$ fibres with monodromies whose product is the Dehn twist squared composed with $-1$) and the $I_1$ fibres of the D7-branes. The identification of the charges, four D7 per O7, is forced by the degree of $\Delta$ (24) and the charge $-4$ of each O7.
+\end{proof}
+
+\begin{verdict}[claim 22]
+Proved. The statement is exact at the $SO(8)^4$ point, where the modulus is constant, and the limit $\eps\to0$ is the stable degeneration of the K3 into two rational elliptic surfaces \cite{CDW14}, with the orientifold as the double curve.
+\end{verdict}
+
+\begin{proposition}[claim 23]\label{prop:senlimitcy}
+Let $B$ be a smooth base of an elliptic Calabi--Yau threefold or fourfold with the Sen family of Weierstrass models. Then:
+\begin{enumerate}[label=(\roman*),leftmargin=2em]
+\item the D7-brane locus $\eta^2 = h\chi$ is a divisor of $B$ with a double point locus along $\eta = h = 0$ (and, for fourfolds, a pinch point locus along $\eta=h=\chi=0$): it is the Whitney umbrella, not a smooth divisor, and the O7-plane $h=0$ is tangent to it along the double curve \cite{CDE09};
+\item the limit is a stable degeneration of the Calabi--Yau to the union of two $\PP^1$-fibred components over $B$, glued along the double cover $X$ of $B$ branched along $h=0$, with the D7-brane data encoded in a spectral cover \cite{CDW14};
+\item for bases $B$ with non-Higgsable clusters, that is, divisors of self-intersection $\le -3$ in a surface base or their analogues in threefold bases, the generic Weierstrass model has non-abelian gauge symmetry on them for every value of the complex structure, $\Delta$ vanishes to order at least two on them, and the family $f=-3h^2+\eps\eta$ does not reach a weak coupling limit in which these divisors carry D7-branes of a perturbative orientifold: the Sen limit does not exist as a perturbative type IIB orientifold on such bases \cite{MT12,MT15}. For surface bases these include the Hirzebruch surfaces $\FF_n$, $n\ge3$, and most toric bases; for threefold bases almost all.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+(i) is a computation: near a point of $\eta=h=0$ with $\chi\ne0$, the equation $\eta^2 = h\chi$ is $\eta^2 = h$ after rescaling, the Whitney umbrella $\{u^2 = vw\}$ in the fourfold case; its singular locus and the tangency are read off from the equations \cite[Section~2]{CDE09}. (ii) is \cite[Sections~3 and~4]{CDW14}, by the semistable reduction of the Weierstrass family. (iii) is the classification of \cite{MT12} for surface bases and \cite{MT15} for threefold bases: on a curve of self-intersection $-n\le -3$ the sections $f,g$ vanish to orders $(\lceil 2 - 4/n\rceil$-type$)$ forced by the adjunction formula, the fibre is of Kodaira type $IV$, $I_0^*$, $IV^*$, $III^*$ or $II^*$ for every complex structure, and the coupling on such a curve is fixed at a finite value, so no family of the Sen type sends $\tau\to i\infty$ there.
+\end{proof}
+
+\begin{verdict}[claim 23]
+Incomplete. The statement of \cite{Sen97orientifold} \gap{that the orientifold limit of F-theory on a Calabi--Yau threefold or fourfold places the D7-branes on a smooth divisor $\eta^2 = h\chi$ of the base} is false as a statement about the divisor, which is singular along $\eta=h=0$ \cite{CDE09}, and the sentence that the limit exists for any elliptic Calabi--Yau is false on bases with non-Higgsable clusters \cite{MT12,MT15}. The construction of \cite{Sen97orientifold} is correct where it applies: on bases without non-Higgsable clusters the degeneration exists \cite{CDW14}, and the singular D7-brane is a feature of the limit, not an error in it, once the tangency with the O7-plane is understood; the tadpole and the spectrum computed in \cite{Sen97orientifold} for $\PP^2$ and $\FF_0$, $\FF_1$, $\FF_2$ bases are correct. We mark the scope, not the computation.
+\end{verdict}

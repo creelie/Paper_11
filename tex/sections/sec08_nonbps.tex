@@ -1,0 +1,30 @@
+\section{Non-BPS branes and the descent relations}\label{sec:nonbps}
+
+The tachyon conjectures of Section~\ref{sec:tachyon} have a static counterpart: the solitons of the tachyon field are themselves D-branes. Sen \cite{Sen98bab} identified the vortex on a D$p$--$\overline{\rm D}p$ pair of type II with the BPS D$(p-2)$-brane, \cite{Sen98spinor} identified the kink on a D1--$\overline{\rm D}$1 pair of type I with a stable non-BPS D-particle transforming as a spinor of $SO(32)$, the state required by the duality with the heterotic string, and \cite{Sen99descent} organised these into the \emph{descent relations}: the non-BPS D$p$-brane of type II is the orbifold of the D$p$--$\overline{\rm D}p$ pair by $(-1)^{F_L}$, and the BPS D$(p-1)$-brane is the kink on the non-BPS D$p$-brane.
+
+\begin{theorem}[claims 19, 20]\label{thm:descent}
+\begin{enumerate}[label=(\roman*),leftmargin=2em]
+\item At the critical radius $R = \sqrt{2}$ (in units $\alpha'=1$) of a circle transverse to the brane pair, the tachyon kink on a D$p$--$\overline{\rm D}p$ pair of type II wrapped on the circle is an exactly marginal boundary deformation, and the boundary conformal field theory at the end of the deformation is that of a non-BPS D$(p-1)$-brane; the kink on the non-BPS D$p$-brane at $R=1$ is, in the same way, the BPS D$(p-1)$-brane.
+\item The conserved charges of D-branes and of their tachyon solitons are classified by the K-theory of spacetime: $K(X)$ for type IIB, $K^{-1}(X)$ for type IIA, $KO(X)$ for type I; the kink on the type I D1--$\overline{\rm D}$1 pair carries the class generating $KO^{-1}({\rm pt}) = \ZZ_2$ and is the $SO(32)$ spinor, stable and non-BPS.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+(i) is the construction of \cite{Sen98spinor,Sen99descent}: the tachyon of the wrapped pair at the critical radius has a vertex operator $\cos(X/\sqrt2)\otimes\sigma_1$ which is exactly marginal, the deformation by it can be followed to its end by fermionising the boson $X$, and the boundary state at the end is the boundary state of the lower brane with Dirichlet condition on $X$. (ii) is Witten's theorem \cite{Witten98K}, which starts from Sen's identification of the brane--antibrane system with a pair of bundles $(E,F)$ and the tachyon with a map between them and identifies the charge with the class of $(E,F)$ in K-theory; the type I computation $KO^{-1}({\rm pt})=\ZZ_2$ gives the $\ZZ_2$ charge of the spinor, which prevents its decay.
+\end{proof}
+
+\begin{verdict}[claims 19, 20]
+Proved. Both statements are theorems of boundary conformal field theory and of K-theory respectively; the existence of the spinor as a stable non-BPS state was confirmed by its mass at weak coupling, which matches the heterotic spinor's at strong coupling up to the expected corrections, and by the identification of the stable non-BPS states of other orbifolds and orientifolds by the same method \cite{Sen99nonBPS}.
+\end{verdict}
+
+\begin{proposition}[claim 21; Sen 2003]\label{prop:kinkdbi}
+In the effective action \eqref{eq:dbi} on a non-BPS D$p$-brane, the kink solution $T(x) = \lim_{a\to\infty} a\,x$ (a step of infinite slope) is singular as a field and regular as a source: its energy-momentum tensor is $\mathcal T_{p-1}$ times a delta function at $x=0$, and the effective action of its collective coordinates and world-volume gauge field is exactly the Dirac--Born--Infeld action of a BPS D$(p-1)$-brane, to all orders in the fields and for every potential $V$ with $\int V\,dT$ finite. The same holds for the vortex on the brane--antibrane pair.
+\end{proposition}
+
+\begin{proof}
+\cite{Sen03kink}, Sections~3 and~4: for the ansatz $T = f(a(x-\xi(y)))$ with $f$ odd and increasing, in the limit the action evaluated on the ansatz is independent of the profile $f$ and of the scale $a$, by the change of variables $T = f(\cdot)$, and equals $-\mathcal T_{p-1}\int\sqrt{-\det(g_{\alpha\beta}+F_{\alpha\beta})}$ with the induced metric of the embedding $\xi$; the equations of motion of the ansatz follow from the full equations because the action is stationary in $f$ and $a$.
+\end{proof}
+
+\begin{verdict}[claim 21]
+Proved, within the effective action. The statement is about \eqref{eq:dbi} and is exact there; it says nothing about the string theory corrections to \eqref{eq:dbi}, which are not controlled on the kink, where second derivatives are large. The agreement of the tension and of the form of the world-volume action with those of the D$(p-1)$-brane is the content of the claim and holds.
+\end{verdict}

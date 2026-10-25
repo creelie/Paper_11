@@ -1,0 +1,54 @@
+\section{The tachyon conjectures}\label{sec:tachyon}
+
+\subsection{Universality}\label{ssec:universality}
+
+An unstable D-brane of bosonic string theory, or a brane--antibrane pair or non-BPS brane of type II, carries an open string tachyon. Sen's conjectures about it \cite{Sen98bab,Sen99nonBPS} are three: the tachyon potential has a minimum at which the negative energy density exactly cancels the tension of the brane; the lump and kink solutions of the tachyon field are the D-branes of lower dimension; and around the minimum there are no perturbative open string states, since there is no brane for them to end on. The first step towards testing them was the observation \cite{Sen99univ} that the tachyon potential is universal.
+
+\begin{theorem}[claim 11; Sen 1999]\label{thm:universality}
+In the cubic open string field theory of Witten on a D-brane described by a boundary conformal field theory $\mathrm{BCFT}_0$, the subspace $\mathcal H_{\rm univ}$ of the string field spanned by the states obtained from the $SL(2,\RR)$-invariant vacuum by the matter Virasoro generators and the ghost oscillators is closed under the star product and under the BRST operator, and the action restricted to it is $\mathcal T_p V_{\rm univ}$, where $\mathcal T_p$ is the tension of the brane and $V_{\rm univ}$ does not depend on $\mathrm{BCFT}_0$. The same holds for the Berkovits field theory of the brane--antibrane pair and of the non-BPS brane, with the GSO-odd and GSO-even sectors.
+\end{theorem}
+
+\begin{proof}
+This is \cite[Sections~2 and~3]{Sen99univ}. The matter part of the action involves only correlators of the matter Virasoro generators and the identity on the disc, which are fixed by the central charge $c=26$ (or $c=15$) and the conformal Ward identities, and the ghost part is independent of the background; the normalisation of the disc partition function is the tension. Closure of $\mathcal H_{\rm univ}$ under the star product follows from the fact that the star product is a conformal map of three half-discs into one, which maps Virasoro descendants of the identity to Virasoro descendants of the identity. The equations of motion restricted to $\mathcal H_{\rm univ}$ are therefore the equations of motion in it, and a solution in $\mathcal H_{\rm univ}$ is a solution of the full theory.
+\end{proof}
+
+\begin{verdict}[claim 11]
+Proved. The universality is used in every subsequent analytic solution: Schnabl's tachyon vacuum lies in $\mathcal H_{\rm univ}$, and so does the solution of Erler in the superstring.
+\end{verdict}
+
+\subsection{The three conjectures}\label{ssec:threeconj}
+
+Let $\Psi$ be the open string field of the cubic theory on a D$p$-brane with action $S = -\frac{1}{g^2}\big[\frac12\langle\Psi,Q_B\Psi\rangle + \frac13\langle\Psi,\Psi*\Psi\rangle\big]$, normalised so that the tension of the brane is $\mathcal T_p = 1/(2\pi^2 g^2)$.
+
+\begin{theorem}[claims 12, 13, 14]\label{thm:threeconj}
+\begin{enumerate}[label=(\roman*),leftmargin=2em]
+\item There is a solution $\Psi_0\in\mathcal H_{\rm univ}$ of the equation of motion $Q_B\Psi + \Psi*\Psi = 0$ whose action is $S[\Psi_0] = \mathcal T_p\,\mathrm{Vol}$, that is, whose energy density is $-\mathcal T_p$ \cite{Schnabl05}.
+\item The kinetic operator around $\Psi_0$,
+\[
+Q_{\Psi_0}\Phi = Q_B\Phi + \Psi_0*\Phi - (-1)^{|\Phi|}\Phi*\Psi_0 ,
+\]
+has trivial cohomology in every ghost number: there is a string field $A$ with $Q_{\Psi_0}A = 1$, the identity of the star algebra \cite{EllwoodSchnabl07}.
+\item For every boundary conformal field theory $\mathrm{BCFT}_*$ with the same bulk theory as $\mathrm{BCFT}_0$ and admitting boundary condition changing operators between the two of weight zero with regular operator products, there is a solution $\Psi_*$ of the equation of motion on the D$p$-brane whose energy is that of $\mathrm{BCFT}_*$ and whose fluctuation spectrum is that of $\mathrm{BCFT}_*$; the tachyon lump describing a D$(p-1)$-brane at any compactification radius is of this form \cite{ErlerMaccaferri14}.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+(i) is the solution of \cite{Schnabl05} in the gauge $\mathcal B_0\Psi = 0$, with the energy computed there and confirmed by \cite{Okawa06} and by \cite{FuchsKroyter06}, who checked that the equation of motion holds when contracted with the solution itself; the simpler solution of \cite{ErlerSchnabl09}, $\Psi = \frac{1}{\sqrt{1+K}}\,c(1+K)Bc\,\frac{1}{\sqrt{1+K}}$ in the $KBc$ algebra, has the same energy by a two-line computation. (ii) is \cite{EllwoodSchnabl07}: for the Erler--Schnabl solution the homotopy operator is $A = B/(1+K)$, and $Q_\Psi A = 1$ is an identity of the $KBc$ algebra. (iii) is \cite[Section~4]{ErlerMaccaferri14}: the solution is $\Psi_* = \Psi_{\rm tv} - \Sigma\,\Psi_{\rm tv}\,\bar\Sigma$ with $\Sigma,\bar\Sigma$ built from the boundary condition changing operators and a timelike Wilson line, and $\bar\Sigma\Sigma = 1$; the energy is the disc partition function of $\mathrm{BCFT}_*$ and the cohomology of $Q_{\Psi_*}$ is isomorphic to that of $\mathrm{BCFT}_*$. The hypothesis on the boundary condition changing operators is satisfied by the lump at every radius, by the Wilson line construction of the same paper; the numerical lumps of \cite{KudrnaSchnabl18} agree.
+\end{proof}
+
+\begin{verdict}[claims 12, 13, 14]
+Proved. Each statement is a theorem of cubic open string field theory; the sense in which it is a theorem about string theory depends on cubic string field theory being a complete description of the open string, which is the framework of the conjectures and is not in question in them.
+\end{verdict}
+
+\begin{theorem}[claim 15; Erler 2013]\label{thm:superstring}
+In the open superstring field theory of Berkovits on a non-BPS D-brane there is an analytic solution for the tachyon vacuum, built from $2\times 2$ matrices in two $GL_2$ subgroups of the star algebra, whose action equals the tension of the non-BPS brane, so that the energy density of the vacuum is $-\mathcal T_p$.
+\end{theorem}
+
+\begin{proof}
+\cite{Erler13}. The energy is computed in closed form from the nonpolynomial action.
+\end{proof}
+
+\begin{verdict}[claim 15]
+Proved for the energy. The absence of open string states around the superstring vacuum follows from the homotopy operator of the cubic reformulation of the same solution, and the lower-dimensional branes in the superstring are not yet covered by an analytic solution; the numerical results of \cite{BSZ00}, the level truncation to level $(2,4)$ with $85\%$ of the tension, were the state of the conjecture before \cite{Erler13}.
+ Of the papers citing \cite{Erler13}, none constructs a homotopy operator for the kinetic operator around Erler's solution or a lump solution of the Berkovits theory; the second and third conjectures remain open there, and the first is proved.
+\end{verdict}

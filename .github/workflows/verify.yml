@@ -1,0 +1,53 @@
+name: verify
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: install elan
+        run: |
+          curl -sSfL https://github.com/leanprover/elan/releases/latest/download/elan-x86_64-unknown-linux-gnu.tar.gz | tar xz
+          ./elan-init -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: check the file
+        working-directory: lean
+        run: lean SenConjectures.lean | tee ../axioms.txt
+
+      - name: fail if any theorem depends on an axiom other than propext
+        run: |
+          if grep -q "sorryAx\|ofReduceBool\|Classical.choice" axioms.txt; then
+            echo "a theorem depends on a forbidden axiom"; exit 1
+          fi
+          n=$(grep -c "does not depend on any axioms" axioms.txt || true)
+          m=$(grep -c "depends on axioms: \[propext\]" axioms.txt || true)
+          bad=$(grep -c "depends on axioms" axioms.txt || true)
+          echo "axiom-free: $n   propext only: $m"
+          if [ "$bad" -ne "$m" ]; then
+            echo "a theorem depends on an axiom other than propext"; exit 1
+          fi
+          if [ "$((n + m))" -ne 57 ]; then
+            echo "expected 57 theorems, found $((n + m))"; exit 1
+          fi
+
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: recompute the tables and compare with the committed output
+        working-directory: code
+        run: |
+          python3 siegel_dyons.py /tmp/out.json > /tmp/run.log
+          python3 -c "import json; a=json.load(open('/tmp/out.json')); b=json.load(open('siegel_dyons_out.json')); assert a==b, 'tables differ'; print('tables agree')"

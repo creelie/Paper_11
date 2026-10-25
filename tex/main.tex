@@ -1,0 +1,98 @@
+\documentclass[aps,prd,twocolumn,superscriptaddress,nofootinbib,longbibliography,floatfix,amsmath,amssymb,10pt]{revtex4-2}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+\usepackage{orcidlink}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\usepackage{xurl}
+\usepackage{soul}
+\definecolor{burntorange}{RGB}{204,85,0}
+\definecolor{softyellow}{RGB}{255,241,168}
+\sethlcolor{softyellow}
+\newcommand{\fatal}[1]{\textcolor{burntorange}{#1}}
+\newcommand{\gap}[1]{\hl{#1}}
+\makeatletter\let\write@bibliographystyle\relax\let\bibliography@latex\@gobble\makeatother
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{verdict}[theorem]{Verdict}
+
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\HH}{\mathbb{H}}
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\FF}{\mathbb{F}}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\Phit}{\widetilde{\Phi}}
+\newcommand{\anaxiaDOIlink}{\href{https://doi.org/10.5281/zenodo.23484160}{\nolinkurl{doi:10.5281/zenodo.23484160}}}
+\renewcommand{\st}{\textsc}
+\newcommand{\zenodoCodeID}{10.5281/zenodo.XXXXXXXX}
+\tolerance=2000
+\emergencystretch=2em
+\raggedbottom
+
+\begin{document}
+
+\title{The Conjectures of Ashoke Sen}
+
+\author{Deep Bhattacharjee\,\orcidlink{0000-0003-0466-750X}}
+\email{itsdeep@live.com}
+\thanks{$*$\,Corresponding author. Further addresses: \nolinkurl{d.bhattacharjee@erl-forschung.de}, \nolinkurl{egspl@proton.me}.}
+\affiliation{Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India}
+\affiliation{Formerly, University of Calcutta (Heramba Chandra College), 23/49 Gariahat Road, Golpark, Kolkata 700029, West Bengal, India}
+
+\date{October 25, 2026}
+
+\begin{abstract}
+\itshape
+Ashoke Sen made many conjectures about string theory over thirty years: that a certain symmetry of the theory is exact, that two magnetic monopoles form a bound state, that an unstable brane decays to a vacuum with no open strings and leaves behind a dust with no pressure, that a path integral counts the states of a black hole, that the number of states of a dyon is positive. We went through all of them, thirty-six statements in all, read the papers in which they were made and the papers that tested them, and checked every reference. We say for each one whether it has been proved, whether it has passed every test without a proof, whether it was stretched beyond the case where it holds, or whether it is false. Most of the conjectures are true. Two are false: the positivity of the dyon count fails in two orbifold models, where we recompute the negative numbers exactly, and the pressureless dust is not the end state of a brane decaying unevenly, where we prove that the dust piles up to infinite density in a finite time. For everything that is still open we say what is missing.
+\par\medskip\upshape\noindent\textit{2020 Mathematics Subject Classification.} 81T30; 81T13; 83C57; 11F46; 35L67; 53C26.
+\end{abstract}
+
+\keywords{S-duality; tachyon condensation; black hole entropy; Siegel modular forms}
+
+\maketitle
+\makeatletter\renewcommand\l@subsection[2]{}\renewcommand\l@subsubsection[2]{}\makeatother
+\tableofcontents
+
+\input{sections/sec01_intro}
+\input{sections/sec02_catalogue}
+\input{sections/sec03_sduality}
+\input{sections/sec04_dyons}
+\input{sections/sec05_positivity}
+\input{sections/sec06_tachyon}
+\input{sections/sec07_rolling}
+\input{sections/sec08_nonbps}
+\input{sections/sec09_senlimit}
+\input{sections/sec10_entropy}
+\input{sections/sec11_quantum}
+\input{sections/sec12_sft}
+\input{sections/sec13_conclusion}
+
+\appendix
+\input{sections/appA_computation}
+\input{sections/appB_dust}
+
+\input{sections/declarations}
+\begingroup\sloppy\emergencystretch=5em\input{sections/bibliography}\endgroup
+
+\end{document}

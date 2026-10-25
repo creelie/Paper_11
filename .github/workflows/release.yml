@@ -1,0 +1,32 @@
+name: release
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "release tag, for example v1.0.0"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: build the archives
+        run: |
+          mkdir -p dist
+          cp main.pdf "dist/The_Conjectures_of_Ashoke_Sen.pdf"
+          (cd tex && zip -qr "../dist/The_Conjectures_of_Ashoke_Sen_tex.zip" main.tex sections tables figures)
+          zip -qr dist/verification_code.zip code lean figures LICENSE README.md
+
+      - name: create the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${{ github.event.inputs.tag }}" dist/* \
+            --title "The Conjectures of Ashoke Sen ${{ github.event.inputs.tag }}" \
+            --notes-file RELEASE_NOTES.md
