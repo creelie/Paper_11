@@ -45,7 +45,7 @@ says exactly which statements are.
 | --- | --- |
 | concept DOI of all versions, resolving to the latest | [10.5281/zenodo.23652472](https://doi.org/10.5281/zenodo.23652472) |
 | v1.0.0 | [10.5281/zenodo.23652473](https://doi.org/10.5281/zenodo.23652473) |
-| v1.0.1 (the paper citing the archive by its concept DOI) | recorded when published |
+| v1.0.1 (the paper citing the archive by its concept DOI) | [10.5281/zenodo.23652641](https://doi.org/10.5281/zenodo.23652641) |
 
 ## Author and contact
 
