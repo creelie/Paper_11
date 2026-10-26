@@ -1,6 +1,8 @@
 name: Sen core certificate audit
 on:
   workflow_dispatch:
+  push:
+    branches: [codex/sen-proof-audit-2026-10-26]
 permissions:
   contents: read
 jobs:
