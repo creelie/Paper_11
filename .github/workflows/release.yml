@@ -4,29 +4,37 @@ on:
   workflow_dispatch:
     inputs:
       tag:
-        description: "release tag, for example v1.0.0"
+        description: "release tag, for example v2.0.0"
         required: true
 
 permissions:
   contents: write
 
 jobs:
-  release:
+  checks:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: build the archives
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: recompute the tables and rerun the constant checks
+        working-directory: code
         run: |
-          mkdir -p dist
-          cp main.pdf "dist/The_Conjectures_of_Ashoke_Sen.pdf"
-          (cd tex && zip -qr "../dist/The_Conjectures_of_Ashoke_Sen_tex.zip" main.tex sections tables figures)
-          zip -qr dist/verification_code.zip code lean figures LICENSE README.md
+          python3 siegel_dyons.py /tmp/out.json > /tmp/run.log
+          python3 -c "import json; a=json.load(open('/tmp/out.json')); b=json.load(open('siegel_dyons_out.json')); assert a==b, 'tables differ'; print('tables agree')"
+          python3 verify_revision.py
+          python3 verify_infrared_estimates.py
 
+  release:
+    needs: checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
       - name: create the release
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "${{ github.event.inputs.tag }}" dist/* \
-            --title "The Conjectures of Ashoke Sen ${{ github.event.inputs.tag }}" \
-            --notes-file RELEASE_NOTES.md
+          gh release create "${{ github.event.inputs.tag }}" dist/ConjecturesOfAshokeSen_final2.pdf dist/ConjecturesOfAshokeSen-tex.zip dist/ConjecturesOfAshokeSen-arxiv.tar.gz \
+            --title "Conjectures of Ashoke Sen: Scope, Exact Tests and Analytic Limits ${{ github.event.inputs.tag }}" \
+            --notes-file .github/RELEASE_NOTES.md

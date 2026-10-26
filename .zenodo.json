@@ -1,26 +1,26 @@
 {
-  "title": "Conjectures of Ashoke Sen: Scope, Exact Tests and Analytic Limits: manuscript, exact computations and scoped formal checks",
-  "description": "<p>Single-column research revision of a selected survey, with corrected charge cone and 30-entry exact scan, a precise dust focusing statement, the base/cover divisor distinction, and a source-version audit. The infrared appendices construct a finite-energy soft model and derive a subtracted tree-emission cutoff bound, logarithmic tail formulas and an overlapping-limit obstruction. All three current Lean modules compile and pass kernel replay relative to imports; their 75 named audited statements have limited documented scopes. No new fatal error in corrected published proofs, full four-dimensional infrared closure or full-manuscript formalisation is claimed. Deep Bhattacharjee is the sole author.</p>",
+  "title": "Conjectures of Ashoke Sen: Scope, Exact Tests and Analytic Limits",
+  "description": "<p>The paper examines thirty-six statements associated with Ashoke Sen's work on duality, tachyon condensation, black hole indices and string field theory, separating mathematical results within a stated framework, physical conjectures, and extensions beyond the hypotheses of a derivation. Exact product expansions reproduce the negative full dyon indices of the toroidal orbifolds, with thirty negative-index charge triples in the scanned cone; the dust equations of tachyon matter receive their characteristic flow and sign criterion; the D7 divisor on the F-theory base is separated from its singular pullback to the orientifold cover. The archive holds the compiled paper, its LaTeX source, the exact-arithmetic program that computes every table, the Lean 4 certificates of the finite statements, and the scripts that check the explicit constants of the appendices.</p>",
   "upload_type": "software",
-  "license": "mit",
+  "license": "MIT",
   "access_right": "open",
   "creators": [
     {
       "name": "Bhattacharjee, Deep",
       "orcid": "0000-0003-0466-750X",
-      "affiliation": "Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India; formerly, University of Calcutta (Heramba Chandra College), 23/49 Gariahat Road, Golpark, Kolkata 700029, West Bengal, India"
+      "affiliation": "Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India; formerly, University of Calcutta, Senate House, 87/1 College Street, Kolkata 700073, West Bengal, India"
     }
   ],
   "keywords": [
     "Ashoke Sen",
-    "string theory",
+    "S-duality",
     "dyon counting",
     "Siegel modular forms",
     "wall crossing",
     "tachyon condensation",
     "black hole entropy",
-    "Lean 4"
+    "string field theory"
   ],
   "language": "eng",
-  "version": "1.1.0"
+  "version": "2.0.0"
 }

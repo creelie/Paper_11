@@ -1,15 +1,18 @@
 cff-version: 1.2.0
-message: "Cite the version DOI in the archive receipt."
+message: "If you use this archive, cite it with the version DOI of the release you used."
 title: "Conjectures of Ashoke Sen: Scope, Exact Tests and Analytic Limits"
-version: 1.1.0
+version: 2.0.0
 date-released: 2026-10-26
 authors:
   - family-names: Bhattacharjee
     given-names: Deep
     orcid: https://orcid.org/0000-0003-0466-750X
-repository-code: https://github.com/creelie/Paper_11
+repository-code: https://github.com/creelie/paper_11
 license: MIT
 identifiers:
   - type: doi
     value: 10.5281/zenodo.23652472
     description: Concept DOI for all versions
+  - type: doi
+    value: 10.5281/zenodo.NNNN
+    description: Version DOI of release v2.0.0

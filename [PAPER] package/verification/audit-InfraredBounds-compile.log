@@ -1,6 +1,0 @@
-'SenInfrared.squared_norm_error' depends on axioms: [propext, Classical.choice, Quot.sound]
-'SenInfrared.weighted_difference_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
-'SenInfrared.corner_jacobian' depends on axioms: [propext, Classical.choice, Quot.sound]
-'SenInfrared.blown_up_corner_density' depends on axioms: [propext, Classical.choice, Quot.sound]
-'SenInfrared.soft_degree_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
-'SenInfrared.positive_soft_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
