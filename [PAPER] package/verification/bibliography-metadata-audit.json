@@ -1,0 +1,2720 @@
+[
+  {
+    "key": "AGJST06",
+    "doi": "10.1088/1126-6708/2006/10/058",
+    "draft_title": "Rotating attractors",
+    "registered_title": "Rotating attractors",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2006,
+          10,
+          20
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2006",
+    "issue": "10",
+    "page": "058-058",
+    "article_number": null
+  },
+  {
+    "key": "AKS06",
+    "doi": "10.1088/1126-6708/2006/06/043",
+    "draft_title": "On $S$-duality for non-simply-laced gauge groups",
+    "registered_title": "On S-duality for non-simply-laced gauge groups",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2006,
+          6,
+          20
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2006",
+    "issue": "06",
+    "page": "043-043",
+    "article_number": null
+  },
+  {
+    "key": "AtiyahHitchin88",
+    "doi": "10.1515/9781400859306",
+    "draft_title": "The geometry and dynamics of magnetic monopoles",
+    "registered": false,
+    "error": "HTTPError"
+  },
+  {
+    "key": "Barnaby04",
+    "doi": "10.1088/1126-6708/2004/07/025",
+    "draft_title": "Caustic formation in tachyon effective field theories",
+    "registered_title": "Caustic Formation in Tachyon Effective Field Theories",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2004,
+          7,
+          14
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2004",
+    "issue": "07",
+    "page": "025-025",
+    "article_number": null
+  },
+  {
+    "key": "BBGMS10",
+    "doi": "10.1007/JHEP02(2010)091",
+    "draft_title": "Supersymmetry, Localization and Quantum Entropy Function",
+    "registered_title": "Supersymmetry, localization and quantum entropy function",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2010,
+          2
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2010",
+    "issue": "2",
+    "page": null,
+    "article_number": "91"
+  },
+  {
+    "key": "BGMS11",
+    "doi": "10.1007/JHEP11(2011)143",
+    "draft_title": "Logarithmic Corrections to $\\mathcal N=4$ and $\\mathcal N=8$ Black Hole Entropy: A One Loop Test of Quantum Gravity",
+    "registered_title": "Logarithmic corrections to $$ \\mathcal{N} = {4} $$ and $$ \\mathcal{N} = {8} $$ black hole entropy: a one loop test of quantum gravity",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2011,
+          11
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2011",
+    "issue": "11",
+    "page": null,
+    "article_number": "143"
+  },
+  {
+    "key": "BLLM26",
+    "doi": "10.5281/zenodo.23484395",
+    "draft_title": "BLLM: Beyond the LLM with Deep Human-Mind-AI",
+    "registered": false,
+    "error": "HTTPError"
+  },
+  {
+    "key": "BMS09hair",
+    "doi": "10.1088/1126-6708/2009/07/091",
+    "draft_title": "Black Hole Hair Removal",
+    "registered_title": "Black hole hair removal",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2009,
+          7,
+          24
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2009",
+    "issue": "07",
+    "page": "091-091",
+    "article_number": null
+  },
+  {
+    "key": "BringmannMurthy13",
+    "doi": "10.4310/CNTP.2013.v7.n1.a2",
+    "draft_title": "On the positivity of black hole degeneracies in string theory",
+    "registered_title": "On the positivity of black hole degeneracies in string theory",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "International Press of Boston",
+    "published": {
+      "date-parts": [
+        [
+          2013
+        ]
+      ]
+    },
+    "container": [
+      "Communications in Number Theory and Physics"
+    ],
+    "volume": "7",
+    "issue": "1",
+    "page": "15-56",
+    "article_number": null
+  },
+  {
+    "key": "BRY23",
+    "doi": "10.1007/JHEP05(2023)048",
+    "draft_title": "ZZ instantons and the non-perturbative dual of c = 1 string theory",
+    "registered_title": "ZZ instantons and the non-perturbative dual of c = 1 string theory",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          5,
+          8
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2023",
+    "issue": "5",
+    "page": null,
+    "article_number": "48"
+  },
+  {
+    "key": "BSZ00",
+    "doi": "10.1016/S0550-3213(00)00501-0",
+    "draft_title": "Tachyon condensation in superstring field theory",
+    "registered_title": "Tachyon condensation in superstring field theory",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Elsevier BV",
+    "published": {
+      "date-parts": [
+        [
+          2000,
+          10
+        ]
+      ]
+    },
+    "container": [
+      "Nuclear Physics B"
+    ],
+    "volume": "587",
+    "issue": "1-3",
+    "page": "147-178",
+    "article_number": null
+  },
+  {
+    "key": "CD19",
+    "doi": "10.1007/JHEP05(2019)005",
+    "draft_title": "Properties of dyons in $\\mathcal N=4$ theories at small charges",
+    "registered_title": "Properties of dyons in $$ \\mathcal{N} $$ = 4 theories at small charges",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          5
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2019",
+    "issue": "5",
+    "page": null,
+    "article_number": "5"
+  },
+  {
+    "key": "CD21",
+    "doi": "10.1007/JHEP03(2021)106",
+    "draft_title": "Horizon states and the sign of their index in $\\mathcal N=4$ dyons",
+    "registered_title": "Horizon states and the sign of their index in $$ \\mathcal{N} $$ = 4 dyons",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          3
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2021",
+    "issue": "3",
+    "page": null,
+    "article_number": "106"
+  },
+  {
+    "key": "CDE09",
+    "doi": "10.1088/1126-6708/2009/02/005",
+    "draft_title": "D-brane Deconstructions in IIB Orientifolds",
+    "registered_title": "D-brane deconstructions in IIB orientifolds",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2009,
+          2,
+          2
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2009",
+    "issue": "02",
+    "page": "005-005",
+    "article_number": null
+  },
+  {
+    "key": "CDKM04",
+    "doi": "10.1088/1126-6708/2004/12/075",
+    "draft_title": "Asymptotic degeneracy of dyonic $\\mathcal N=4$ string states and black hole entropy",
+    "registered_title": "Asymptotic degeneracy of dyonic<i>N</i>=4 string states and black hole entropy",
+    "similarity": 0.931,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2005,
+          1,
+          5
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2004",
+    "issue": "12",
+    "page": "075-075",
+    "article_number": null
+  },
+  {
+    "key": "CDW14",
+    "doi": "10.4310/ATMP.2014.v18.n3.a2",
+    "draft_title": "The Sen Limit",
+    "registered_title": "The Sen limit",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "International Press of Boston",
+    "published": {
+      "date-parts": [
+        [
+          2014
+        ]
+      ]
+    },
+    "container": [
+      "Advances in Theoretical and Mathematical Physics"
+    ],
+    "volume": "18",
+    "issue": "3",
+    "page": "613-658",
+    "article_number": null
+  },
+  {
+    "key": "CGMS16",
+    "doi": "10.1007/JHEP04(2016)082",
+    "draft_title": "Do All BPS Black Hole Microstates Carry Zero Angular Momentum?",
+    "registered_title": "Do all BPS black hole microstates carry zero angular momentum?",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2016,
+          4
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2016",
+    "issue": "4",
+    "page": "1-37",
+    "article_number": null
+  },
+  {
+    "key": "ChowdhuryMaji24",
+    "doi": "10.1007/JHEP05(2024)091",
+    "draft_title": "Counting $\\mathcal N=8$ black holes as algebraic varieties",
+    "registered_title": "Counting $$\\mathcal{N}$$ = 8 black holes as algebraic varieties",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          5,
+          8
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2024",
+    "issue": "5",
+    "page": null,
+    "article_number": "91"
+  },
+  {
+    "key": "ChowdhuryMaji26",
+    "doi": "10.1007/JHEP08(2026)070",
+    "draft_title": "Pure D-brane black holes: BPS counting and non-BPS vacua",
+    "registered_title": "Pure D-brane black holes: BPS counting and non-BPS vacua",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          7
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2026",
+    "issue": "8",
+    "page": null,
+    "article_number": "70"
+  },
+  {
+    "key": "CKMRW20",
+    "doi": "10.1007/JHEP10(2020)184",
+    "draft_title": "Dyonic black hole degeneracies in $\\mathcal N=4$ string theory from Dabholkar-Harvey degeneracies",
+    "registered": false,
+    "error": "HTTPError"
+  },
+  {
+    "key": "Dabholkar05",
+    "doi": "10.1103/PhysRevLett.94.241301",
+    "draft_title": "Exact counting of black hole microstates",
+    "registered_title": "Exact Counting of Supersymmetric Black Hole Microstates",
+    "similarity": 0.833,
+    "registered": true,
+    "publisher": "American Physical Society (APS)",
+    "published": {
+      "date-parts": [
+        [
+          2005,
+          6,
+          21
+        ]
+      ]
+    },
+    "container": [
+      "Physical Review Letters"
+    ],
+    "volume": "94",
+    "issue": "24",
+    "page": null,
+    "article_number": "241301"
+  },
+  {
+    "key": "DabholkarGaiotto07",
+    "doi": "10.1088/1126-6708/2007/12/087",
+    "draft_title": "Spectrum of CHL dyons from genus-two partition function",
+    "registered_title": "Spectrum of CHL dyons from genus-two partition function",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2007,
+          12,
+          28
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2007",
+    "issue": "12",
+    "page": "087-087",
+    "article_number": null
+  },
+  {
+    "key": "DabholkarNampuri07",
+    "doi": "10.1088/1126-6708/2007/11/077",
+    "draft_title": "Spectrum of dyons and black holes in CHL orbifolds using Borcherds lift",
+    "registered_title": "Spectrum of dyons and black holes in CHL orbifolds using Borcherds lift",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2007,
+          11,
+          26
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2007",
+    "issue": "11",
+    "page": "077-077",
+    "article_number": null
+  },
+  {
+    "key": "DavidSen06",
+    "doi": "10.1088/1126-6708/2006/11/072",
+    "draft_title": "CHL Dyons and Statistical Entropy Function from D1-D5 System",
+    "registered_title": "CHL dyons and statistical entropy function from D1-D5 system",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2006,
+          11,
+          27
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2006",
+    "issue": "11",
+    "page": "072-072",
+    "article_number": null
+  },
+  {
+    "key": "DDMP05",
+    "doi": "10.1088/1126-6708/2005/10/096",
+    "draft_title": "Precision counting of small black holes",
+    "registered_title": "Precision counting of small black holes",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2005,
+          10,
+          27
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2005",
+    "issue": "10",
+    "page": "096-096",
+    "article_number": null
+  },
+  {
+    "key": "DenefMoore11",
+    "doi": "10.1007/JHEP11(2011)129",
+    "draft_title": "Split states, entropy enigmas, holes and halos",
+    "registered_title": "Split states, entropy enigmas, holes and halos",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2011,
+          11
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2011",
+    "issue": "11",
+    "page": null,
+    "article_number": "129"
+  },
+  {
+    "key": "DFHK96",
+    "doi": "10.1016/0370-2693(96)00773-3",
+    "draft_title": "$S$-duality in $\\mathcal N=4$ supersymmetric gauge theories with arbitrary gauge group",
+    "registered_title": "S-duality in N = 4 supersymmetric gauge theories with arbitrary gauge group",
+    "similarity": 0.947,
+    "registered": true,
+    "publisher": "Elsevier BV",
+    "published": {
+      "date-parts": [
+        [
+          1996,
+          9
+        ]
+      ]
+    },
+    "container": [
+      "Physics Letters B"
+    ],
+    "volume": "383",
+    "issue": "4",
+    "page": "422-428",
+    "article_number": null
+  },
+  {
+    "key": "DGM11",
+    "doi": "10.1007/JHEP06(2011)019",
+    "draft_title": "Quantum black holes, localization and the topological string",
+    "registered": false,
+    "error": "HTTPError"
+  },
+  {
+    "key": "DGM13",
+    "doi": "10.1007/JHEP04(2013)062",
+    "draft_title": "Localization \\& Exact Holography",
+    "registered_title": "Localization &amp; exact holography",
+    "similarity": 0.947,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2013,
+          4
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2013",
+    "issue": "4",
+    "page": null,
+    "article_number": "62"
+  },
+  {
+    "key": "DJS06",
+    "doi": "10.1088/1126-6708/2006/06/064",
+    "draft_title": "Product representation of Dyon partition function in CHL models",
+    "registered_title": "Product representation of dyon partition function in CHL models",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2006,
+          6,
+          30
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2006",
+    "issue": "06",
+    "page": "064-064",
+    "article_number": null
+  },
+  {
+    "key": "DJS07",
+    "doi": "10.1088/1126-6708/2007/01/016",
+    "draft_title": "Dyon spectrum in generic $\\mathcal N=4$ supersymmetric $\\ZZ_N$ orbifolds",
+    "registered_title": "Dyon spectrum in generic Script N = 4 supersymmetric Bbb Z\n                    <sub>\n                      <i>N</i>\n                    </sub>\n                    orbifolds",
+    "similarity": 0.81,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2007,
+          1,
+          4
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2007",
+    "issue": "01",
+    "page": "016-016",
+    "article_number": null
+  },
+  {
+    "key": "DVV97",
+    "doi": "10.1016/S0550-3213(96)00640-2",
+    "draft_title": "Counting dyons in $\\mathcal N=4$ string theory",
+    "registered_title": "Counting dyons in N = 4 string theory",
+    "similarity": 0.892,
+    "registered": true,
+    "publisher": "Elsevier BV",
+    "published": {
+      "date-parts": [
+        [
+          1997,
+          1
+        ]
+      ]
+    },
+    "container": [
+      "Nuclear Physics B"
+    ],
+    "volume": "484",
+    "issue": "3",
+    "page": "543-561",
+    "article_number": null
+  },
+  {
+    "key": "Dwork26",
+    "doi": "10.5281/zenodo.23484427",
+    "draft_title": "Which string vibrations become which generations on the Dwork quintic: code, checks and engine record",
+    "registered": false,
+    "error": "HTTPError"
+  },
+  {
+    "key": "EllwoodSchnabl07",
+    "doi": "10.1088/1126-6708/2007/02/096",
+    "draft_title": "Proof of vanishing cohomology at the tachyon vacuum",
+    "registered_title": "Proof of vanishing cohomology at the tachyon vacuum",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2007,
+          2,
+          28
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2007",
+    "issue": "02",
+    "page": "096-096",
+    "article_number": null
+  },
+  {
+    "key": "Erler13",
+    "doi": "10.1007/JHEP11(2013)007",
+    "draft_title": "Analytic solution for tachyon condensation in Ber\\-ko\\-vits' open superstring field theory",
+    "registered_title": "Analytic solution for tachyon condensation in Berkovits\u2019 open superstring field theory",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2013,
+          11
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2013",
+    "issue": "11",
+    "page": null,
+    "article_number": "7"
+  },
+  {
+    "key": "ErlerMaccaferri14",
+    "doi": "10.1007/JHEP10(2014)029",
+    "draft_title": "String Field Theory Solution for Any Open String Background",
+    "registered_title": "String field theory solution for any open string background",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2014,
+          10
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2014",
+    "issue": "10",
+    "page": null,
+    "article_number": "29"
+  },
+  {
+    "key": "ErlerSchnabl09",
+    "doi": "10.1088/1126-6708/2009/10/066",
+    "draft_title": "A Simple Analytic Solution for Tachyon Condensation",
+    "registered_title": "A simple analytic solution for Tachyon condensation",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2009,
+          10,
+          26
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2009",
+    "issue": "10",
+    "page": "066-066",
+    "article_number": null
+  },
+  {
+    "key": "FK04",
+    "doi": "10.1103/PhysRevD.70.046004",
+    "draft_title": "Inhomogeneous fragmentation of the rolling tachyon",
+    "registered_title": "Inhomogeneous fragmentation of the rolling tachyon",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "American Physical Society (APS)",
+    "published": {
+      "date-parts": [
+        [
+          2004,
+          8,
+          24
+        ]
+      ]
+    },
+    "container": [
+      "Physical Review D"
+    ],
+    "volume": "70",
+    "issue": "4",
+    "page": null,
+    "article_number": "046004"
+  },
+  {
+    "key": "FKS02",
+    "doi": "10.1088/1126-6708/2002/09/026",
+    "draft_title": "Caustics in ta\\-chy\\-on matter and other Born--In\\-feld scalars",
+    "registered_title": "Caustics in Tachyon Matter and Other Born-Infeld Scalars",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2002,
+          9,
+          10
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2002",
+    "issue": "09",
+    "page": "026-026",
+    "article_number": null
+  },
+  {
+    "key": "FuchsKroyter06",
+    "doi": "10.1088/1126-6708/2006/05/006",
+    "draft_title": "On the validity of the solution of string field theory",
+    "registered_title": "On the validity of the solution of string field theory",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2006,
+          5,
+          4
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2006",
+    "issue": "05",
+    "page": "006-006",
+    "article_number": null
+  },
+  {
+    "key": "GauntlettLowe96",
+    "doi": "10.1016/0550-3213(96)00218-0",
+    "draft_title": "Dyons and $S$-duality in $\\mathcal N=4$ supersymmetric gauge theory",
+    "registered_title": "Dyons and S-duality in N = 4 supersymmetric gauge theory",
+    "similarity": 0.928,
+    "registered": true,
+    "publisher": "Elsevier BV",
+    "published": {
+      "date-parts": [
+        [
+          1996,
+          7
+        ]
+      ]
+    },
+    "container": [
+      "Nuclear Physics B"
+    ],
+    "volume": "472",
+    "issue": "1-2",
+    "page": "194-206",
+    "article_number": null
+  },
+  {
+    "key": "GGPZ95",
+    "doi": "10.1016/0550-3213(95)00177-T",
+    "draft_title": "$S$-duality in $\\mathcal N=4$ Yang--Mills theories with general gauge groups",
+    "registered_title": "S-duality in N = 4 Yang-Mills theories with general gauge groups",
+    "similarity": 0.936,
+    "registered": true,
+    "publisher": "Elsevier BV",
+    "published": {
+      "date-parts": [
+        [
+          1995,
+          8
+        ]
+      ]
+    },
+    "container": [
+      "Nuclear Physics B"
+    ],
+    "volume": "448",
+    "issue": "1-2",
+    "page": "127-165",
+    "article_number": null
+  },
+  {
+    "key": "GritsenkoNikulin97",
+    "doi": "10.1353/ajm.1997.0002",
+    "draft_title": "Siegel automorphic form corrections of some Lorentzian Kac--Moody Lie algebras",
+    "registered_title": "Siegel automorphic form corrections of some Lorentzian Kac-Moody Lie algebras",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Project MUSE",
+    "published": {
+      "date-parts": [
+        [
+          1997,
+          2
+        ]
+      ]
+    },
+    "container": [
+      "American Journal of Mathematics"
+    ],
+    "volume": "119",
+    "issue": "1",
+    "page": "181-224",
+    "article_number": null
+  },
+  {
+    "key": "HeidmannMondal19",
+    "doi": "10.1007/JHEP06(2019)011",
+    "draft_title": "The full space of BPS multicenter states with pure D-brane charges",
+    "registered_title": "The full space of BPS multicenter states with pure D-brane charges",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          6
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2019",
+    "issue": "6",
+    "page": null,
+    "article_number": "11"
+  },
+  {
+    "key": "HHM04",
+    "doi": "10.1215/S0012-7094-04-12233-X",
+    "draft_title": "Hodge cohomology of gravitational instantons",
+    "registered_title": "Hodge cohomology of gravitational instantons",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Duke University Press",
+    "published": {
+      "date-parts": [
+        [
+          2004,
+          4,
+          15
+        ]
+      ]
+    },
+    "container": [
+      "Duke Mathematical Journal"
+    ],
+    "volume": "122",
+    "issue": "3",
+    "page": "485-548",
+    "article_number": null
+  },
+  {
+    "key": "Hitchin00",
+    "doi": "10.1007/s002200050806",
+    "draft_title": "$L^2$ cohomology of hyperKahler quotients",
+    "registered_title": "L 2 -Cohomology of Hyperk\u00e4hler Quotients",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2000,
+          4,
+          1
+        ]
+      ]
+    },
+    "container": [
+      "Communications in Mathematical Physics"
+    ],
+    "volume": "211",
+    "issue": "1",
+    "page": "153-165",
+    "article_number": null
+  },
+  {
+    "key": "IMT25",
+    "doi": "10.1007/JHEP08(2025)152",
+    "draft_title": "Black hole microstate counting from the gravitational path integral",
+    "registered_title": "Black hole microstate counting from the gravitational path integral",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          20
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2025",
+    "issue": "8",
+    "page": null,
+    "article_number": "152"
+  },
+  {
+    "key": "IMT25b",
+    "doi": "10.1007/JHEP07(2025)058",
+    "draft_title": "Revisiting the logarithmic corrections to the black hole entropy",
+    "registered_title": "Revisiting the logarithmic corrections to the black hole entropy",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          3
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2025",
+    "issue": "7",
+    "page": null,
+    "article_number": "58"
+  },
+  {
+    "key": "JatkarSen06",
+    "doi": "10.1088/1126-6708/2006/04/018",
+    "draft_title": "Dyon spectrum in CHL models",
+    "registered_title": "Dyon spectrum in CHL models",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2006,
+          4,
+          10
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2006",
+    "issue": "04",
+    "page": "018-018",
+    "article_number": null
+  },
+  {
+    "key": "KapustinWitten07",
+    "doi": "10.4310/CNTP.2007.v1.n1.a1",
+    "draft_title": "Electric-Magnetic Duality And The Geometric Langlands Program",
+    "registered_title": "Electric-magnetic duality and the geometric Langlands program",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "International Press of Boston",
+    "published": {
+      "date-parts": [
+        [
+          2007
+        ]
+      ]
+    },
+    "container": [
+      "Communications in Number Theory and Physics"
+    ],
+    "volume": "1",
+    "issue": "1",
+    "page": "1-236",
+    "article_number": null
+  },
+  {
+    "key": "KKSS25",
+    "doi": "10.1007/JHEP11(2025)025",
+    "draft_title": "All order classical electromagnetic soft theorems",
+    "registered_title": "All order classical electromagnetic soft theorems",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          11,
+          5
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2025",
+    "issue": "11",
+    "page": null,
+    "article_number": "25"
+  },
+  {
+    "key": "KLL14",
+    "doi": "10.1103/PhysRevD.90.043011",
+    "draft_title": "Logarithmic Corrections to $N\\ge 2$ Black Hole Entropy",
+    "registered": false,
+    "error": "HTTPError"
+  },
+  {
+    "key": "KottkeRochon24",
+    "doi": "10.1007/s00222-024-01253-5",
+    "draft_title": "$L^2$-Cohomology of quasi-fibered boundary metrics",
+    "registered_title": "$L^{2}$-Cohomology of quasi-fibered boundary metrics",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          4,
+          4
+        ]
+      ]
+    },
+    "container": [
+      "Inventiones mathematicae"
+    ],
+    "volume": "236",
+    "issue": "3",
+    "page": "1083-1131",
+    "article_number": null
+  },
+  {
+    "key": "KrishnaSahoo23",
+    "doi": "10.1007/JHEP11(2023)233",
+    "draft_title": "Universality of loop corrected soft theorems in 4d",
+    "registered_title": "Universality of loop corrected soft theorems in 4d",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          30
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2023",
+    "issue": "11",
+    "page": null,
+    "article_number": "233"
+  },
+  {
+    "key": "LaddhaSen19",
+    "doi": "10.1103/PhysRevD.101.084011",
+    "draft_title": "Classical proof of the classical soft graviton theorem in $D>4$",
+    "registered_title": "Classical proof of the classical soft graviton theorem in \n<mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mml:mrow><mml:mi>D</mml:mi><mml:mo>&gt;</mml:mo><mml:mn>4</mml:mn></mml:mrow></mml:math>",
+    "similarity": 0.488,
+    "registered": true,
+    "publisher": "American Physical Society (APS)",
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          4,
+          6
+        ]
+      ]
+    },
+    "container": [
+      "Physical Review D"
+    ],
+    "volume": "101",
+    "issue": "8",
+    "page": null,
+    "article_number": "084011"
+  },
+  {
+    "key": "LeeWeinbergYi96",
+    "doi": "10.1016/0370-2693(96)00286-9",
+    "draft_title": "Electromagnetic duality and $SU(3)$ monopoles",
+    "registered_title": "Electromagnetic duality and SU(3) monopoles",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Elsevier BV",
+    "published": {
+      "date-parts": [
+        [
+          1996,
+          5
+        ]
+      ]
+    },
+    "container": [
+      "Physics Letters B"
+    ],
+    "volume": "376",
+    "issue": "1-3",
+    "page": "97-102",
+    "article_number": null
+  },
+  {
+    "key": "LLM07",
+    "doi": "10.1088/1126-6708/2007/03/014",
+    "draft_title": "Closed strings from decaying D-branes",
+    "registered_title": "Closed strings from decaying D-branes",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2007,
+          3,
+          5
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2007",
+    "issue": "03",
+    "page": "014-014",
+    "article_number": null
+  },
+  {
+    "key": "MatsuoOkuyama98",
+    "doi": "10.1016/S0370-2693(98)00288-3",
+    "draft_title": "BPS condition of string junction from M theory",
+    "registered_title": "BPS condition of string junction from M theory",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Elsevier BV",
+    "published": {
+      "date-parts": [
+        [
+          1998,
+          5
+        ]
+      ]
+    },
+    "container": [
+      "Physics Letters B"
+    ],
+    "volume": "426",
+    "issue": "3-4",
+    "page": "294-296",
+    "article_number": null
+  },
+  {
+    "key": "MontonenOlive77",
+    "doi": "10.1016/0370-2693(77)90076-4",
+    "draft_title": "Magnetic monopoles as gauge particles?",
+    "registered_title": "Magnetic monopoles as gauge particles?",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Elsevier BV",
+    "published": {
+      "date-parts": [
+        [
+          1977,
+          12
+        ]
+      ]
+    },
+    "container": [
+      "Physics Letters B"
+    ],
+    "volume": "72",
+    "issue": "1",
+    "page": "117-120",
+    "article_number": null
+  },
+  {
+    "key": "MT12",
+    "doi": "10.2478/s11534-012-0065-4",
+    "draft_title": "Classifying bases for 6D F-theory models",
+    "registered_title": "Classifying bases for 6D F-theory models",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Walter de Gruyter GmbH",
+    "published": {
+      "date-parts": [
+        [
+          2012,
+          10,
+          1
+        ]
+      ]
+    },
+    "container": [
+      "Open Physics"
+    ],
+    "volume": "10",
+    "issue": "5",
+    "page": "1072-1088",
+    "article_number": null
+  },
+  {
+    "key": "MT15",
+    "doi": "10.1007/JHEP05(2015)080",
+    "draft_title": "Non-Higgsable clusters for 4D F-theory models",
+    "registered_title": "Non-Higgsable clusters for 4D F-theory models",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2015,
+          5
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2015",
+    "issue": "5",
+    "page": null,
+    "article_number": "80"
+  },
+  {
+    "key": "MurthyReys16",
+    "doi": "10.1007/JHEP04(2016)052",
+    "draft_title": "Single-centered black hole microstate degeneracies from instantons in supergravity",
+    "registered_title": "Single-centered black hole microstate degeneracies from instantons in supergravity",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2016,
+          4
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2016",
+    "issue": "4",
+    "page": "1-33",
+    "article_number": null
+  },
+  {
+    "key": "Okawa06",
+    "doi": "10.1088/1126-6708/2006/04/055",
+    "draft_title": "Comments on Schnabl's analytic solution for ta\\-chy\\-on con\\-den\\-sa\\-tion in Witten's open string field theory",
+    "registered_title": "Comments on Schnabl's analytic solution for tachyon condensation in Witten's open string field theory",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2006,
+          4,
+          28
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2006",
+    "issue": "04",
+    "page": "055-055",
+    "article_number": null
+  },
+  {
+    "key": "Osborn79",
+    "doi": "10.1016/0370-2693(79)91118-3",
+    "draft_title": "Topological charges for $N=4$ supersymmetric gauge theories and monopoles of spin 1",
+    "registered_title": "Topological charges for N = 4 supersymmetric gauge theories and monopoles of spin 1",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Elsevier BV",
+    "published": {
+      "date-parts": [
+        [
+          1979,
+          5
+        ]
+      ]
+    },
+    "container": [
+      "Physics Letters B"
+    ],
+    "volume": "83",
+    "issue": "3-4",
+    "page": "321-326",
+    "article_number": null
+  },
+  {
+    "key": "Pius16",
+    "doi": "10.1007/JHEP09(2018)122",
+    "draft_title": "Cutkosky rules for superstring field theory",
+    "registered_title": "Erratum to: Cutkosky rules for superstring field theory",
+    "similarity": 0.894,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2018,
+          9
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2018",
+    "issue": "9",
+    "page": null,
+    "article_number": "122"
+  },
+  {
+    "key": "Porrati96",
+    "doi": "10.1016/0370-2693(96)00346-2",
+    "draft_title": "On the existence of states saturating the Bogomolny bound in $\\mathcal N=4$ supersymmetry",
+    "registered_title": "On the existence of states saturating the Bogomol'nyi bound in N = 4 supersymmetry",
+    "similarity": 0.943,
+    "registered": true,
+    "publisher": "Elsevier BV",
+    "published": {
+      "date-parts": [
+        [
+          1996,
+          6
+        ]
+      ]
+    },
+    "container": [
+      "Physics Letters B"
+    ],
+    "volume": "377",
+    "issue": "1-3",
+    "page": "67-75",
+    "article_number": null
+  },
+  {
+    "key": "ReyYee98",
+    "doi": "10.1016/S0550-3213(98)00401-5",
+    "draft_title": "BPS dynamics of triple $(p,q)$ string junction",
+    "registered_title": "BPS dynamics of the triple (p, q) string junction",
+    "similarity": 0.959,
+    "registered": true,
+    "publisher": "Elsevier BV",
+    "published": {
+      "date-parts": [
+        [
+          1998,
+          8
+        ]
+      ]
+    },
+    "container": [
+      "Nuclear Physics B"
+    ],
+    "volume": "526",
+    "issue": "1-3",
+    "page": "229-240",
+    "article_number": null
+  },
+  {
+    "key": "RSZ01",
+    "doi": "10.4310/ATMP.2001.v5.n2.a5",
+    "draft_title": "String field theory around the tachyon vacuum",
+    "registered_title": "String field theory around the tachyon vacuum",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "International Press of Boston",
+    "published": {
+      "date-parts": [
+        [
+          2001
+        ]
+      ]
+    },
+    "container": [
+      "Advances in Theoretical and Mathematical Physics"
+    ],
+    "volume": "5",
+    "issue": "2",
+    "page": "353-392",
+    "article_number": null
+  },
+  {
+    "key": "SahooSen19",
+    "doi": "10.1007/JHEP02(2019)086",
+    "draft_title": "Classical and Quantum Results on Logarithmic Terms in the Soft Theorem in Four Dimensions",
+    "registered_title": "Classical and quantum results on logarithmic terms in the soft theorem in four dimensions",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          2
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2019",
+    "issue": "2",
+    "page": null,
+    "article_number": "86"
+  },
+  {
+    "key": "Schnabl05",
+    "doi": "10.4310/ATMP.2006.v10.n4.a1",
+    "draft_title": "Analytic solution for tachyon condensation in open string field theory",
+    "registered_title": "Analytic solution for tachyon condensation in open string field theory",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "International Press of Boston",
+    "published": {
+      "date-parts": [
+        [
+          2006
+        ]
+      ]
+    },
+    "container": [
+      "Advances in Theoretical and Mathematical Physics"
+    ],
+    "volume": "10",
+    "issue": "4",
+    "page": "433-501",
+    "article_number": null
+  },
+  {
+    "key": "SchwarzSen93",
+    "doi": "10.1016/0370-2693(93)90495-4",
+    "draft_title": "Duality symmetries of 4-D heterotic strings",
+    "registered_title": "Duality symmetries of 4D heterotic strings",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Elsevier BV",
+    "published": {
+      "date-parts": [
+        [
+          1993,
+          8
+        ]
+      ]
+    },
+    "container": [
+      "Physics Letters B"
+    ],
+    "volume": "312",
+    "issue": "1-2",
+    "page": "105-114",
+    "article_number": null
+  },
+  {
+    "key": "SchwarzSen94",
+    "doi": "10.1016/0550-3213(94)90053-1",
+    "draft_title": "Duality symmetric actions",
+    "registered_title": "Duality symmetric actions",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Elsevier BV",
+    "published": {
+      "date-parts": [
+        [
+          1994,
+          1
+        ]
+      ]
+    },
+    "container": [
+      "Nuclear Physics B"
+    ],
+    "volume": "411",
+    "issue": "1",
+    "page": "35-63",
+    "article_number": null
+  },
+  {
+    "key": "SegalSelby96",
+    "doi": "10.1007/BF02099547",
+    "draft_title": "The cohomology of the space of magnetic monopoles",
+    "registered_title": "The cohomology of the space of magnetic monopoles",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          1996,
+          4
+        ]
+      ]
+    },
+    "container": [
+      "Communications in Mathematical Physics"
+    ],
+    "volume": "177",
+    "issue": "3",
+    "page": "775-787",
+    "article_number": null
+  },
+  {
+    "key": "Seiberg97",
+    "doi": "10.1103/PhysRevLett.79.3577",
+    "draft_title": "Why is the matrix model correct?",
+    "registered_title": "Why Is the Matrix Model Correct?",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "American Physical Society (APS)",
+    "published": {
+      "date-parts": [
+        [
+          1997,
+          11,
+          10
+        ]
+      ]
+    },
+    "container": [
+      "Physical Review Letters"
+    ],
+    "volume": "79",
+    "issue": "19",
+    "page": "3577-3580",
+    "article_number": null
+  },
+  {
+    "key": "Sen02field",
+    "doi": "10.1142/S0217732302008071",
+    "draft_title": "Field theory of tachyon matter",
+    "registered_title": "FIELD THEORY OF TACHYON MATTER",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "World Scientific Pub Co Pte Ltd",
+    "published": {
+      "date-parts": [
+        [
+          2002,
+          9,
+          7
+        ]
+      ]
+    },
+    "container": [
+      "Modern Physics Letters A"
+    ],
+    "volume": "17",
+    "issue": "27",
+    "page": "1797-1804",
+    "article_number": null
+  },
+  {
+    "key": "Sen02matter",
+    "doi": "10.1088/1126-6708/2002/07/065",
+    "draft_title": "Tachyon matter",
+    "registered_title": "Tachyon Matter",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2002,
+          7,
+          29
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2002",
+    "issue": "07",
+    "page": "065-065",
+    "article_number": null
+  },
+  {
+    "key": "Sen02rolling",
+    "doi": "10.1088/1126-6708/2002/04/048",
+    "draft_title": "Rolling tachyon",
+    "registered_title": "Rolling Tachyon",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2002,
+          4,
+          25
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2002",
+    "issue": "04",
+    "page": "048-048",
+    "article_number": null
+  },
+  {
+    "key": "Sen03kink",
+    "doi": "10.1103/PhysRevD.68.066008",
+    "draft_title": "Dirac--Born--Infeld action on the tachyon kink and vortex",
+    "registered_title": "Dirac-Born-Infeld action on the tachyon kink and vortex",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "American Physical Society (APS)",
+    "published": {
+      "date-parts": [
+        [
+          2003,
+          9,
+          26
+        ]
+      ]
+    },
+    "container": [
+      "Physical Review D"
+    ],
+    "volume": "68",
+    "issue": "6",
+    "page": null,
+    "article_number": "066008"
+  },
+  {
+    "key": "Sen03openclosed",
+    "doi": "10.1103/PhysRevLett.91.181601",
+    "draft_title": "Open--closed duality at tree level",
+    "registered_title": "Open-Closed String Duality at Tree Level",
+    "similarity": 0.903,
+    "registered": true,
+    "publisher": "American Physical Society (APS)",
+    "published": {
+      "date-parts": [
+        [
+          2003,
+          10,
+          31
+        ]
+      ]
+    },
+    "container": [
+      "Physical Review Letters"
+    ],
+    "volume": "91",
+    "issue": "18",
+    "page": null,
+    "article_number": "181601"
+  },
+  {
+    "key": "Sen04review",
+    "doi": "10.1142/S0217751X0502519X",
+    "draft_title": "Tachyon dynamics in open string theory",
+    "registered_title": "TACHYON DYNAMICS IN OPEN STRING THEORY",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "World Scientific Pub Co Pte Lt",
+    "published": {
+      "date-parts": [
+        [
+          2005,
+          9,
+          30
+        ]
+      ]
+    },
+    "container": [
+      "International Journal of Modern Physics A"
+    ],
+    "volume": "20",
+    "issue": "24",
+    "page": "5513-5656",
+    "article_number": null
+  },
+  {
+    "key": "Sen04stretch",
+    "doi": "10.1088/1126-6708/2005/05/059",
+    "draft_title": "How does a fundamental string stretch its horizon?",
+    "registered_title": "How does a fundamental string stretch its horizon?",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2005,
+          5,
+          25
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2005",
+    "issue": "05",
+    "page": "059-059",
+    "article_number": null
+  },
+  {
+    "key": "Sen05entropy",
+    "doi": "10.1088/1126-6708/2005/09/038",
+    "draft_title": "Black hole entropy function and the attractor mechanism in higher derivative gravity",
+    "registered_title": "Black hole entropy function and the attractor mechanism in higher derivative gravity",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2005,
+          9,
+          14
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2005",
+    "issue": "09",
+    "page": "038-038",
+    "article_number": null
+  },
+  {
+    "key": "Sen05stretching",
+    "doi": "10.1088/1126-6708/2005/07/073",
+    "draft_title": "Stretching the horizon of a higher dimensional small black hole",
+    "registered_title": "Stretching the horizon of a higher dimensional small black hole",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2005,
+          7,
+          28
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2005",
+    "issue": "07",
+    "page": "073-073",
+    "article_number": null
+  },
+  {
+    "key": "Sen07junction",
+    "doi": "10.1088/1126-6708/2007/12/019",
+    "draft_title": "Three String Junction and $\\mathcal N=4$ Dyon Spectrum",
+    "registered_title": "Threel string junction and \ud835\udca9 = 4 dyon spectrum",
+    "similarity": 0.9,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2007,
+          12,
+          4
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2007",
+    "issue": "12",
+    "page": "019-019",
+    "article_number": null
+  },
+  {
+    "key": "Sen07twocentred",
+    "doi": "10.1088/1126-6708/2007/09/045",
+    "draft_title": "Two centered black holes and $\\mathcal N=4$ dyon spectrum",
+    "registered_title": "Two centered black holes and<i>N</i>= 4 dyon spectrum",
+    "similarity": 0.894,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2007,
+          9,
+          11
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2007",
+    "issue": "09",
+    "page": "045-045",
+    "article_number": null
+  },
+  {
+    "key": "Sen07walls",
+    "doi": "10.1088/1126-6708/2007/05/039",
+    "draft_title": "Walls of Marginal Stability and Dyon Spectrum in $\\mathcal N=4$ Supersymmetric String Theories",
+    "registered_title": "Walls of marginal stability and dyon spectrum in Script N = 4 supersymmetric string theories",
+    "similarity": 0.929,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2007,
+          5,
+          14
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2007",
+    "issue": "05",
+    "page": "039-039",
+    "article_number": null
+  },
+  {
+    "key": "Sen08qef",
+    "doi": "10.1142/S0217751X09045893",
+    "draft_title": "Quantum Entropy Function from $AdS_2/CFT_1$ Correspondence",
+    "registered_title": "QUANTUM ENTROPY FUNCTION FROM\n                    <font>AdS</font>\n                    <sub>2</sub>\n                    /\n                    <font>CFT</font>\n                    <sub>1</sub>\n                    CORRESPONDENCE",
+    "similarity": 0.774,
+    "registered": true,
+    "publisher": "World Scientific Pub Co Pte Ltd",
+    "published": {
+      "date-parts": [
+        [
+          2009,
+          9,
+          20
+        ]
+      ]
+    },
+    "container": [
+      "International Journal of Modern Physics A"
+    ],
+    "volume": "24",
+    "issue": "23",
+    "page": "4225-4244",
+    "article_number": null
+  },
+  {
+    "key": "Sen11negative",
+    "doi": "10.1007/JHEP10(2011)073",
+    "draft_title": "Negative discriminant states in $\\mathcal N=4$ supersymmetric string theories",
+    "registered_title": "Negative discriminant states in $ \\mathcal{N} = 4 $ supersymmetric string theories",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2011,
+          10
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2011",
+    "issue": "10",
+    "page": null,
+    "article_number": "73"
+  },
+  {
+    "key": "Sen11positivity",
+    "doi": "10.1007/s10714-011-1175-9",
+    "draft_title": "How Do Black Holes Predict the Sign of the Fourier Coefficients of Siegel Modular Forms?",
+    "registered_title": "How do black holes predict the sign of the Fourier coefficients of siegel modular forms?",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2011,
+          4,
+          19
+        ]
+      ]
+    },
+    "container": [
+      "General Relativity and Gravitation"
+    ],
+    "volume": "43",
+    "issue": "8",
+    "page": "2171-2183",
+    "article_number": null
+  },
+  {
+    "key": "Sen12N2",
+    "doi": "10.1007/s10714-012-1336-5",
+    "draft_title": "Logarithmic Corrections to $\\mathcal N=2$ Black Hole Entropy: An Infrared Window into the Microstates",
+    "registered_title": "Logarithmic corrections to $${\\mathcal{N} = 2}$$ black hole entropy: an infrared window into the microstates",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2012,
+          2,
+          14
+        ]
+      ]
+    },
+    "container": [
+      "General Relativity and Gravitation"
+    ],
+    "volume": "44",
+    "issue": "5",
+    "page": "1207-1266",
+    "article_number": null
+  },
+  {
+    "key": "Sen12rotating",
+    "doi": "10.1007/s10714-012-1373-0",
+    "draft_title": "Logarithmic Corrections to Rotating Extremal Black Hole Entropy in Four and Five Dimensions",
+    "registered_title": "Logarithmic corrections to rotating extremal black hole entropy in four and five dimensions",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2012,
+          5,
+          16
+        ]
+      ]
+    },
+    "container": [
+      "General Relativity and Gravitation"
+    ],
+    "volume": "44",
+    "issue": "8",
+    "page": "1947-1991",
+    "article_number": null
+  },
+  {
+    "key": "Sen13schwarzschild",
+    "doi": "10.1007/JHEP04(2013)156",
+    "draft_title": "Logarithmic Corrections to Schwarzschild and Other Non-extremal Black Hole Entropy in Different Dimensions",
+    "registered_title": "Logarithmic corrections to Schwarzschild and other non-extremal black hole entropy in different dimensions",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2013,
+          4
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2013",
+    "issue": "4",
+    "page": null,
+    "article_number": "156"
+  },
+  {
+    "key": "Sen15offshell",
+    "doi": "10.1002/prop.201500002",
+    "draft_title": "Off-shell Amplitudes in Superstring Theory",
+    "registered_title": "Off-shell Amplitudes in Superstring Theory",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Wiley",
+    "published": {
+      "date-parts": [
+        [
+          2015,
+          2,
+          11
+        ]
+      ]
+    },
+    "container": [
+      "Fortschritte der Physik"
+    ],
+    "volume": "63",
+    "issue": "3-4",
+    "page": "149-188",
+    "article_number": null
+  },
+  {
+    "key": "Sen15onePI",
+    "doi": "10.1007/JHEP08(2015)025",
+    "draft_title": "Gauge Invariant 1PI Effective Superstring Field Theory: Inclusion of the Ramond Sector",
+    "registered_title": "Gauge invariant 1PI effective superstring field theory: inclusion of the Ramond sector",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2015,
+          8
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2015",
+    "issue": "8",
+    "page": null,
+    "article_number": "25"
+  },
+  {
+    "key": "Sen16BV",
+    "doi": "10.1007/JHEP02(2016)087",
+    "draft_title": "BV Master Action for Heterotic and Type II String Field Theories",
+    "registered_title": "BV master action for heterotic and type II string field theories",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2016,
+          2
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2016",
+    "issue": "2",
+    "page": null,
+    "article_number": "87"
+  },
+  {
+    "key": "Sen16unitarity",
+    "doi": "10.1007/JHEP12(2016)115",
+    "draft_title": "Unitarity of Superstring Field Theory",
+    "registered_title": "Unitarity of superstring field theory",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2016,
+          12
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2016",
+    "issue": "12",
+    "page": null,
+    "article_number": "115"
+  },
+  {
+    "key": "Sen18subsub",
+    "doi": "10.1007/JHEP11(2017)123",
+    "draft_title": "Subleading Soft Graviton Theorem for Loop Amplitudes",
+    "registered_title": "Subleading soft graviton theorem for loop amplitudes",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2017,
+          11
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2017",
+    "issue": "11",
+    "page": null,
+    "article_number": "123"
+  },
+  {
+    "key": "Sen20fixing",
+    "doi": "10.1007/JHEP03(2020)005",
+    "draft_title": "Fixing an Ambiguity in Two Dimensional String Theory Using String Field Theory",
+    "registered_title": "Fixing an ambiguity in two dimensional string theory using string field theory",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          3
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2020",
+    "issue": "3",
+    "page": null,
+    "article_number": "5"
+  },
+  {
+    "key": "Sen21Dinst",
+    "doi": "10.1007/JHEP11(2021)061",
+    "draft_title": "D-instantons, string field theory and two dimensional string theory",
+    "registered_title": "D-instantons, string field theory and two dimensional string theory",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          11
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2021",
+    "issue": "11",
+    "page": null,
+    "article_number": "61"
+  },
+  {
+    "key": "Sen21IIB",
+    "doi": "10.1007/JHEP12(2021)146",
+    "draft_title": "Normalization of type IIB D-instanton amplitudes",
+    "registered_title": "Normalization of type IIB D-instanton amplitudes",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          12,
+          21
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2021",
+    "issue": "12",
+    "page": null,
+    "article_number": "146"
+  },
+  {
+    "key": "Sen21normalisation",
+    "doi": "10.1007/JHEP11(2021)077",
+    "draft_title": "Normalization of D-instanton amplitudes",
+    "registered_title": "Normalization of D-instanton amplitudes",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          11
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2021",
+    "issue": "11",
+    "page": null,
+    "article_number": "77"
+  },
+  {
+    "key": "Sen23localisation",
+    "doi": "10.1007/JHEP08(2026)174",
+    "draft_title": "Revisiting localization for BPS black hole entropy",
+    "registered_title": "Revisiting localization for BPS black hole entropy",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          21
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2026",
+    "issue": "8",
+    "page": null,
+    "article_number": "174"
+  },
+  {
+    "key": "Sen92kerr",
+    "doi": "10.1103/PhysRevLett.69.1006",
+    "draft_title": "Rotating charged black hole solution in heterotic string theory",
+    "registered_title": "Rotating charged black hole solution in heterotic string theory",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "American Physical Society (APS)",
+    "published": {
+      "date-parts": [
+        [
+          1992,
+          8,
+          17
+        ]
+      ]
+    },
+    "container": [
+      "Physical Review Letters"
+    ],
+    "volume": "69",
+    "issue": "7",
+    "page": "1006-1009",
+    "article_number": null
+  },
+  {
+    "key": "Sen94duality",
+    "doi": "10.1142/S0217751X94001497",
+    "draft_title": "Strong--weak coupling duality in four-dimensional string theory",
+    "registered_title": "STRONG\u2013WEAK COUPLING DUALITY IN FOUR-DIMENSIONAL STRING THEORY",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "World Scientific Pub Co Pte Lt",
+    "published": {
+      "date-parts": [
+        [
+          1994,
+          8,
+          20
+        ]
+      ]
+    },
+    "container": [
+      "International Journal of Modern Physics A"
+    ],
+    "volume": "09",
+    "issue": "21",
+    "page": "3707-3750",
+    "article_number": null
+  },
+  {
+    "key": "Sen94dyon",
+    "doi": "10.1016/0370-2693(94)90763-3",
+    "draft_title": "Dyon--monopole bound states, self-dual harmonic forms on the multi-monopole moduli space, and $SL(2,\\ZZ)$ invariance in string theory",
+    "registered_title": "Dyon-monopole bound states, self-dual harmonic forms on the multi-monopole moduli space, and SL (2,Z) invariance in string theory",
+    "similarity": 0.995,
+    "registered": true,
+    "publisher": "Elsevier BV",
+    "published": {
+      "date-parts": [
+        [
+          1994,
+          6
+        ]
+      ]
+    },
+    "container": [
+      "Physics Letters B"
+    ],
+    "volume": "329",
+    "issue": "2-3",
+    "page": "217-221",
+    "article_number": null
+  },
+  {
+    "key": "Sen96ftheory",
+    "doi": "10.1016/0550-3213(96)00347-1",
+    "draft_title": "F theory and orientifolds",
+    "registered_title": "F-theory and orientifolds",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Elsevier BV",
+    "published": {
+      "date-parts": [
+        [
+          1996,
+          9
+        ]
+      ]
+    },
+    "container": [
+      "Nuclear Physics B"
+    ],
+    "volume": "475",
+    "issue": "3",
+    "page": "562-578",
+    "article_number": null
+  },
+  {
+    "key": "Sen97orientifold",
+    "doi": "10.1103/PhysRevD.55.R7345",
+    "draft_title": "Orientifold limit of F theory vacua",
+    "registered_title": "Orientifold limit of<mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mml:mi>F</mml:mi></mml:math>-theory vacua",
+    "similarity": 0.458,
+    "registered": true,
+    "publisher": "American Physical Society (APS)",
+    "published": {
+      "date-parts": [
+        [
+          1997,
+          6,
+          15
+        ]
+      ]
+    },
+    "container": [
+      "Physical Review D"
+    ],
+    "volume": "55",
+    "issue": "12",
+    "page": "R7345-R7349",
+    "article_number": null
+  },
+  {
+    "key": "Sen98bab",
+    "doi": "10.1088/1126-6708/1998/08/012",
+    "draft_title": "Tachyon condensation on the brane anti-brane system",
+    "registered_title": "Tachyon condensation on the brane antibrane system",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          1998,
+          8,
+          28
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "1998",
+    "issue": "08",
+    "page": "012-012",
+    "article_number": null
+  },
+  {
+    "key": "Sen98matrix",
+    "doi": "10.4310/ATMP.1998.v2.n1.a2",
+    "draft_title": "D0-branes on $T^n$ and matrix theory",
+    "registered": false,
+    "error": "HTTPError"
+  },
+  {
+    "key": "Sen98network",
+    "doi": "10.1088/1126-6708/1998/03/005",
+    "draft_title": "String network",
+    "registered_title": "String network",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          1998,
+          3,
+          17
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "1998",
+    "issue": "03",
+    "page": "005-005",
+    "article_number": null
+  },
+  {
+    "key": "Sen98spinor",
+    "doi": "10.1088/1126-6708/1998/09/023",
+    "draft_title": "SO(32) spinors of type I and other solitons on brane--anti-brane pair",
+    "registered_title": "SO(32) spinors of type I and other solitons on brane-antibrane pair",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          1998,
+          9,
+          29
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "1998",
+    "issue": "09",
+    "page": "023-023",
+    "article_number": null
+  },
+  {
+    "key": "Sen99descent",
+    "doi": "10.1142/S0217751X99001901",
+    "draft_title": "Descent relations among bosonic D-branes",
+    "registered_title": "DESCENT RELATIONS AMONG BOSONIC D-BRANES",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "World Scientific Pub Co Pte Ltd",
+    "published": {
+      "date-parts": [
+        [
+          1999,
+          10,
+          10
+        ]
+      ]
+    },
+    "container": [
+      "International Journal of Modern Physics A"
+    ],
+    "volume": "14",
+    "issue": "25",
+    "page": "4061-4077",
+    "article_number": null
+  },
+  {
+    "key": "Sen99univ",
+    "doi": "10.1088/1126-6708/1999/12/027",
+    "draft_title": "Universality of the tachyon potential",
+    "registered_title": "Universality of the tachyon potential",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          1999,
+          12,
+          29
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "1999",
+    "issue": "12",
+    "page": "027-027",
+    "article_number": null
+  },
+  {
+    "key": "SenZwiebach94",
+    "doi": "10.1016/0550-3213(94)90145-7",
+    "draft_title": "Quantum background independence of closed string field theory",
+    "registered": false,
+    "error": "HTTPError"
+  },
+  {
+    "key": "VafaWitten94",
+    "doi": "10.1016/0550-3213(94)90097-3",
+    "draft_title": "A Strong coupling test of $S$-duality",
+    "registered_title": "A strong coupling test of S-duality",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Elsevier BV",
+    "published": {
+      "date-parts": [
+        [
+          1994,
+          12
+        ]
+      ]
+    },
+    "container": [
+      "Nuclear Physics B"
+    ],
+    "volume": "431",
+    "issue": "1-2",
+    "page": "3-77",
+    "article_number": null
+  },
+  {
+    "key": "Witten98K",
+    "doi": "10.1088/1126-6708/1998/12/019",
+    "draft_title": "D-branes and K-theory",
+    "registered": false,
+    "error": "HTTPError"
+  },
+  {
+    "key": "YM26",
+    "doi": "10.5281/zenodo.23490028",
+    "draft_title": "Lattice Yang--Mills theory: spacing-uniform obstructions, the mass gap up to the Dobrushin ceiling and in a forest gauge, and Lean certificate",
+    "registered": false,
+    "error": "HTTPError"
+  },
+  {
+    "key": "HLS18",
+    "doi": "10.1007/JHEP02(2018)113",
+    "draft_title": "On the scarcity of weak coupling in the string landscape",
+    "registered_title": "On the scarcity of weak coupling in the string landscape",
+    "similarity": 1.0,
+    "registered": true,
+    "publisher": "Springer Science and Business Media LLC",
+    "published": {
+      "date-parts": [
+        [
+          2018,
+          2
+        ]
+      ]
+    },
+    "container": [
+      "Journal of High Energy Physics"
+    ],
+    "volume": "2018",
+    "issue": "2",
+    "page": null,
+    "article_number": "113"
+  }
+]

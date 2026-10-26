@@ -1,62 +1,9 @@
-# The Conjectures of Ashoke Sen
+# Conjectures of Ashoke Sen: Scope, Exact Tests and Analytic Limits
 
-Source, data and verification code of the paper *The Conjectures of Ashoke Sen*
-by Deep Bhattacharjee.
+Current research revision: v1.1.0. Author: Deep Bhattacharjee.
 
-The paper goes through thirty-six statements that Ashoke Sen made as
-conjectures or as results extended beyond their derivation, from the S-duality
-of the heterotic string in 1994 to the soft graviton theorems and the
-D-instanton normalisation, and gives each one a verdict: proved (twenty-two),
-confirmed without a proof (ten), incomplete (two) or false as stated (two).
-The two failures are the positivity of the single-centred dyon index, which
-the paper refutes by an exact computation in the Z_2 toroidal orbifold of type
-II string theory, and tachyon matter as the final state of an inhomogeneous
-brane decay, which the paper refutes by a caustic theorem. For every claim
-that is not proved the paper names the missing step and records that no
-proof exists in the literature that cites it.
+This repository retains its original name Paper_11; the delivered manuscript is organised locally as Paper_12. `[PAPER] package/` contains the current manuscript, raw TeX, code, formal-scope report and submission preparation documents. Version-specific DOI and final ZIPs are attached only after the archive confirms publication.
 
-## Layout
+The revision corrects the charge cone, reproduces 30 negative full-index triples and gives precise limits for the dust and geometric arguments. Its single-column manuscript includes a finite-energy soft-emission model, a quantitative subtracted tree-emission bound, logarithmic tail estimates and an overlapping-limit obstruction. The full four-dimensional string-field-theory factorisation and remainder problem remains unproved. It does not establish new fatal errors in Sen's corrected published proofs or resolve all surveyed conjectures. Consult ORIGINAL-PAPER-AUDIT.md for accessible sources, versions and exclusions. Corrections to the supplied review are listed separately in CHANGE-RECORD.md.
 
-| Path | Content |
-| --- | --- |
-| `main.pdf` | the compiled paper |
-| `tex/` | the LaTeX source: `main.tex`, `sections/`, `tables/`, `figures/` |
-| `code/siegel_dyons.py` | exact Fourier coefficients of 1/Phi_10 and of the Siegel form of the Z_2 orbifold, the wall-crossing check and the list of negative single-centred indices; writes `siegel_dyons_out.json` |
-| `lean/SenConjectures.lean` | the same expansions carried out inside the Lean 4 kernel, with the theorems of the paper that are finite arithmetic proved by `decide` |
-| `figures/make_figures.py` | the generator of the three figures |
-
-## Reproducing
-
-```
-cd code && python3 siegel_dyons.py          # Python 3, standard library only
-cd lean && lean SenConjectures.lean         # Lean 4.35.0, no Mathlib; prints the axioms of every theorem
-cd tex && pdflatex main && pdflatex main && pdflatex main
-```
-
-The Lean file compiles against a bare toolchain (`lean-toolchain` pins it) and
-needs no `lake`; `lake build` also works. Every theorem depends on no axiom or on
-`propext` alone; none uses `sorry` or native evaluation. The verdicts of the
-paper are statements about string theory and are not formalised; `lean/README.md`
-says exactly which statements are.
-
-## Releases
-
-| Release | Zenodo DOI |
-| --- | --- |
-| concept DOI of all versions, resolving to the latest | [10.5281/zenodo.23652472](https://doi.org/10.5281/zenodo.23652472) |
-| v1.0.0 | [10.5281/zenodo.23652473](https://doi.org/10.5281/zenodo.23652473) |
-| v1.0.1 (the paper citing the archive by its concept DOI) | [10.5281/zenodo.23652641](https://doi.org/10.5281/zenodo.23652641) |
-
-## Author and contact
-
-Deep Bhattacharjee, ORCID
-[0000-0003-0466-750X](https://orcid.org/0000-0003-0466-750X). Formerly,
-Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha
-751030, India; formerly, University of Calcutta (Heramba Chandra College),
-23/49 Gariahat Road, Golpark, Kolkata 700029, West Bengal, India.
-Emails: d.bhattacharjee@erl-forschung.de, itsdeep@live.com, egspl@proton.me.
-For anything related to this repository write to egspl@proton.me.
-
-## Licence
-
-MIT, see `LICENSE`.
+The original finite series certificate and analytic supplement have separate toolchains and scopes; consult FORMAL-SCOPE.md. Metadata checks are not content verification. No exhaustive audit of the author's complete publication record is claimed. Historical v1.0.0/v1.0.1 archives, including old ZIPs, remain for provenance and are superseded by the present source and package.

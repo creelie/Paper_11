@@ -1,0 +1,25 @@
+{
+  "pdfs": [
+    {
+      "file": "ConjecturesOfAshokeSentests.pdf",
+      "pages": 63,
+      "sha256": "dd6115c4fec05235df918c649da1a78ff97de16f0616f92c892ee67aa706d147"
+    },
+    {
+      "file": "coverletterjournal.pdf",
+      "pages": 1,
+      "sha256": "fab1464598b1483cc9b04d79ac7dd0f064199dfac7cb6b8d962acea555dbb6e8"
+    },
+    {
+      "file": "journalaideclarationform.pdf",
+      "pages": 1,
+      "sha256": "47c2370159a7a68a62e9e334dbf211de81e60a021da3ab6fbc06f53aec783f3c"
+    }
+  ],
+  "same_REVTeX_class": true,
+  "no_margin_line_numbering": true,
+  "visual_review_pending": false,
+  "visual_pages_reviewed": 63,
+  "support_pages_reviewed": 2,
+  "visual_notes": "All pages rendered and inspected; no clipped or overlapping content. Single-column tables split for legibility; no margin line numbers. REVTeX retains small vbox warnings without visible clipping."
+}

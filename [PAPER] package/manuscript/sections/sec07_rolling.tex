@@ -1,0 +1,116 @@
+\section{The rolling tachyon and tachyon matter}\label{sec:rolling}
+
+\subsection{Homogeneous decay}\label{ssec:homogeneous}
+
+Sen \cite{Sen02rolling} described the time-dependent decay of an unstable D$p$-brane by the boundary conformal field theory with the marginal deformation $\lambda\int \cosh X^0$ of the free boson $X^0$ on the boundary of the world-sheet, and computed the energy-momentum tensor from the boundary state. In the bosonic string, for $0<\lambda\le\frac12$,
+\begin{equation}\label{eq:rolling}
+\begin{gathered}
+T_{00} = \tfrac{1}{2}\mathcal T_p\big(1+\cos 2\pi\lambda\big) ,\qquad
+T_{ij} = -\delta_{ij}\,\mathcal T_p\,f(x^0),\\
+f(x^0) = \frac{1}{1+e^{x^0}\sin\pi\lambda} + \frac{1}{1+e^{-x^0}\sin\pi\lambda} - 1 ,
+\end{gathered}
+\end{equation}
+and in the superstring the same with $x^0$ replaced by $\sqrt2 x^0$ and $\sin\pi\lambda$ by $\sin^2\pi\lambda$.
+
+\begin{theorem}[claim 16; Sen 2002]\label{thm:homogeneous}
+The energy density \eqref{eq:rolling} is conserved, and the pressure $-\mathcal T_p f(x^0)$ tends to zero as $x^0\to\pm\infty$, as $e^{-|x^0|}$ in the bosonic string and $e^{-\sqrt2|x^0|}$ in the superstring. The endpoint $\lambda=0$ is the undeformed brane with constant nonzero pressure and is excluded from the decay assertion. For $\lambda=\frac12$ the energy density vanishes and the solution is the tachyon vacuum at all times.
+\end{theorem}
+
+\begin{proof}
+The boundary state is the product of the Dirichlet boundary state for the spatial directions, the $c=1$ boundary state of the $\cosh X^0$ deformation, obtained by Wick rotation of the $SU(2)$ rotation of the Neumann boundary state at the self-dual radius, and the ghost boundary state; $T_{\mu\nu}$ is read off from the coefficient of the closed string graviton. As $x^0\to+\infty$ the first term of $f$ is $O(e^{-x^0})$ and the second is $1 - \sin\pi\lambda\, e^{-x^0} + O(e^{-2x^0})$, so $f = O(e^{-x^0})$; the case $x^0\to-\infty$ is symmetric. Conservation is $\partial_0 T_{00}=0$, immediate from the form of $T_{00}$. This is \cite[Section~3]{Sen02rolling}; the computation is exact in $\alpha'$ and at tree level in the string coupling.
+\end{proof}
+
+\begin{verdict}[claim 16]
+Proved. The statement is a theorem of boundary conformal field theory. The open question is its physical scope, treated in Section~\ref{ssec:emission}.
+\end{verdict}
+
+\subsection{Tachyon matter and the caustic theorem}\label{ssec:caustic}
+
+Sen \cite{Sen02matter} called the asymptotic state of \eqref{eq:rolling}, with constant energy density and vanishing pressure, \emph{tachyon matter}, and \cite{Sen02field} proposed an effective field theory for the tachyon near the minimum of its potential whose solutions are this matter:
+\begin{equation}\label{eq:dbi}
+\begin{gathered}
+S = -\int d^{p+1}x\; V(T)\sqrt{1+\eta^{\mu\nu}\partial_\mu T\partial_\nu T},\\
+\eta = \operatorname{diag}(-1,1,\dots,1),\qquad V(T)\to 0 \text{ as } T\to\infty .
+\end{gathered}
+\end{equation}
+The late-time pressure statement in \cite{Sen02matter} concerns the homogeneous rolling solution. The field theory in \cite{Sen02field} also has the exact dust solution $T=t$, $\Pi=f(x)$, with arbitrary time-independent nonnegative density $f$. Thus a nonconstant density alone does not imply focusing. Caustics arise from a compressive velocity gradient. The calculation below determines when that happens in the pressureless equations; it does not refute the existence or the homogeneous asymptotics claimed in those papers.
+
+Near the minimum, $V\to0$, the equation of motion of \eqref{eq:dbi} forces $\eta^{\mu\nu}\partial_\mu T\partial_\nu T\to -1$ wherever the energy density stays finite \cite[Section~2]{Sen02field}, and the energy-momentum tensor takes the form
+\begin{equation}\label{eq:dust}
+T^{\mu\nu} = \rho\, u^\mu u^\nu,\qquad u^\mu = -\eta^{\mu\nu}\partial_\nu T,\qquad u^\mu u_\mu = -1,
+\end{equation}
+of a pressureless fluid with velocity $u^\mu$ and rest density $\rho = V(T)/\sqrt{1+\partial T\cdot\partial T}\ \ge 0$. We write $W = \partial_t T = \sqrt{1+|\nabla T|^2}$ for the branch in which $T$ increases with time (the other branch is obtained by $T\mapsto -T$), $v = -\nabla T/W$ for the three-velocity $u^i/u^0$ of the fluid, and $\eps = T^{00} = \rho W^2$ for the energy density.
+
+\begin{lemma}\label{lem:dustflow}
+Let $T$ be a $C^2$ solution of $\eta^{\mu\nu}\partial_\mu T\partial_\nu T = -1$ on $[0,t_1)\times\RR^p$ with $\partial_t T>0$, and let $\rho\ge0$ be $C^1$ with $\partial_\mu(\rho u^\mu) = 0$. Then:
+\begin{enumerate}[label=(\roman*),leftmargin=2em]
+\item $u^\mu\partial_\mu u^\nu = 0$: the integral curves of $u$, equivalently the curves $\dot X = v(t,X)$, are straight lines $X(t;x_0) = x_0 + t\,v_0(x_0)$, $v_0 = v(0,\cdot)$, along which $v$ is constant;
+\item $\partial_t\eps + \partial_i(\eps v^i) = 0$, and along the lines of (i)
+\[
+\eps\big(t,X(t;x_0)\big)\det\big(I + t\,Dv_0(x_0)\big) = \eps(0,x_0);
+\]
+\item $Dv_0 = -W^{-1}P\,H$ with $H = \nabla^2 T(0,\cdot)$ the Hessian of the initial profile and $P = I - \nabla T\nabla T^{\mathsf T}/W^2$ symmetric and positive definite; the eigenvalues of $Dv_0(x_0)$ are real, and $Dv_0(x_0)$ has a negative eigenvalue if and only if $H(x_0)$ has a positive eigenvalue.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+(i) Since $u_\mu = -\partial_\mu T$ is a gradient,
+\[
+u^\mu\partial_\mu u_\nu = u^\mu\partial_\nu u_\mu = \tfrac12\partial_\nu(u^\mu u_\mu) = 0 .
+\]
+In components, with $u^0=W$ and $u^i = Wv^i$, the equations $u^\mu\partial_\mu W = 0$ and $u^\mu\partial_\mu(Wv^i)=0$ give $(\partial_t + v\cdot\nabla)v = 0$, so $v$ is constant along the curves $\dot X = v$, which are therefore straight. (ii) $\partial_\mu(\rho u^\mu u^0) = u^0\partial_\mu(\rho u^\mu) + \rho u^\mu\partial_\mu u^0 = 0$ is the continuity equation for $\eps = \rho W^2$ with flux $\eps v$. Writing it as $(\partial_t + v\cdot\nabla)\eps = -\eps\,\nabla\!\cdot v$ and using
+\[
+\nabla\!\cdot v\big(t,X(t;x_0)\big) = \tfrac{d}{dt}\ln\det\big(I+tDv_0(x_0)\big),
+\]
+which holds because the Jacobian $D_{x_0}X = I + tDv_0$ satisfies $\tfrac{d}{dt}D_{x_0}X = (Dv)(D_{x_0}X)$, gives
+\[
+\tfrac{d}{dt}\big[\eps\det(I+tDv_0)\big] = 0
+\]
+along the line. (iii) Differentiating $v^i = -\partial_iT/W$ and $W^2 = 1+|\nabla T|^2$ gives $\partial_j v^i = -W^{-1}\big(\delta_{ik} - \partial_iT\partial_kT/W^2\big)\partial_k\partial_jT$. The matrix $P$ has eigenvalue $1$ on the orthogonal complement of $\nabla T$ and $1-|\nabla T|^2/W^2 = W^{-2}>0$ along it. $PH$ is similar to $P^{1/2}HP^{1/2}$, which is symmetric, so its eigenvalues are real, and Sylvester's law gives the same inertia as $H$. The additional negative scalar in $Dv_0=-W^{-1}PH$ reverses positive and negative signs.
+\end{proof}
+
+\begin{theorem}[forward focusing in the dust equations]\label{thm:caustic}
+Let $T_0\in C^3(\RR^p)$, $v_0=-\nabla T_0/\sqrt{1+|\nabla T_0|^2}$, and $\eps_0$ be a positive $C^1$ initial density. Put $A(x)=Dv_0(x)$ and assume $A$ is bounded. Its eigenvalues are real. Define
+\begin{equation}\label{eq:tc}
+\begin{gathered}
+M=\sup_x\max\bigl(\{0\}\cup\{-\lambda:\lambda\in\operatorname{spec}A(x)\}\bigr),
+\\
+t_*=\begin{cases}1/M&M>0,\\+\infty&M=0.\end{cases}
+\end{gathered}
+\end{equation}
+Then the following statements hold.
+\begin{enumerate}[label=(\roman*),leftmargin=2em]
+\item The characteristic map is $X_t(x)=x+t v_0(x)$, with $D X_t=I+tA(x)$. Before its first loss of invertibility,
+\[
+\eps(t,X_t(x))=\frac{\eps_0(x)}{\det(I+tA(x))}.
+\]
+For $0\le t<t_*$ the map is a global diffeomorphism.
+\item If $T_0$ is concave, all eigenvalues of $A$ are nonnegative; no forward focal point occurs and the density along each characteristic is nonincreasing. If $T_0$ has a positive Hessian eigenvalue at some point, a forward focal time is finite on that characteristic.
+\item If $0<M<\infty$ is attained at $x_*$, the first singular Jacobian occurs at $t_*=1/M$. Its determinant tends to zero from above along $x_*$ and $\eps(t,X_t(x_*))\to+\infty$. Without attainment, $t_*$ is only the infimum of the local focal times; a singular characteristic at exactly $t_*$ and a density blow-up there are not asserted.
+\item In one dimension, $v_0'=-T_0''/(1+T_0'^2)^{3/2}$. Hence compression occurs precisely where $T_0''>0$. Every bounded nonconstant $C^3$ profile on $\RR^p$ has a positive Hessian eigenvalue somewhere and therefore a finite local focal time. A periodic profile also attains its finite maximum compression.
+\end{enumerate}
+\end{theorem}
+
+\begin{figure}[tbp]
+\centering\includegraphics[width=0.94\linewidth,height=0.48\textheight,keepaspectratio]{figures/fig_caustic.png}
+\caption{Exact relativistic dust characteristics and density for $T_0=T_*+a\cos kx$, $a=1/2$, $k=1$, before $t_c=1/(ak^2)$. The velocity is $ak\sin(kx)/\sqrt{1+a^2k^2\sin^2(kx)}$. The surface is capped for display; the formula is not capped. Plotting code was revised with ChatGPT/Codex assistance.}
+\label{fig:caustic}
+\end{figure}
+
+\begin{proof}
+Lemma~\ref{lem:dustflow} gives (i) locally. The similarity of $PH$ to the symmetric matrix $P^{1/2}HP^{1/2}$ and the factor $-W^{-1}$ show that a negative eigenvalue of $A$ corresponds to a positive eigenvalue of $H$, proving (ii). For $t<t_*$ every eigenvalue factor $1+t\lambda$ is positive. Also $|v_0|\le1$, so $|X_t(x)|\ge |x|-t$ and $X_t$ is proper. A proper local diffeomorphism $\RR^p\to\RR^p$ is a covering onto the connected target: its image is both open and closed. Since the target is simply connected and the source connected, it is a global diffeomorphism. This proves the global assertion in (i).
+
+At an attained maximiser, some $\lambda=-M$ and all remaining factors are positive for $t<t_*$. Their product approaches zero, while the numerator stays positive, proving (iii). If no maximiser exists, this argument only gives a sequence of local focal times approaching $t_*$; passing to a fixed singular characteristic would be unjustified. For (iv), differentiate the displayed velocity. A $C^2$ function with no positive Hessian eigenvalue anywhere is concave. A concave function on all of $\RR^p$ bounded below is constant, by restriction to lines; hence a bounded nonconstant profile cannot have that property. Periodicity supplies compactness for attainment. The dust theory loses a classical single-valued velocity field at focusing; higher-derivative or string effects at that point are outside this theorem.
+\end{proof}
+
+\begin{verdict}[claim 17]
+Scope limited. Homogeneous rolling has the pressureless asymptotic in the original papers. Inhomogeneous effective dust may develop caustics, as already analysed in \cite{FKS02,FK04,Barnaby04}. The theorem above states the sign criterion and attainment conditions precisely. It neither gives the string-theoretic continuation through a caustic nor disproves Sen's homogeneous result. The stationary solution $T=t$, $\Pi=f(x)$ remains a counterexample to any assertion that every spatially varying density must focus.
+\end{verdict}
+
+\subsection{Closed string emission and open--closed duality}\label{ssec:emission}
+
+The decaying brane couples to closed strings, and the question whether the classical open string description of Theorem~\ref{thm:homogeneous} survives their emission was raised in \cite{Sen02rolling} and answered in part by Lambert, Liu and Maldacena \cite{LLM07}: the energy radiated into closed strings by a decaying D$p$-brane is infinite at leading order for $p\le2$ and finite for $p>2$; for $p=0$ the divergence, cut off at energies of order $1/g_s$, carries away an energy of the order of the mass of the brane, which signals the need to control backreaction before inferring an exact energy partition. Sen \cite{Sen03openclosed} turned this into the conjecture of \emph{open--closed duality at tree level}: the tree-level open string theory on the decaying brane, with its tachyon matter, is a dual description of the closed string state produced by the decay, so that the two are not to be added.
+
+\begin{verdict}[claim 18]
+Confirmed. The conjecture is supported by the computation of \cite{LLM07}, in which the closed string state produced is determined by the open string boundary state and its energy, for $p=0$, is the energy of the brane; by the matching of the energy-momentum tensor of the emitted closed strings with that of tachyon matter in the regime where both can be computed \cite{Sen03openclosed}; and by the two-dimensional string theory, where the decay of the D0-brane is the motion of a single fermion of the matrix model and the open and closed descriptions are provably the same \cite{Sen04review}. A general proof in critical string theory is not supplied by the sources examined here, and the missing step is a control of the backreaction of the emitted closed strings on the open string dynamics beyond leading order in $g_s$. The conjecture is stated for homogeneous decay; after Theorem~\ref{thm:caustic} the inhomogeneous case has no classical open string side to be dual to beyond $t_c$.
+\end{verdict}

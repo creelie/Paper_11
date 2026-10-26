@@ -1,0 +1,50 @@
+\section{The Sen limit of F-theory}\label{sec:senlimit}
+
+Sen \cite{Sen96ftheory} showed that F-theory on an elliptic K3 surface, at the point of its moduli space where the Weierstrass model $y^2 = x^3 + f(z)x + g(z)$ has constant modulus $\tau$ and four $D_4$ singular fibres, is the type IIB orientifold on $T^2/\ZZ_2$ with four orientifold seven-planes and four D7-branes on each, with gauge group $SO(8)^4$ and constant coupling; and that moving away from this point, in a one-parameter family $f = -3h^2 + \eps\eta$, $g = -2h^3 + \eps h\eta - \tfrac{1}{12}\eps^2\chi$ with $\eps\to0$, the coupling becomes weak away from the loci $h=0$, which are the orientifold planes, while the discriminant $\Delta = -9\eps^2 h^2(\eta^2 - h\chi) + O(\eps^3)$ places the D7-branes on $\eta^2 = h\chi$. In \cite{Sen97orientifold} the same expansion was applied to F-theory on elliptic Calabi--Yau threefolds and fourfolds over a base $B$, with $h,\eta,\chi$ sections of $K_B^{-2}, K_B^{-4}, K_B^{-6}$: the statement is that F-theory on such a Calabi--Yau has a weak coupling limit which is type IIB on the double cover of $B$ branched along $h=0$, with the orientifold projection, O7-planes on $h=0$ and D7-branes on $\eta^2=h\chi$.
+
+\begin{theorem}[scope of the weak-coupling expansion]\label{thm:senlimitk3}
+For $f=-3h^2+\eps\eta$ and $g=-2h^3+\eps h\eta-\eps^2\chi/12$, one has
+\begin{align}
+4f^3+27g^2={}&-9\eps^2h^2(\eta^2-h\chi)\nonumber\\
+&+\eps^3(4\eta^3-\tfrac92h\eta\chi)+\tfrac3{16}\eps^4\chi^2.
+\end{align}
+At points with $h(\eta^2-h\chi)\ne0$, the modular invariant $j\propto f^3/(4f^3+27g^2)$ diverges as $\eps^{-2}$. This is a generic-point limit, not a smooth elliptic fibration at $\eps=0$: its discriminant vanishes identically there. The perturbative orientifold and D7 interpretation is the construction in \cite{Sen96ftheory,Sen97orientifold}. The generic O7 monodromy is $-T^{-4}$ in the convention of \cite{Sen97orientifold}; the enhanced O7 with four coincident D7-branes has combined monodromy $-I$.
+\end{theorem}
+\begin{proof}
+The discriminant identity follows by expansion; the leading nonzero coefficient gives the asserted growth. The two monodromies concern different configurations: adding the four D7 monodromies $T^4$ cancels the $T^{-4}$ factor. A Kodaira type cannot be read from the everywhere-degenerate central fibre as though it were an ordinary smooth family.
+\end{proof}
+
+\begin{verdict}[claim 22]
+Established in the stated geometric and physical framework. The constant-coupling $SO(8)^4$ model and the generic weak-coupling family are related constructions, not identical fibre configurations.
+\end{verdict}
+
+\begin{proposition}[base divisor and double-cover divisor]\label{prop:senlimitcy}
+Suppose $h,\eta$ are local coordinates near $h=\eta=0$ on a smooth base and $\chi$ is nonzero there. The divisor $D_B=\{\eta^2-h\chi=0\}$ on the base is smooth at that point. On the smooth orientifold double cover $X=\{\xi^2=h\}$ its pullback is
+\[
+D_X=\{\eta^2-\xi^2\chi=0\},
+\]
+which is singular along $\xi=\eta=0$. Where $\chi$ is a unit it has two local branches. At a transverse triple locus $\xi=\eta=\chi=0$ in a three-dimensional cover, its local equation is the Whitney pinch form $u^2=v^2w$.
+\end{proposition}
+\begin{proof}
+For $F=\eta^2-h\chi$, at $h=\eta=0$ one has $dF=-\chi\,dh\ne0$. On the cover, the three derivatives of $G=\eta^2-\xi^2\chi$ in these coordinates are $2\eta,-2\xi\chi,-\xi^2$, all zero on the stated double locus. A unit $\chi$ has a local analytic square root, so $G=(\eta-\xi\sqrt\chi)(\eta+\xi\sqrt\chi)$. The transverse triple locus gives the pinch form. This is the distinction used in the D7 analysis of \cite{CDE09}.
+\end{proof}
+
+\begin{proposition}[a non-Higgsable divisor is not a sufficient obstruction]\label{prop:i0star}
+In a local chart let $s=0$ be a divisor and take
+\[
+h=s h_1,\qquad\eta=s^2\eta_2,\qquad\chi=s^3\chi_3.
+\]
+Then $f=s^2F_\eps$, $g=s^3G_\eps$, with
+\[
+F_\eps=-3h_1^2+\eps\eta_2,\quad
+G_\eps=-2h_1^3+\eps h_1\eta_2-\eps^2\chi_3/12.
+\]
+If the coefficients are generic units, the divisor has vanishing orders $(2,3,6)$ for nonzero $\eps$ and $j$ on it grows as $\eps^{-2}$ when $h_1(\eta_2^2-h_1\chi_3)\ne0$. Thus an $I_0^*$ divisor does not itself force strong coupling in the limit.
+\end{proposition}
+\begin{proof}
+The common factor $s^6$ cancels in $f^3/(4f^3+27g^2)$, leaving Theorem~\ref{thm:senlimitk3} with $h_1,\eta_2,\chi_3$. This is a local calculation, not a global existence theorem on an arbitrary base. The allowed $I_0^*$ case is explicitly distinguished from exceptional-fibre obstructions in \cite{HLS18}.
+\end{proof}
+
+\begin{verdict}[claim 23]
+Scope limited, with no false smoothness claim attributed to Sen here. The original paper calls the orientifold reduction formal and discusses singular auxiliary spaces. Its formula must not be restated as a theorem that every base admits a smooth global perturbative orientifold. The singularity in Proposition~\ref{prop:senlimitcy} is on the cover, and non-Higgsability alone is insufficient to exclude weak coupling. The global obstructions of \cite{HLS18} require their additional fibre and section conditions. These known qualifications replace an unrestricted statement; they are not a newly discovered contradiction in Sen's expansion.
+\end{verdict}

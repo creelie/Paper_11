@@ -60,16 +60,16 @@ Proved. The formula is a residue computation, and the identification of the jump
 
 \subsection{Negative discriminant states}\label{ssec:negative}
 
-The quartic invariant $\Delta = Q^2P^2 - (Q\cdot P)^2$ is the square of the entropy of the single-centred black hole, $S = \pi\sqrt\Delta$; the coefficients of $1/\Phit$ with $\Delta<0$ cannot be single-centred black holes. Sen \cite{Sen11negative} conjectured and argued that every such coefficient is accounted for by two-centred configurations of half-BPS states, so that
+The discriminant $\Delta=Q^2P^2-(Q\cdot P)^2$ must be positive for the regular classical single-centred solutions in the stated sector. The treatment of negative discriminant states uses chamber-dependent sums over two-centred decompositions and bound-state metamorphosis \cite{Sen11negative,CKMRW20}. A single primitive contribution has the form
 \begin{equation}\label{eq:negative}
-d(Q,P) = (-1)^{Q\cdot P+1}\,|Q\cdot P|\; d_h(Q)\,d_h(P)\qquad\text{for }\Delta<0
+(-1)^{\langle\Gamma_1,\Gamma_2\rangle+1}|\langle\Gamma_1,\Gamma_2\rangle|\,d_h(\Gamma_1)d_h(\Gamma_2).
 \end{equation}
-in the chamber where the two-centred state exists, after a duality transformation to a standard form of the charges. Table~\ref{tab:phi10} shows the pattern: the entries with $\Delta<0$ in our tables ($Q^2=P^2=2$, $Q\cdot P=3$: $327$; $Q\cdot P = -2$: $-209304$) are, as Sen's paper explains, images of two-centred states under the duality group (the second is $-2\cdot 324\cdot 323$, the first $3\cdot 109 = 327$ with $d_h$ evaluated at the dual charges).\footnote{For $Q^2=P^2=2$, $Q\cdot P=-2$, the state is the two-centred bound state of $(Q,0)$ and $(0,P)$ with $|Q\cdot P|=2$, index $2\cdot 324\cdot 324 = 209952$, minus the single-centred contribution $648$, which is the value at $Q\cdot P=2$; the total $209952-648 = 209304$ is what the table shows with the sign $(-1)^{Q\cdot P+1} = -1$. The entry $327$ at $Q\cdot P = 3$ has $\Delta = 4-9 = -5$ and is a two-centred state of the duality images of the charges.}
+The full answer requires the allowed decompositions and their identifications. For example $(Q^2,P^2,Q\cdot P)=(2,2,-2)$ has $\Delta=0$, not negative discriminant; it must not be used as a negative-discriminant example. The identity $209952-648=209304$ is an arithmetic wall-crossing check, not a proof of a proposed microscopic decomposition. Similarly $327=3\cdot109$ does not identify $109$ as a half-BPS degeneracy.
 
 \begin{theorem}[claim 8]\label{thm:negative}
-Every Fourier coefficient of $1/\Phi_{10}$ with negative discriminant is given by a finite sum of two-centred contributions of the form \eqref{eq:negative} over the duality images of the charges. The same holds for the CHL forms $\Phit_k$, $N=2,3,5,7$.
+Every Fourier coefficient of $1/\Phi_{10}$ with negative discriminant is given by a finite sum of two-centred contributions of the form \eqref{eq:negative} over the duality images of the charges. The CHL generalisations require the separate hypotheses and formulas of \cite{Sen11negative}; no CHL formula is deduced solely from the $\Phi_{10}$ theorem.
 \end{theorem}
 
 \begin{proof}
-For $\Phi_{10}$ this is the main theorem of Chowdhury, Kidambi, Murthy, Reys and Wrase \cite{CKMRW20}, who derive the exact formula for all polar (negative discriminant) coefficients from the mock modular decomposition of \cite{DMZ12} and check it against $1650$ coefficients; for the CHL forms the same paper, with \cite{Sen11negative} for the structure of the walls, treats $N=2,3,5,7$. The physical interpretation, that the states are two-centred, is \cite{Sen11negative}.
+For $\Phi_{10}$ this is the main theorem of Chowdhury, Kidambi, Murthy, Reys and Wrase \cite{CKMRW20}, who derive the exact formula for all polar (negative discriminant) coefficients from the mock modular decomposition of \cite{DMZ12} and check it against $1650$ coefficients; its direct scope is the $K3\times T^2$ theory associated with $\Phi_{10}$, and it is not cited as a proof for every CHL form. The physical interpretation, that the states are two-centred, is \cite{Sen11negative}.
 \end{proof}

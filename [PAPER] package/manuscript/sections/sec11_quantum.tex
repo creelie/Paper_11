@@ -1,0 +1,53 @@
+\section{The quantum entropy function and the logarithmic corrections}\label{sec:quantum}
+
+\subsection{The quantum entropy function}\label{ssec:qef}
+
+Sen \cite{Sen08qef} proposed that the exact degeneracy of the horizon states of an extremal black hole with charges $\vec q$ is the finite part of the Euclidean string theory path integral on the near-horizon $AdS_2$,
+\begin{equation}\label{eq:qef}
+d_{\rm hor}(\vec q) = \Big\langle \exp\Big[-i q_i\oint A^{(i)}_\theta\, d\theta\Big]\Big\rangle^{\rm finite}_{AdS_2} ,
+\end{equation}
+with a Wilson line insertion at the boundary carrying the charges, the boundary conditions fixing the charges rather than the chemical potentials, and the ``finite part'' defined by subtracting the terms proportional to the length of the boundary; and that this quantity matches the appropriately signed horizon index for quarter-BPS black holes after hair removal and the helicity-trace convention are fixed (Section~\ref{ssec:hair}).
+
+\begin{verdict}[claim 27]
+Confirmed. The proposal passes every test that can be computed: the classical limit of \eqref{eq:qef} is the exponential of the Wald entropy; the one-loop correction is the logarithmic term, which matches the microscopic index exactly in $\mathcal N=4$ and $\mathcal N=8$ (Theorem~\ref{thm:logs}); and the localisation of the path integral in $\mathcal N=2$ supergravity, proposed in \cite{BBGMS10} and carried out in \cite{DGM11,DGM13}, reproduces the exact Rademacher expansion of the index of $\mathcal N=8$ black holes and the leading Bessel function of the $\mathcal N=4$ one \cite{MurthyReys16,IMT25,IMT25b}. The last of these results is weaker than its statement in the literature, and Sen's own later assessment \cite{Sen23localisation} says so: \gap{the claim that supersymmetric localisation of the $AdS_2$ path integral reproduces the Rademacher expansion from first principles} rests on three steps that are not established. The Killing spinors of the near-horizon geometry grow at the boundary of $AdS_2$ and do not act on the space of normalisable fluctuations over which the path integral is defined, so the localisation argument has no proved domain; the measure on the localisation manifold used in \cite{DGM11,MurthyReys16} is postulated and not derived, and a different measure changes every subleading term; and the one-loop determinants over the transverse directions depend on an ultraviolet cut-off that the computation sets, without justification, at the four-dimensional Planck scale. Sen himself discusses these qualifications in \cite{Sen23localisation}; they are not counted here as errors left unacknowledged by him. There is no proof: the path integral is not defined beyond the semiclassical expansion, the localisation argument assumes an off-shell supersymmetric completion of the higher-derivative terms, and the identification of the subtracted terms with the hair is made case by case. The missing step is a definition of the right-hand side of \eqref{eq:qef} that does not rely on a saddle point expansion; the conjecture is, in this sense, a proposal for what that definition should give.
+\end{verdict}
+
+\subsection{The logarithmic corrections}\label{ssec:logs}
+
+The one-loop contribution to \eqref{eq:qef} from the massless fields on $AdS_2\times S^2$ gives a term $c\ln A_H$ in the entropy, with $c$ determined by the spectrum and the two-derivative action alone. Banerjee, Gupta, Mandal and Sen \cite{BGMS11} computed it for quarter-BPS black holes in $\mathcal N=4$ and eighth-BPS black holes in $\mathcal N=8$ string theory, and Sen \cite{Sen12N2} for half-BPS black holes in $\mathcal N=2$ theories with $n_V$ vector and $n_H$ hypermultiplets.
+
+\begin{theorem}[claim 28]\label{thm:logs}
+The logarithmic correction to the entropy of a quarter-BPS black hole in any $\mathcal N=4$ string compactification is zero, and that of an eighth-BPS black hole in $\mathcal N=8$ string theory on $T^6$ is $-4\ln A_H$. Both agree with the microscopic indices: the asymptotic expansion of the Fourier coefficients of $1/\Phi_{10}$ and its CHL analogues has no logarithmic term, and that of the $\mathcal N=8$ index, a Fourier coefficient of $\vartheta_1(\tau,z)^2/\eta(\tau)^6$, has the term $-2\ln\Delta$ with $\Delta\propto A_H^2$, that is, $-2\ln\Delta = -4\ln A_H$ \cite{BGMS11}.
+\end{theorem}
+
+\begin{proof}
+The macroscopic computation is the heat kernel of the quadratic fluctuation operator of all massless fields on $AdS_2\times S^2$ with the near-horizon flux, including the graviton, the gravitini and the vector fields, with the zero modes of the asymptotic symmetries treated separately; the coefficient is the $s^0$ term of the heat kernel together with the zero-mode counting, $-(c_{\rm local} + c_{\rm zm})\ln a$ with $a$ the radius. In $\mathcal N=4$ the contributions cancel between the gravity multiplet and the vector multiplets \cite[Section~7]{BGMS11}; in $\mathcal N=8$ the net result is $-8\ln a = -4\ln A_H$ \cite[Section~8]{BGMS11}. The microscopic expansions are in \cite[Section~2]{BGMS11}, from the saddle point expansion of the inverse Siegel form \cite{DavidSen06} and of the Jacobi form. The computation was rederived from the on-shell action of the Euclidean solution and from the $AdS_2$ Schwarzian in \cite{IMT25,IMT25b}, with the same coefficients.
+\end{proof}
+
+\begin{verdict}[claim 28]
+Proved, as a match between two computations each of which is complete: the macroscopic coefficient is a theorem of one-loop quantum field theory on the near-horizon geometry and the microscopic one of the asymptotics of modular forms. The rotating black holes in four and five dimensions \cite{Sen12rotating} and the extremal Kerr and Reissner--Nordstr\"om black holes without supersymmetry \cite{Sen12N2,Sen13schwarzschild}, for which no microscopic count exists, are predictions and remain confirmed in the sense of claim~29.
+\end{verdict}
+
+\begin{proposition}[claim 29; Sen 2012]\label{prop:n2log}
+For a half-BPS black hole in an $\mathcal N=2$ supergravity with $n_V$ vector and $n_H$ hypermultiplets, the logarithmic correction is $\frac{1}{12}(23 + n_H - n_V)\ln A_H$, equal to $\big(2 - \frac{\chi}{24}\big)\ln A_H$ with $\chi = 2(n_V - n_H + 1)$ the Euler number of the Calabi--Yau threefold in the type IIA convention, with the universal hypermultiplet included; the type IIB Euler-number relation has the opposite sign.
+\end{proposition}
+
+\begin{proof}
+\cite{Sen12N2}, by the same heat kernel method, the only difference from $\mathcal N=4$ being the absence of the cancellation; the result was rederived by \cite{KLL14} from the heat kernel of $\mathcal N=2$ supergravity on the same background.
+\end{proof}
+
+\begin{verdict}[claim 29]
+Confirmed. A universal comparison for the full class of $\mathcal N=2$ theories is not established here; this does not deny microscopic indices in particular $\mathcal N=2$ compactifications. The comparison made in \cite{Sen12N2} is with the measure in the OSV formula, and agrees with the measure proposed by Denef and Moore if their result is extrapolated to weak topological string coupling. A model-independent microscopic comparison in a fixed ensemble is not established here.
+ The general framework and the ensemble must be fixed before comparing a logarithmic coefficient.
+\end{verdict}
+
+\subsection{A check of the cutoff-scale preprint}
+
+The current preprint \cite{Sen26cutoff} separates the extended-supergravity cancellation from an unresolved nonzero-Euler-number case. There is a local notation problem in its Eq.~(2.7): a contribution to $\Delta\ln Z_n$ is printed as the multiplicative factor $(g_s^{-1}\lambda_S^2)^2$. In the logarithm it must instead read
+\begin{equation}
+\Delta\ln Z_{\rm rot}=\ln[(g_s^{-1}\lambda_S^2)^2]
+=-2\ln g_s+4\ln\lambda_S.
+\end{equation}
+This is a notation correction, not a refutation of the later result. Combining this expression with the three translational modes, the fermionic modes, two-form modes and the ensemble terms gives the stated coefficients $(\alpha_{NZ}+7-n)$ and $(n_{NS}-4)$ in its Eq.~(2.10). The elementary coefficient sums are checked in the analytic supplement. The current arXiv PDF was inspected for this equation; the INSPIRE record checked for this revision supplied no journal-version or erratum metadata. That search result is not a proof that no correction exists elsewhere.
+
+The cutoff comparison in \cite{Sen26cutoff} keeps other inputs fixed. Its Section~4 explicitly allows coordinated changes of duality frame and measure, and its Section~5 leaves the $\chi\ne0$ discrepancy unresolved. These qualifications prevent the conditional cutoff calculation from being restated as a theorem excluding every other ultraviolet completion. We do not claim to solve its Calabi--Yau discrepancy here.

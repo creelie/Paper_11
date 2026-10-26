@@ -1,0 +1,540 @@
+{
+  "status": "passed",
+  "modules": [
+    {
+      "module": "SenConjectures",
+      "lean": "4.34.1",
+      "mathlib": null,
+      "source_sha256": "642db3661bdbbde59db33adcb30c80cc3c235489c9bb6b04f5b9a6839c942611",
+      "named_statements": 57,
+      "compile_exit_code": 0,
+      "compile_seconds": 571.82,
+      "compile_log_sha256": "30ee305bf967e3ba94da1365cd16d934c1bb771ceb7b18e4eb1aac491041ad93",
+      "statements": [
+        {
+          "name": "Sen.dh_values",
+          "axioms": []
+        },
+        {
+          "name": "Sen.violations_single_centred",
+          "axioms": []
+        },
+        {
+          "name": "Sen.upTo_succ",
+          "axioms": []
+        },
+        {
+          "name": "Sen.productPart_def",
+          "axioms": []
+        },
+        {
+          "name": "Sen.coefficientTable_def",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_genera",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_step_0",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_upTo_0",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_step_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_upTo_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_step_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_upTo_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_step_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_upTo_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_step_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_upTo_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_step_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_upTo_5",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_step_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_upTo_6",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_step_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_upTo_7",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_step_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_upTo_8",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_step_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_upTo_9",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_step_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_upTo_10",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_step_11",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_upTo_11",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_step_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_upTo_12",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_step_13",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_upTo_13",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tabT_finish",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tabT_table",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.het_genera",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.het_step_0",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.het_upTo_0",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.het_step_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.het_upTo_1",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.het_step_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.het_upTo_2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.het_step_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.het_upTo_3",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.het_step_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.het_upTo_4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tabHR_finish",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tabHR_table",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tabHL_finish",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tabHL_table",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.het_table",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.wall_crossing",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_rows_P0",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_rows_P2",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.tor2_rows_P4",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Sen.violations_in_table",
+          "axioms": [
+            "propext"
+          ]
+        }
+      ],
+      "replay_exit_code": 0,
+      "replay_seconds": 550.361,
+      "replay_log_sha256": "87e1da75f7929b36ea422f8c7b9cbe0e5a9da4f2cedf27a2dabb05f469bf20e4",
+      "olean_sha256": "ed5ec4fb400ec7c5942ed98c4d3078db7e235084f219427c347d7341c375b69c",
+      "execution": "GitHub Actions",
+      "run_url": "https://github.com/creelie/Paper_11/actions/runs/40269225225"
+    },
+    {
+      "module": "AnalyticScopeChecks",
+      "lean": "4.34.0-rc2",
+      "mathlib": "85e3a25e006c35636f0e53b0e9296caca2685bc0",
+      "source_sha256": "3bfab0f6d833c4df0a7983c4e7551fee8753e6f0de5c14078ac730227c1ab584",
+      "named_statements": 12,
+      "compile_exit_code": 0,
+      "compile_seconds": 106.696,
+      "compile_log_sha256": "61e17b8a4153f0cff6bebb23d7f08bc1296878dd4e479af811b36cb96ffcc509",
+      "statements": [
+        {
+          "name": "SenScope.compression_sign",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "SenScope.no_compression_for_nonpositive_hessian",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "SenScope.focal_time_positive",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "SenScope.focal_jacobian_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "SenScope.discriminant_expansion",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "SenScope.cover_pullback_factorisation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "SenScope.base_transverse_derivative_nonzero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "SenScope.positive_index_does_not_exclude_fermions",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "SenScope.negative_index_rejects_conjunction",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "SenScope.cone_linear_example",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "SenScope.leading_soft_exponent_cancel",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "SenScope.cutoff_log_coefficients",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "replay_exit_code": 0,
+      "replay_seconds": 37.349,
+      "replay_log_sha256": "f9c471093f933e575aa1d34651b55969f873aa19325033d38beada4a5540e742",
+      "olean_sha256": "5aa926aaed105c70536eb62d1a407fed92d861ddea0a4154c4bc143d30efe215"
+    },
+    {
+      "module": "InfraredBounds",
+      "lean": "4.34.0-rc2",
+      "mathlib": "85e3a25e006c35636f0e53b0e9296caca2685bc0",
+      "source_sha256": "fc1376797aee11ae29b8caa2958e0d9a582436eb0e128a42b401613b0f062c9c",
+      "named_statements": 6,
+      "compile_exit_code": 0,
+      "compile_seconds": 15.39,
+      "compile_log_sha256": "070584ae0e06a13a52692cd89cbddf73b31002cd328ecacc62fd57ebfbd3d52d",
+      "statements": [
+        {
+          "name": "SenInfrared.squared_norm_error",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "SenInfrared.weighted_difference_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "SenInfrared.corner_jacobian",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "SenInfrared.blown_up_corner_density",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "SenInfrared.soft_degree_identity",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "SenInfrared.positive_soft_degree",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "replay_exit_code": 0,
+      "replay_seconds": 31.195,
+      "replay_log_sha256": "2be7cf8ff798b9e018ef54765283ce93dd2061d1b02314b76ef384335c6d4525",
+      "olean_sha256": "83584d4fe69fd7d0beef5dc3318ebb30439aeabe440efccd09aff39dbbcfc6ce"
+    }
+  ],
+  "named_statements": 75,
+  "full_manuscript_formalised": false,
+  "full_four_dimensional_infrared_closure": false,
+  "replay_scope": "Lean's own kernel replay, relative to imports; not a separate proof assistant.",
+  "execution": "Core on GitHub Actions; Mathlib supplements locally. Exact matching source hashes required.",
+  "local_duplicate": "Interrupted after excessive memory paging; its result is not counted as a pass.",
+  "completed_at_utc": "2026-10-26T04:50:09.075785+00:00"
+}

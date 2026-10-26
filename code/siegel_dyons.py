@@ -4,7 +4,7 @@
 Exact integer arithmetic.  Reproduces (i) the heterotic/K3xT^2 table of Sen (1/Phi_10),
 (ii) the wall-crossing jump between the two expansions in e^{+-2 pi i v}, and
 (iii) the toroidal Z_2 orbifold table of Chattopadhyaya-David (JHEP 05 (2019) 005, Table 17-19),
-whose negative entries at single-centred charges violate Sen's positivity conjecture.
+whose known negative full-index entries require the hair and horizon distinction.
 
 Conventions (Sen, JHEP 0705:039; David-Jatkar-Sen, JHEP 0606:064):
   Phi(rho,sigma,v) = e^{2 pi i (rho + sigma/N + v)} prod_{b,r} prod_{k' in Z + r/N, l in Z, j in 2Z+b}
@@ -309,7 +309,7 @@ if __name__ == '__main__':
     results['chl2_R'] = {f"{k[0]},{k[1]}": v for k, v in tabC.items()}
     # single-centred region R for Gamma_0(2) (Sen 1008.4209 eq. 3.9 = Chattopadhyaya-David eq. 4.7)
     def single_centred_Z2(q2, p2, qp):
-        return (q2 > 0 and p2 > 0 and q2 * p2 > qp * qp and 2 * q2 + p2 - 3 * qp * qp >= 0
+        return (q2 > 0 and p2 > 0 and q2 * p2 > qp * qp and 2 * q2 + p2 - 3 * qp >= 0
                 and 2 * q2 >= qp and p2 >= qp and qp >= 0)
     viol = []
     for l in range(0, 13):

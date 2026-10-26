@@ -1,0 +1,51 @@
+\section{Black hole entropy: the entropy function and small black holes}\label{sec:entropy}
+
+\subsection{The entropy function}\label{ssec:entropyfunction}
+
+For an extremal black hole in a theory of gravity with covariant higher-derivative terms in the framework specified below, whose near-horizon geometry has the symmetry $SO(2,1)\times SO(D-1)$ of $AdS_2\times S^{D-2}$ with electric fields $e_i$ and magnetic charges $p_a$, Sen \cite{Sen05entropy} defined the entropy function
+\begin{equation}\label{eq:entropyfunction}
+\begin{gathered}
+\mathcal E(\vec u,\vec v,\vec e,\vec q,\vec p) = 2\pi\big(e_i q_i - f(\vec u,\vec v,\vec e,\vec p)\big),\\
+f = \int_{S^{D-2}}\sqrt{-\det g}\,\mathcal L ,
+\end{gathered}
+\end{equation}
+where $f$ is the Lagrangian density integrated over the sphere on the near-horizon ansatz with radii $v_1,v_2$ of $AdS_2$ and $S^{D-2}$ and constant scalars $u_s$.
+
+\begin{theorem}[claims 24, 25]\label{thm:entropyfunction}
+\begin{enumerate}[label=(\roman*),leftmargin=2em]
+\item The equations of motion of the near-horizon geometry are the conditions
+\[
+\partial\mathcal E/\partial u_s = \partial\mathcal E/\partial v_{1,2} = 0,\qquad \partial\mathcal E/\partial e_i = 0,
+\]
+the last being the definition of the charges $q_i$, and the Wald entropy of the black hole is the value of $\mathcal E$ at the extremum \cite{Sen05entropy}.
+\item For rotating extremal black holes, whose near-horizon geometry has the symmetry $SO(2,1)\times U(1)$ and depends on the polar angle through functions $\Omega(\theta),\psi(\theta),\dots$, the same holds with $\mathcal E$ a functional of these functions and with an additional term $2\pi\alpha J$ for the angular momentum, the extremisation being over the functions as well as the constants \cite{AGJST06}.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+The derivation, including the normalization and curvature-variation convention, is given in \cite[Section~2]{Sen05entropy} and its rotating extension in \cite{AGJST06}. For a covariant Lagrangian with no derivatives of curvature, the Wald expression is $-2\pi\int_H (\partial\mathcal L/\partial R_{\mu\nu\rho\sigma})\epsilon_{\mu\nu}\epsilon_{\rho\sigma}$ with the induced volume factor and $\epsilon_{\mu\nu}\epsilon^{\mu\nu}=-2$. Curvature derivatives require the corresponding variational derivative, and Chern--Simons terms require separate treatment. The near-horizon equations and the Legendre transform give the entropy function in this framework. Local extremisation does not by itself construct a regular solution extending to prescribed asymptotic data.
+\end{proof}
+
+\begin{verdict}[claims 24, 25]
+Proved. The theorem is a derivation within classical higher-derivative gravity with the stated symmetry; the attractor mechanism, that the entropy is independent of the asymptotic moduli, is a corollary whenever the extremum is isolated in the scalars. The results agree with the earlier supergravity computations of Cardoso, de Wit and Mohaupt where both apply \cite{Sen05entropy}, and the formalism has been used in every later comparison of macroscopic and microscopic entropies.
+\end{verdict}
+
+\subsection{Small black holes}\label{ssec:small}
+
+A half-BPS state of the heterotic string on $T^6$ with winding $w$ and momentum $n$ on a circle, with $nw>0$, has $d_h(nw)\sim e^{4\pi\sqrt{nw}}$ states, while the two-derivative supergravity solution with these charges has a singular horizon of zero area. Sen \cite{Sen04stretch} argued that the higher-derivative terms stretch the horizon to string scale and that the entropy function with the Gauss--Bonnet term, $\mathcal L \supset \frac{1}{16\pi G}\phi(S)\big(R_{\mu\nu\rho\sigma}^2 - 4R_{\mu\nu}^2 + R^2\big)$ with the one-loop coupling $\phi(S)$, gives
+\begin{equation}\label{eq:small}
+S_{\rm BH} = 4\pi\sqrt{nw}
+\end{equation}
+in four dimensions, in agreement with the statistical entropy to leading order; \cite{Sen05stretching} extended the computation to the heterotic string in $D$ dimensions.
+
+\begin{proposition}[claim 26]\label{prop:small}
+With the Gauss--Bonnet term as the only higher-derivative correction, the entropy function gives a finite entropy for the small black hole in every dimension $D\ge4$, proportional to $\sqrt{nw}$. The coefficient equals the statistical one, $4\pi$, for $D=4$ and $D=5$, and differs from it for every $D\ge6$ \cite[Section~4]{Sen05stretching}. In four dimensions the agreement extends to all orders in $1/\sqrt{nw}$ when the full supersymmetric $F$-term corrections are used in place of the Gauss--Bonnet term \cite{Dabholkar05,DDMP05}.
+\end{proposition}
+
+\begin{proof}
+The near-horizon solution of \cite{Sen05stretching} has $v_1,v_2$ and the dilaton fixed by the extremisation with the Gauss--Bonnet coupling, and the entropy at the extremum is $c_D\sqrt{nw}$ with $c_D$ computed there: $c_4 = c_5 = 4\pi$ and $c_D\ne4\pi$ for $D\ge6$ (the paper tabulates the ratio). For $D=4$, \cite{Dabholkar05} evaluated the entropy with the full $F$-term, and \cite{DDMP05} matched the result to the asymptotic expansion of $d_h$ to all orders in $1/\sqrt{nw}$ up to the non-perturbative terms; the Gauss--Bonnet term alone reproduces the leading term because the four-dimensional $F$-term reduces to it on the near-horizon geometry at this order.
+\end{proof}
+
+\begin{verdict}[claim 26]
+Scope limited and already qualified by Sen. The Gauss--Bonnet truncation gives the stated match in $D=4,5$ and a mismatch in higher dimensions. The abstract and calculation of \cite{Sen05stretching} explicitly identify this limitation and the absence of a full supersymmetric completion in the truncation. It is therefore excluded from proposed new errors. Agreement within a truncated action does not establish control of the full string-scale derivative expansion.
+\end{verdict}

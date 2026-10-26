@@ -54,8 +54,8 @@ def fig_indices():
     ax.set_xticks(range(0, 13, 2))
     ax.view_init(elev=24, azim=-58)
     ax.set_box_aspect((2.2, 1.0, 1.1))
-    fig.text(0.5, 0.94, r"Single-centred index $d(Q^2,P^2,0)$ of the $\mathbb{Z}_2$ toroidal orbifold", ha="center", fontsize=12)
-    fig.text(0.5, 0.05, "burnt orange: negative index (positivity fails); grey: positive", ha="center", fontsize=10)
+    fig.text(0.5, 0.94, r"Full dyon index $d(Q^2,P^2,0)$ of the $\mathbb{Z}_2$ toroidal orbifold", ha="center", fontsize=12)
+    fig.text(0.5, 0.05, "burnt orange: negative full index; horizon index is a separate quantity; grey: positive", ha="center", fontsize=10)
     fig.subplots_adjust(left=0.02, right=0.98, bottom=0.06, top=0.95)
     save(fig, "fig_indices.png")
 
@@ -65,8 +65,8 @@ def fig_caustic():
     tc = 1.0 / (a * k * k)
     x0 = np.linspace(0, 4 * np.pi, 1600)
     T0 = a * np.cos(k * x0)
-    v0 = a * k * np.sin(k * x0)  # v_0 = -T_0'/W with W = 1 in the small-slope limit
-    v0p = a * k * k * np.cos(k * x0)
+    v0 = a * k * np.sin(k * x0) / np.sqrt(1 + a*a*k*k*np.sin(k*x0)**2)
+    v0p = a * k * k * np.cos(k * x0) / (1+a*a*k*k*np.sin(k*x0)**2)**1.5
     ts = np.linspace(0, 0.97 * tc, 60)
     xs = np.linspace(0, 4 * np.pi, 320)
     Z = np.zeros((len(ts), len(xs)))
@@ -83,7 +83,7 @@ def fig_caustic():
     # characteristics drawn on the floor
     for xi in np.linspace(0, 4 * np.pi, 41):
         tt = np.linspace(0, 1.0, 50)
-        xx = xi + tt * tc * (a * k * np.sin(k * xi))
+        xx = xi + tt * tc * (a * k * np.sin(k * xi) / np.sqrt(1+a*a*k*k*np.sin(k*xi)**2))
         ax.plot(xx, tt, np.zeros_like(tt), color="black", linewidth=0.4)
     for m in (0, 1):
         xm = (2 * m + 1) * np.pi / k
@@ -102,8 +102,8 @@ def fig_caustic():
 
 
 def fig_verdicts():
-    verdict = {1: "c", 2: "p", 3: "c", 4: "p", 5: "p", 6: "p", 7: "p", 8: "p", 9: "f", 10: "c", 11: "p", 12: "p", 13: "p",
-               14: "p", 15: "c", 16: "p", 17: "f", 18: "c", 19: "p", 20: "p", 21: "p", 22: "p", 23: "i", 24: "p", 25: "p",
+    verdict = {1: "c", 2: "p", 3: "c", 4: "p", 5: "p", 6: "p", 7: "p", 8: "p", 9: "i", 10: "c", 11: "p", 12: "p", 13: "p",
+               14: "p", 15: "c", 16: "p", 17: "i", 18: "c", 19: "p", 20: "p", 21: "p", 22: "p", 23: "i", 24: "p", 25: "p",
                26: "i", 27: "c", 28: "p", 29: "c", 30: "p", 31: "p", 32: "c", 33: "p", 34: "c", 35: "p", 36: "c"}
     areas = [("Duality", [1, 2, 3, 4, 5]), ("Dyons", [6, 7, 8, 9, 10, 36]), ("Tachyons", list(range(11, 22))),
              ("F-theory", [22, 23]), ("Entropy", list(range(24, 30))), ("SFT, soft, networks", list(range(30, 36)))]
@@ -127,9 +127,9 @@ def fig_verdicts():
     ax.set_box_aspect((1.3, 2.0, 0.45))
     from matplotlib.patches import Patch
     ax.legend(handles=[Patch(color=GREEN, label="proved (22)"), Patch(color=BLUE, label="confirmed, unproved (10)"),
-                       Patch(color=YELLOW, label="incomplete (2)"), Patch(color=BURNT, label="false as stated (2)")],
+                       Patch(color=YELLOW, label="scope limited (4)")],
               loc="upper left", fontsize=8, frameon=False)
-    fig.text(0.5, 0.94, "The thirty-six claims by section and verdict", ha="center", fontsize=12)
+    fig.text(0.5, 0.94, "Selected statements: established, supported, scope limited", ha="center", fontsize=12)
     fig.subplots_adjust(left=0.02, right=0.98, bottom=0.04, top=0.95)
     fig.canvas.draw()
     from mpl_toolkits.mplot3d import proj3d

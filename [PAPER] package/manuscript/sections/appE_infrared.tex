@@ -1,0 +1,67 @@
+\section{A finite-energy infrared limit in an explicit soft model}\label{app:infraredlimit}
+
+The leading-soft cancellation of Appendix~\ref{app:perturbative} can be strengthened to a construction allowing infinitely many unresolved quanta and a total-energy observable. The theorem below is a statement about an explicitly defined positive emission model. Its relation to a string amplitude requires additional factorisation estimates, stated afterwards. It is not a claimed solution of the full four-dimensional string-field-theory problem.
+
+\begin{theorem}[finite-energy limit and quantitative cutoff removal]\label{thm:softmeasure}
+Fix $b\ge0$ and $0<E<\Lambda$. For $0<\lambda<E$, let $N_\lambda$ be a Poisson random measure on $[\lambda,E]$ with intensity $b\,d\omega/\omega$, coupled by restriction of one measure on $(0,E]$. Put $S_\lambda=\int_{[\lambda,E]}\omega N(d\omega)$. There is a finite nonnegative random variable $S$ such that $S_\lambda\uparrow S$ almost surely and in $L^1$, and
+\begin{align}
+\mathbb E S&=bE,&\mathbb E|S-S_\lambda|&=b\lambda,\\
+\mathbb E e^{-tS}&=\exp\left[b\int_0^E\frac{e^{-t\omega}-1}{\omega}\,d\omega\right]\quad(t\ge0).
+\end{align}
+For a bounded Lipschitz function $F:[0,\infty)\to\RR$, with Lipschitz constant $L_F$, define the inclusive model functional
+\begin{align}
+\mathcal I_\lambda(F)={}&e^{-b\ln(\Lambda/\lambda)}
+\sum_{n=0}^{\infty}\frac{b^n}{n!}
+\int_{[\lambda,E]^n}F\left(\sum_{j=1}^n\omega_j\right)
+\prod_{j=1}^n\frac{d\omega_j}{\omega_j}.
+\end{align}
+Then
+\begin{align}
+\mathcal I_0(F)&=(E/\Lambda)^b\mathbb EF(S),\\
+|\mathcal I_\lambda(F)-\mathcal I_0(F)|
+&\le(E/\Lambda)^b L_F b\lambda.
+\end{align}
+If $b>0$, the total number of emitted quanta is infinite almost surely, although $S$ is finite, and the law of $S$ has no atoms. Consequently the cutoff also has a limit for each total-energy veto $F(s)=\mathbf1_{s\le\delta}$.
+\end{theorem}
+
+\begin{proof}
+Partition $(0,E]$ into dyadic bands $J_k=(E2^{-k-1},E2^{-k}]$, $k\ge0$. On each band take an independent Poisson number with mean $b\ln2$, and conditional on that number take independent energies with density $1/(\omega\ln2)$ on the band. This constructs the measure on the product probability space without assuming a finite total particle number. The expectation of the energy in $J_k$ is $b|J_k|$, so the sum of the expectations is $bE$. The nonnegative total energy is therefore finite almost surely. Monotone convergence gives the almost-sure limit and
+\[
+\mathbb E(S-S_\lambda)=\int_0^\lambda\omega\,b\frac{d\omega}{\omega}=b\lambda.
+\]
+
+For a finite cutoff, the elementary generating function of a Poisson distribution yields
+\[
+\mathbb E e^{-tS_\lambda}=\exp\left[b\int_\lambda^E\frac{e^{-t\omega}-1}{\omega}\,d\omega\right].
+\]
+The bound $|e^{-t\omega}-1|\le t\omega$ makes the exponent integrable at zero. Dominated convergence proves the Laplace formula for $S$. Writing the Poisson expectation of $F(S_\lambda)$ as its absolutely convergent sum over particle numbers gives exactly
+\[
+\mathcal I_\lambda(F)=(E/\Lambda)^b\mathbb EF(S_\lambda).
+\]
+The Lipschitz estimate follows from the common coupling and the preceding $L^1$ identity.
+
+If $b>0$, the count on $(\lambda,E]$ has Poisson mean $b\ln(E/\lambda)\to\infty$. For every fixed integer $K$, its probability of being at most $K$ tends to zero. Hence the total count is infinite almost surely. To prove absence of atoms, split at $a\in(0,E)$. The sum of energies in $[a,E]$, conditional on at least one emission, has a continuous distribution, since each energy has a density and convolutions retain that property. It is independent of the energies below $a$. Thus for every $x$,
+\[
+\mathbb P(S=x)\le\mathbb P(N([a,E])=0)=(a/E)^b.
+\]
+Let $a\downarrow0$. Finally $S_\lambda\to S$ almost surely, and the indicator of a fixed total-energy threshold is continuous away from an event of probability zero. Bounded convergence proves the final assertion. For $b=0$ the measure is concentrated at $S=0$ and the conclusion is immediate directly.
+\end{proof}
+
+This theorem treats total unresolved energy, not just a bound on each individual quantum. It also explains why a finite-energy limit need not be a finite-particle Fock vector. It constructs an energy distribution, not the angular momentum, memory algebra or gauge constraints of a gravitational quantum state.
+
+\begin{proposition}[an explicit transfer criterion]
+Let $\Sigma_\lambda(F)$ be a proposed regulated string observable. Suppose, for each observable in a specified class,
+\[
+\Sigma_\lambda(F)=H\mathcal I_\lambda(F)+R_\lambda(F),
+\]
+where $H$ is finite and independent of $\lambda$, and $R_\lambda(F)\to R_0(F)$ is separately proved. Then $\Sigma_\lambda(F)$ has a finite limit, with
+\[
+\Sigma_0(F)=H\mathcal I_0(F)+R_0(F).
+\]
+For Lipschitz $F$, its error is at most $|H|(E/\Lambda)^bL_Fb\lambda+|R_\lambda(F)-R_0(F)|$.
+\end{proposition}
+\begin{proof}
+Subtract the two expressions and apply Theorem~\ref{thm:softmeasure} and the triangle inequality. The convergence assumption on the remainder is essential; the proposition does not establish it.
+\end{proof}
+
+\paragraph*{The remaining string-theory problem.} Weinberg's treatment \cite{Weinberg65} establishes the familiar gravitational soft cancellations in its stated setting. More recent algebraic scattering constructions \cite{PSW22,PS24} explicitly address the state-space problem. They do not justify silently replacing a constructed string-field evolution by an assumed automorphism. For the full string problem one must supply a specified stable compactification and observable, a common regulator compatible with the gauge identities, factorisation over all relevant degeneration regions, the corresponding virtual factors and measure, and control of collinear regions and overlapping limits. In the transfer proposition these obligations reside in the existence of $H$ and the convergence of $R_\lambda$. No proof of those obligations for every four-dimensional superstring background is supplied here. The Poisson construction and the scalar exponential identity are not Lean-formalised as probability theory in this release.

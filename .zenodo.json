@@ -1,6 +1,6 @@
 {
-  "title": "LaTeX source and verification code for the paper The Conjectures of Ashoke Sen",
-  "description": "<p>The complete LaTeX source of the paper <em>The Conjectures of Ashoke Sen</em>, with its figures and the compiled PDF, together with the exact-arithmetic computation of the quarter-BPS dyon indices in <code>code/siegel_dyons.py</code> and the Lean 4 file <code>lean/SenConjectures.lean</code>.</p><p>The paper examines thirty-six statements made by Ashoke Sen as conjectures, or as results extended beyond the case in which they were derived, and gives each a verdict: proved, confirmed without proof, incomplete, or false as stated. Two are false: the positivity of the single-centred dyon index fails in the Z_2 toroidal orbifold of type II string theory, where the paper computes twenty-one negative indices exactly from the product formula for the Siegel form, and tachyon matter is not the final state of an inhomogeneous brane decay, where a convexity criterion gives a caustic in finite time. For every unproved claim the paper names the missing step.</p><p><code>code/siegel_dyons.py</code> expands the product formula for 1/Phi_10 and for the Siegel form of the orbifold in exact integer arithmetic, verifies the wall-crossing formula on both sides of a wall, and lists the negative single-centred indices. <code>lean/SenConjectures.lean</code> repeats the expansion inside the Lean 4 kernel, from the definitions of the theta functions, the eta function and the Eisenstein series, and proves the finite statements of the paper by <code>decide</code>; it compiles against a bare Lean 4 toolchain and every theorem depends on no axiom or on propositional extensionality alone. <code>figures/make_figures.py</code> draws the three figures.</p>",
+  "title": "Conjectures of Ashoke Sen: Scope, Exact Tests and Analytic Limits: manuscript, exact computations and scoped formal checks",
+  "description": "<p>Single-column research revision of a selected survey, with corrected charge cone and 30-entry exact scan, a precise dust focusing statement, the base/cover divisor distinction, and a source-version audit. The infrared appendices construct a finite-energy soft model and derive a subtracted tree-emission cutoff bound, logarithmic tail formulas and an overlapping-limit obstruction. All three current Lean modules compile and pass kernel replay relative to imports; their 75 named audited statements have limited documented scopes. No new fatal error in corrected published proofs, full four-dimensional infrared closure or full-manuscript formalisation is claimed. Deep Bhattacharjee is the sole author.</p>",
   "upload_type": "software",
   "license": "mit",
   "access_right": "open",
@@ -21,5 +21,6 @@
     "black hole entropy",
     "Lean 4"
   ],
-  "language": "eng"
+  "language": "eng",
+  "version": "1.1.0"
 }

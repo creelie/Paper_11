@@ -2,7 +2,7 @@
 
 \subsection{The entropy function}\label{ssec:entropyfunction}
 
-For an extremal black hole in a theory of gravity with arbitrary higher-derivative terms, whose near-horizon geometry has the symmetry $SO(2,1)\times SO(D-1)$ of $AdS_2\times S^{D-2}$ with electric fields $e_i$ and magnetic charges $p_a$, Sen \cite{Sen05entropy} defined the entropy function
+For an extremal black hole in a theory of gravity with covariant higher-derivative terms in the framework specified below, whose near-horizon geometry has the symmetry $SO(2,1)\times SO(D-1)$ of $AdS_2\times S^{D-2}$ with electric fields $e_i$ and magnetic charges $p_a$, Sen \cite{Sen05entropy} defined the entropy function
 \begin{equation}\label{eq:entropyfunction}
 \begin{gathered}
 \mathcal E(\vec u,\vec v,\vec e,\vec q,\vec p) = 2\pi\big(e_i q_i - f(\vec u,\vec v,\vec e,\vec p)\big),\\
@@ -23,7 +23,7 @@ the last being the definition of the charges $q_i$, and the Wald entropy of the 
 \end{theorem}
 
 \begin{proof}
-(i) The Wald entropy is $S = -8\pi\int_H \frac{\partial\mathcal L}{\partial R_{\mu\nu\rho\sigma}}\epsilon_{\mu\nu}\epsilon_{\rho\sigma}$; on the $AdS_2\times S^{D-2}$ ansatz the $SO(2,1)$ symmetry makes every covariant tensor built from the fields a combination of the metric and the volume forms with constant coefficients, and the Wald integrand reduces to $v_1\partial f/\partial v_1$ evaluated at the extremum, which by the Euler equations for $v_1$ and $e_i$ and the homogeneity of $f$ equals $2\pi(e_iq_i - f)$ \cite[Section~2]{Sen05entropy}. The equations of motion reduce to the extremisation because the ansatz is the most general one with the symmetry, so that the variation of the action over field configurations with the symmetry is the variation over the ansatz (the principle of symmetric criticality, valid here because the symmetry group is compact times $SO(2,1)$ acting with the stated isotropy). (ii) is \cite[Section~2]{AGJST06}, with the same argument applied to the $SO(2,1)\times U(1)$ ansatz; the extra term arises because the $U(1)$ gauge field of the Kaluza--Klein reduction along the angle carries the angular momentum as its charge.
+The derivation, including the normalization and curvature-variation convention, is given in \cite[Section~2]{Sen05entropy} and its rotating extension in \cite{AGJST06}. For a covariant Lagrangian with no derivatives of curvature, the Wald expression is $-2\pi\int_H (\partial\mathcal L/\partial R_{\mu\nu\rho\sigma})\epsilon_{\mu\nu}\epsilon_{\rho\sigma}$ with the induced volume factor and $\epsilon_{\mu\nu}\epsilon^{\mu\nu}=-2$. Curvature derivatives require the corresponding variational derivative, and Chern--Simons terms require separate treatment. The near-horizon equations and the Legendre transform give the entropy function in this framework. Local extremisation does not by itself construct a regular solution extending to prescribed asymptotic data.
 \end{proof}
 
 \begin{verdict}[claims 24, 25]
@@ -47,5 +47,5 @@ The near-horizon solution of \cite{Sen05stretching} has $v_1,v_2$ and the dilato
 \end{proof}
 
 \begin{verdict}[claim 26]
-Incomplete. The sentence of \cite{Sen04stretch} \gap{that the Gauss--Bonnet term reproduces the entropy of small black holes, taken as a statement about the heterotic string in every dimension,} holds in four and five dimensions only; Sen's own computation \cite{Sen05stretching} shows the mismatch for $D\ge6$ and attributes it to the Gauss--Bonnet term not being the full supersymmetric completion in those dimensions. The four-dimensional claim is proved to all orders in $1/\sqrt{nw}$ \cite{Dabholkar05,DDMP05}. The remaining issue, that the small black hole is not a solution of the two-derivative theory and the higher-derivative expansion is not under control at string scale curvature, was raised in \cite{DDMP05} and is unresolved; the agreement of \eqref{eq:small} is a fact about the Gauss--Bonnet action, and its interpretation as the entropy of a stretched horizon is the conjecture.
+Scope limited and already qualified by Sen. The Gauss--Bonnet truncation gives the stated match in $D=4,5$ and a mismatch in higher dimensions. The abstract and calculation of \cite{Sen05stretching} explicitly identify this limitation and the absence of a full supersymmetric completion in the truncation. It is therefore excluded from proposed new errors. Agreement within a truncated action does not establish control of the full string-scale derivative expansion.
 \end{verdict}

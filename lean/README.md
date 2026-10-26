@@ -1,63 +1,13 @@
-# Lean 4 certificate
+# Formal verification scope
 
-`SenConjectures.lean` carries out, inside the Lean 4 kernel, the finite
-arithmetic on which the paper *The Conjectures of Ashoke Sen* rests, and proves
-the corresponding statements by `decide +kernel`. It needs Lean 4.35.0
-(`lean-toolchain`) and nothing else: no Mathlib, no `lake`, no native
-evaluation.
+The core certificate and the two new supplements use separate toolchains. A successful check is not a formal proof of the full manuscript or four-dimensional string-field-theory infrared finiteness.
 
-```
-lean SenConjectures.lean
-```
+- SenConjectures.lean: bare Lean 4.34.1; 57 named statements in the axiom audit. It expands truncated products and checks the original 21 coefficient triples using the corrected linear cone predicate. It is not an exhaustive check of the 30-entry Python scan. Only propext, or no axioms, occur in its printed audit. No Mathlib is needed for this file.
+- AnalyticScopeChecks.lean: Lean 4.34.0-rc2 with Mathlib commit 85e3a25e006c35636f0e53b0e9296caca2685bc0; 12 elementary sign, polynomial, index-logic and exponential identities.
+- InfraredBounds.lean: the same Mathlib environment; six complex-norm, corner-algebra and homogeneous-degree identities. These are not a formalisation of an amplitude or a phase-space integral.
 
-prints one line per theorem, `'Sen.<name>' depends on axioms: [propext]` or
-`'Sen.<name>' does not depend on any axioms`. The run takes about eleven
-minutes on four cores and peaks at ten gigabytes of memory. The GitHub workflow `verify.yml` runs it on
-every push and fails if a theorem depends on `sorryAx`, `Classical.choice` or
-`Lean.ofReduceBool`, or if the number of theorems changes.
+There are 75 named audited statements. The Mathlib supplements use propext, Classical.choice and Quot.sound. No admitted proof or custom axiom appears in the successful audits. Formal receipts record hashes and completed runs.
 
-## What is proved
+The bare-core command is `lean SenConjectures.lean` under the pinned lean-toolchain. It does not build the Mathlib supplements. The supplements require the separately pinned Mathlib build and its dependencies. Local run scripts in the verification directory record the exact invocation.
 
-Everything is computed from first principles: the theta functions, the Dedekind
-eta function and the Eisenstein series are defined as truncated series in
-`x = q^{1/8}` and `y = e^{2 pi i z}`, the twisted elliptic genera of the
-heterotic string and of the Z_2 toroidal orbifold are built from them, and the
-Fourier coefficients of 1/Phi_10 and of the Siegel form of the orbifold are
-obtained by expanding the Borcherds-type product, exactly as in
-`code/siegel_dyons.py`.
-
-| Theorem | Statement of the paper |
-| --- | --- |
-| `dh_values` | d_h(n) = 1, 24, 324, 3200, 25650 for Q^2 = -2, 0, 2, 4, 6 (coefficients of q eta^{-24}) |
-| `het_table` | Table 1: the indices of 1/Phi_10 for Q^2, P^2 in {2,4,6}, Q.P = -2, ..., 4 |
-| `wall_crossing` | the wall-crossing formula d_R - d_L = (-1)^{Q.P} Q.P d_h(Q) d_h(P) for Q^2, P^2 in {2,4,6}, abs(Q.P) <= 4 |
-| `tor2_rows_P0`, `tor2_rows_P2`, `tor2_rows_P4` | Table 3: the indices of the Z_2 orbifold for Q^2 <= 12, P^2 in {0,2,4}, Q.P = 0, 1, 2 |
-| `violations_in_table` | Table 2: the twenty-one listed charges have the listed negative indices |
-| `violations_single_centred` | the twenty-one charges satisfy the single-centred conditions (4.7) of Chattopadhyaya and David |
-
-The remaining theorems (`*_genera`, `*_step_*`, `*_upTo_*`, `*_finish`,
-`*_table`, and the three unfolding lemmas) are the stages of the two
-expansions. The expansion is too long for one kernel computation, so the file
-stores the elliptic genera and the partial products after each power of
-e^{2 pi i rho} as data blocks, encoded as natural numbers, and the kernel
-checks that each block is what the definitions produce from the previous one;
-the statements about the tables are then assembled from these steps by
-`Eq.trans`. The blocks are certificates, not inputs: a wrong block makes its
-step fail.
-
-## What is not formalised
-
-The verdicts of the paper are statements about string theory, and the kernel
-checks none of them. In particular the following are outside Lean:
-
-- the refutation of the positivity conjecture rests on the computed indices
-  above together with the identification of the single-centred region and the
-  argument of the paper on the hair of the black hole; only the arithmetic is
-  checked;
-- the caustic theorem for the dust of the rolling tachyon is an argument in
-  ordinary differential equations and is proved by hand in the paper;
-- the positivity spot checks of the heterotic string and of the 2A CHL model
-  up to Q^2 = 12 and the Z_3 orbifold, which `code/siegel_dyons.py` performs,
-  are not repeated in Lean;
-- every verdict of the form "proved", "confirmed" or "incomplete" is a
-  judgement about the literature and has no formal counterpart.
+Not formalised: dust PDE and global geometric arguments, probability construction, tree amplitude factorisation, phase-space integrals, uniform loop estimates, flat-function analysis, physical interpretations and literature verdicts. The full string-field-theory infrared problem remains open in this manuscript.

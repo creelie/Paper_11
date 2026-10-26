@@ -1,4 +1,4 @@
-\documentclass[aps,prd,twocolumn,superscriptaddress,nofootinbib,longbibliography,floatfix,amsmath,amssymb,10pt]{revtex4-2}
+\documentclass[aps,prd,onecolumn,superscriptaddress,nofootinbib,longbibliography,floatfix,amsmath,amssymb,11pt]{revtex4-2}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{mathptmx}
@@ -50,9 +50,10 @@
 \emergencystretch=2em
 \raggedbottom
 
+\hypersetup{pdftitle={Conjectures of Ashoke Sen: Scope, Exact Tests and Analytic Limits},pdfauthor={Deep Bhattacharjee}}
 \begin{document}
 
-\title{The Conjectures of Ashoke Sen}
+\title{Conjectures of Ashoke Sen: Scope, Exact Tests and Analytic Limits}
 
 \author{Deep Bhattacharjee\,\orcidlink{0000-0003-0466-750X}}
 \email{itsdeep@live.com}
@@ -60,12 +61,11 @@
 \affiliation{Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India}
 \affiliation{Formerly, University of Calcutta (Heramba Chandra College), 23/49 Gariahat Road, Golpark, Kolkata 700029, West Bengal, India}
 
-\date{October 25, 2026}
+\date{October 26, 2026}
 
 \begin{abstract}
 \itshape
-Ashoke Sen made many conjectures about string theory over thirty years: that a certain symmetry of the theory is exact, that two magnetic monopoles form a bound state, that an unstable brane decays to a vacuum with no open strings and leaves behind a dust with no pressure, that a path integral counts the states of a black hole, that the number of states of a dyon is positive. We went through all of them, thirty-six statements in all, read the papers in which they were made and the papers that tested them, and checked every reference. We say for each one whether it has been proved, whether it has passed every test without a proof, whether it was stretched beyond the case where it holds, or whether it is false. Most of the conjectures are true. Two are false: the positivity of the dyon count fails in two orbifold models, where we recompute the negative numbers exactly, and the pressureless dust is not the end state of a brane decaying unevenly, where we prove that the dust piles up to infinite density in a finite time. For everything that is still open we say what is missing.
-\par\medskip\upshape\noindent\textit{2020 Mathematics Subject Classification.} 81T30; 81T13; 83C57; 11F46; 35L67; 53C26.
+We examine thirty-six selected statements associated with Ashoke Sen's work on duality, tachyon condensation, black hole indices and string field theory. The purpose is to distinguish mathematical results within a specified framework, physical conjectures, and extensions beyond the assumptions used in a derivation. Exact product expansions reproduce known negative dyon indices in toroidal orbifolds; with the charge cone transcribed correctly, a finite scan contains thirty negative-index charge triples. These numbers concern the full index, whose sign need not agree with a horizon index after hair removal. For tachyon dust we give the characteristic flow, the corrected Hessian sign criterion, and precise hypotheses under which the first focusing time is attained. We also separate the D7 divisor on the F-theory base from its singular pullback to the orientifold cover and give a local weak-coupling family with an $I_0^*$ divisor. These calculations delimit claims; they do not disprove the homogeneous rolling solution or Sen's positivity argument under its stated assumptions. The accompanying formal certificates check specified finite computations and algebraic identities, rather than the catalogue's physical interpretations. Established results and later corrections are credited to their sources.\par\medskip\upshape\noindent\textit{2020 Mathematics Subject Classification.} 81T30; 81T13; 83C57; 11F46; 35L67; 53C26.
 \end{abstract}
 
 \keywords{S-duality; tachyon condensation; black hole entropy; Siegel modular forms}
@@ -91,6 +91,10 @@ Ashoke Sen made many conjectures about string theory over thirty years: that a c
 \appendix
 \input{sections/appA_computation}
 \input{sections/appB_dust}
+\input{sections/appC_scopechecks}
+\input{sections/appD_perturbative}
+\input{sections/appE_infrared}
+\input{sections/appF_softremainder}
 
 \input{sections/declarations}
 \begingroup\sloppy\emergencystretch=5em\input{sections/bibliography}\endgroup

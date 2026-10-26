@@ -1,0 +1,36 @@
+\section{The caustic for a periodic perturbation}\label{app:dust}
+
+This appendix works out Theorem~\ref{thm:caustic} for the simplest inhomogeneous initial datum in one space dimension, a periodic perturbation of the homogeneous decay,
+\begin{equation}\label{eq:cosdatum}
+T_0(x) = T_* + a\cos kx,\qquad a>0,\ k>0 ,
+\end{equation}
+on the branch $\partial_t T>0$, and records the quantities that a numerical solution of the full equation \eqref{eq:dbi} can be compared with.
+
+\paragraph*{Velocity and its derivative.} With $T_0' = -ak\sin kx$ and $W_0 = \sqrt{1+a^2k^2\sin^2kx}$,
+\begin{equation}
+v_0(x) = \frac{ak\sin kx}{\sqrt{1+a^2k^2\sin^2 kx}},\qquad
+v_0'(x) = \frac{ak^2\cos kx}{(1+a^2k^2\sin^2kx)^{3/2}} .
+\end{equation}
+The dust moves away from the maxima of $T_0$ (where $\cos kx=1$ and $v_0'>0$, a rarefaction) and towards its minima (where $\cos kx = -1$ and $v_0' = -ak^2<0$).
+
+\paragraph*{The caustic time.} The supremum of $-v_0'$ is attained at the minima $x_m = (2m+1)\pi/k$ of $T_0$, so by Theorem~\ref{thm:caustic}(iv)
+\begin{equation}\label{eq:tccos}
+\mu_- = \sup_x\bigl(-v_0'(x)\bigr) = ak^2, \qquad t_c = \frac{1}{a k^2} .
+\end{equation}
+The characteristics $X(t;x_0) = x_0 + t\,v_0(x_0)$ from a neighbourhood of $x_m$ converge on $x_m$, which is a fixed point of the flow, and have a singular differential there at $t_c$; for $t>t_c$ the map $x_0\mapsto X(t;x_0)$ folds over near $x_m$ and three characteristics pass through each point of a growing interval around it. The smaller the perturbation, the later the caustic, and no value of $a>0$ avoids it; the time is finite for every amplitude and every wavelength, and diverges only in the homogeneous limit $a\to0$ or in the long-wavelength limit $k\to0$ at fixed $a$.
+
+\paragraph*{The density.} Along the characteristic from $x_0$,
+\[
+\eps\bigl(t,X(t;x_0)\bigr) = \frac{\eps_0(x_0)}{1+t\,v_0'(x_0)},\qquad \eps(t,x_m) = \frac{\eps_0(x_m)}{1 - t/t_c},
+\]
+and the density at the minimum diverges as $(t_c - t)^{-1}$. Near the caustic, for $x_0 = x_m + \xi$ with $\xi$ small,
+\[
+v_0'(x_0) = -ak^2\Bigl(1 - \tfrac{k^2\xi^2}{2}(1 + 3a^2k^2)+O(\xi^4)\Bigr),
+\]
+so at $t=t_c$ the linear term of $X(t_c;x_m+\xi) - x_m$ cancels and
+\[
+X(t_c;x_m+\xi) = x_m + c\,\xi^3 + O(\xi^5),\qquad c = \tfrac{k^2}{6}(1+3a^2k^2),
+\]
+while the density there is $\eps_0(x_m)\big/\big(\tfrac{k^2}{2}(1+3a^2k^2)\xi^2\big)\propto |x-x_m|^{-2/3}$: the integrable density singularity at the cubic cusp onset, followed by fold points after the first focusing time, with total energy in any interval finite at $t_c$ and infinite density at one point. For $t>t_c$ the three-valued velocity field carries a finite energy density on each sheet and the dust description of \cite{Sen02field} has no single-valued continuation.
+
+\paragraph*{Comparison with the full equation.} Felder, Kofman and Starobinsky \cite{FKS02} integrated \eqref{eq:dbi} numerically with the exponential potential and inhomogeneous initial data, and found that after a transient the solution is approximated by the free-streaming (Hamilton--Jacobi) solution, which is \eqref{eq:dust}, and that the caustics predicted by it form in the full equation, with second derivatives of $T$ growing without bound at the caustic; Barnaby \cite{Barnaby04} showed the same analytically for several effective actions. The dust formula gives a comparison time after matching effective initial data. It is not an exact prediction of the full Born--Infeld evolution: the transient and higher-derivative corrections depend on the initial data and the effective action. No amplitude-independent transient time or string-scale conclusion is inferred here.

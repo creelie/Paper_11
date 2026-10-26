@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "polynomial_recurrences_checked": 82,
+  "maximum_degree": 40,
+  "exact_arithmetic": "fractions.Fraction and integer factorials",
+  "scope": "Finite transcription checks of moment-polynomial and homogeneous-degree identities.",
+  "not_established": [
+    "String amplitude factorisation",
+    "Uniform loop-remainder bound",
+    "Phase-space integration theorem in Lean",
+    "Full four-dimensional infrared finiteness"
+  ]
+}
