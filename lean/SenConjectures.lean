@@ -379,7 +379,7 @@ def hetRows (t : Option S3) : List (List (Option Int)) :=
 
 /-- Chattopadhyaya–David's condition (4.7) for a single-centred charge, `N = 2`. -/
 def singleCentredZ2 (q2 p2 qp : Int) : Bool :=
-  q2 > 0 ∧ p2 > 0 ∧ q2 * p2 > qp * qp ∧ 2 * q2 + p2 - 3 * qp * qp ≥ 0 ∧
+  q2 > 0 ∧ p2 > 0 ∧ q2 * p2 > qp * qp ∧ 2 * q2 + p2 - 3 * qp ≥ 0 ∧
     2 * q2 ≥ qp ∧ p2 ≥ qp ∧ qp ≥ 0
 
 /-- The table of the `Z_2` orbifold in chamber R, `l = Q^2`, `k2 = P^2/2`; no prefactor

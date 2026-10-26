@@ -1,0 +1,28 @@
+name: Sen core certificate audit
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned official Lean
+        shell: bash
+        run: |
+          curl -fL --retry 3 https://github.com/leanprover/lean4/releases/download/v4.34.1/lean-4.34.1-linux.tar.zst -o /tmp/lean.tar.zst
+          echo "47bf4bbd78f70c2e9670598ab7124d92b6efb7330ff33e5fbb4030f6fd72e4e4  /tmp/lean.tar.zst" | sha256sum -c -
+          tar --zstd -xf /tmp/lean.tar.zst -C /tmp
+          echo "/tmp/lean-4.34.1-linux/bin" >> "$GITHUB_PATH"
+      - name: Compile and replay the core certificate
+        env:
+          AUDIT_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python3 verification/core_audit.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: sen-core-audit
+          path: core-audit/
+          retention-days: 14
