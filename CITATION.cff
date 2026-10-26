@@ -14,5 +14,5 @@ identifiers:
     value: 10.5281/zenodo.23652472
     description: Concept DOI for all versions
   - type: doi
-    value: 10.5281/zenodo.NNNN
+    value: 10.5281/zenodo.23669248
     description: Version DOI of release v2.0.0
