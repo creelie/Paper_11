@@ -1,0 +1,20 @@
+{
+  "doi": "10.5281/zenodo.23656435",
+  "record_id": 23656435,
+  "concept_doi": "10.5281/zenodo.23652472",
+  "version": "1.1.0",
+  "url": "https://zenodo.org/records/23656435",
+  "github_release": "https://github.com/creelie/Paper_11/releases/tag/v1.1.0",
+  "archived_commit": "981a5a0f9c1308ac240018f5aca913f5f4ec5799",
+  "archive": {
+    "key": "creelie/Paper_11-v1.1.0.zip",
+    "bytes": 10897473,
+    "checksum": "md5:69478ba54b1676328aa441b1e3cf6512",
+    "frozen_payload_files_verified": 143
+  },
+  "verified_at_utc": "2026-10-26T04:57:58.171634+00:00",
+  "full_four_dimensional_infrared_closure": false,
+  "full_manuscript_Lean_formalisation": false,
+  "all_current_Lean_modules_checked": true,
+  "final_zip_creation_authorized_by_confirmed_DOI": true
+}
