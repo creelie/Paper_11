@@ -7,11 +7,12 @@ Dijkgraaf, Verlinde and Verlinde \cite{DVV97} proposed that the index of quarter
 d(Q,P) = (-1)^{Q\cdot P+1}\oint_{\mathcal C} d\rho\,d\sigma\,dv\; \frac{e^{-\pi i(\rho Q^2 + \sigma P^2 + 2 v\, Q\cdot P)}}{\Phi_{10}(\rho,\sigma,v)} ,
 \end{equation}
 the contour $\mathcal C$ being a three-torus at fixed, large imaginary parts of $(\rho,\sigma,v)$, with the sign of $\operatorname{Im} v$ determined by the asymptotic moduli \cite{Sen07walls}.\footnote{The sign $(-1)^{Q\cdot P+1}$ converts the Fourier coefficient into the helicity trace index $B_6$ of the four-dimensional theory; it was identified in \cite{Sen07walls,Sen07twocentred} (footnote 2 of \cite{Sen07twocentred} records that it was absent from the earlier papers) and traced to the change of statistics between the five- and four-dimensional descriptions in the presence of a Kaluza--Klein monopole. The index $d$ of this paper is $-B_6$ in the notation of \cite{Sen11positivity}.} Jatkar and Sen \cite{JatkarSen06} proposed the analogous formula for the CHL orbifolds $\ZZ_N$, $N=2,3,5,7$, with $\Phi_{10}$ replaced by a Siegel form $\Phi_k$ of weight $k = 24/(N+1)-2$ for a subgroup of $Sp(2,\ZZ)$, and David, Jatkar and Sen \cite{DJS06,DJS07} derived the product representation
-\begin{widetext}
 \begin{equation}\label{eq:product}
-\Phit(\rho,\sigma,v) = e^{2\pi i(\rho + \sigma/N + v)}\prod_{b=0}^{1}\prod_{r=0}^{N-1}\prod_{\substack{k'\in\ZZ+r/N,\ l\in\ZZ,\ j\in 2\ZZ+b\\ k',l\ge 0;\ j<0 \text{ if } k'=l=0}}\big(1 - e^{2\pi i(k'\sigma + l\rho + jv)}\big)^{\sum_{s=0}^{N-1} e^{2\pi i s l/N} c^{(r,s)}_b(4k'l-j^2)}
+\begin{split}
+\Phit(\rho,\sigma,v) ={}& e^{2\pi i(\rho + \sigma/N + v)}\prod_{b=0}^{1}\prod_{r=0}^{N-1}\prod_{\substack{k'\in\ZZ+r/N,\ l\in\ZZ,\ j\in 2\ZZ+b\\ k',l\ge 0;\ j<0 \text{ if } k'=l=0}}\big(1 - e^{2\pi i(k'\sigma + l\rho + jv)}\big)^{c(k',l,j)},\\
+c(k',l,j) ={}& \sum_{s=0}^{N-1} e^{2\pi i s l/N} c^{(r,s)}_b(4k'l-j^2),
+\end{split}
 \end{equation}
-\end{widetext}
 from the twisted elliptic genera
 \[
 F^{(r,s)}(\tau,z) = \sum_b\sum_{j\in 2\ZZ+b}\sum_{n\in\ZZ/N} c^{(r,s)}_b(4n-j^2)\, q^n y^j

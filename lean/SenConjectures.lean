@@ -14,7 +14,7 @@ each block is what the definitions produce from the previous one, and the theore
 about the tables are assembled from these steps by `Eq.trans`.  The data blocks are
 therefore certificates, not inputs: a wrong block makes its step fail.
 
-Checked with Lean 4.35.0 and no library beyond the core.  Run
+Checked with Lean 4.34.1 and no library beyond the core.  Run
 
     lean SenConjectures.lean
 

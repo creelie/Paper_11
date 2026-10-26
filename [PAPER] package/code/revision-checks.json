@@ -1,7 +1,0 @@
-{
-  "negative_triples": 30,
-  "truncation_stability": "larger L=14,K=5,P=6 reproduces entire scan box",
-  "linear_cone_negative_control": "passed",
-  "full_Lean_coefficient_coverage": false,
-  "scope": "exact finite product computation; no physical horizon identification or proof of all-charge positivity"
-}

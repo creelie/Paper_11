@@ -1,8 +1,9 @@
-\documentclass[aps,prd,onecolumn,superscriptaddress,nofootinbib,longbibliography,floatfix,amsmath,amssymb,11pt]{revtex4-2}
+\documentclass[11pt,a4paper,reqno]{amsart}
+\usepackage[margin=28mm]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{mathptmx}
-\usepackage{amsthm}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
 \usepackage{mathtools}
 \usepackage{graphicx}
 \usepackage{booktabs}
@@ -19,7 +20,6 @@
 \sethlcolor{softyellow}
 \newcommand{\fatal}[1]{\textcolor{burntorange}{#1}}
 \newcommand{\gap}[1]{\hl{#1}}
-\makeatletter\let\write@bibliographystyle\relax\let\bibliography@latex\@gobble\makeatother
 
 \theoremstyle{plain}
 \newtheorem{theorem}{Theorem}[section]
@@ -45,34 +45,42 @@
 \newcommand{\Phit}{\widetilde{\Phi}}
 \newcommand{\anaxiaDOIlink}{\href{https://doi.org/10.5281/zenodo.23484160}{\nolinkurl{doi:10.5281/zenodo.23484160}}}
 \renewcommand{\st}{\textsc}
-\newcommand{\zenodoCodeID}{10.5281/zenodo.23652472}
+\newcommand{\zenodoCodeID}{10.5281/zenodo.NNNN}
+\newcommand{\paragraphx}[1]{\medskip\noindent\textbf{#1}\ }
 \tolerance=2000
 \emergencystretch=2em
 \raggedbottom
+\allowdisplaybreaks
 
 \hypersetup{pdftitle={Conjectures of Ashoke Sen: Scope, Exact Tests and Analytic Limits},pdfauthor={Deep Bhattacharjee}}
-\begin{document}
 
-\title{Conjectures of Ashoke Sen: Scope, Exact Tests and Analytic Limits}
+\title[Conjectures of Ashoke Sen]{Conjectures of Ashoke Sen:\\ Scope, Exact Tests and Analytic Limits}
 
 \author{Deep Bhattacharjee\,\orcidlink{0000-0003-0466-750X}}
+\address{Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India}
+\address{Formerly, University of Calcutta, Senate House, 87/1 College Street, Kolkata 700073, West Bengal, India}
+\email{d.bhattacharjee@erl-forschung.de}
 \email{itsdeep@live.com}
-\thanks{$*$\,Corresponding author. Further addresses: \nolinkurl{d.bhattacharjee@erl-forschung.de}, \nolinkurl{egspl@proton.me}.}
-\affiliation{Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India}
-\affiliation{Formerly, University of Calcutta (Heramba Chandra College), 23/49 Gariahat Road, Golpark, Kolkata 700029, West Bengal, India}
+\email{egspl@proton.me}
+\thanks{\sloppy Corresponding author: Deep Bhattacharjee. Email: \href{mailto:d.bhattacharjee@erl-forschung.de}{d.bhattacharjee@erl-forschung.de}, \href{mailto:itsdeep@live.com}{itsdeep@live.com}, \href{mailto:egspl@proton.me}{egspl@proton.me}; ORCID \href{https://orcid.org/0000-0003-0466-750X}{0000-0003-0466-750X}. Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India, and formerly, University of Calcutta, Senate House, 87/1 College Street, Kolkata 700073, West Bengal, India.}
 
-\date{October 26, 2026}
+\subjclass[2020]{81T30; 81T13; 83C57; 11F46; 35L67; 53C26}
+\keywords{S-duality; tachyon condensation; black hole entropy; Siegel modular forms}
+\date{26 October 2026}
+
+\begin{document}
 
 \begin{abstract}
 \itshape
-We examine thirty-six selected statements associated with Ashoke Sen's work on duality, tachyon condensation, black hole indices and string field theory. The purpose is to distinguish mathematical results within a specified framework, physical conjectures, and extensions beyond the assumptions used in a derivation. Exact product expansions reproduce known negative dyon indices in toroidal orbifolds; with the charge cone transcribed correctly, a finite scan contains thirty negative-index charge triples. These numbers concern the full index, whose sign need not agree with a horizon index after hair removal. For tachyon dust we give the characteristic flow, the corrected Hessian sign criterion, and precise hypotheses under which the first focusing time is attained. We also separate the D7 divisor on the F-theory base from its singular pullback to the orientifold cover and give a local weak-coupling family with an $I_0^*$ divisor. These calculations delimit claims; they do not disprove the homogeneous rolling solution or Sen's positivity argument under its stated assumptions. The accompanying formal certificates check specified finite computations and algebraic identities, rather than the catalogue's physical interpretations. Established results and later corrections are credited to their sources.\par\medskip\upshape\noindent\textit{2020 Mathematics Subject Classification.} 81T30; 81T13; 83C57; 11F46; 35L67; 53C26.
+We examine thirty-six selected statements associated with Ashoke Sen's work on duality, tachyon condensation, black hole indices and string field theory. The purpose is to distinguish mathematical results within a specified framework, physical conjectures, and extensions beyond the assumptions used in a derivation. Exact product expansions reproduce known negative dyon indices in toroidal orbifolds; with the charge cone transcribed correctly, a finite scan contains thirty negative-index charge triples. These numbers concern the full index, whose sign need not agree with a horizon index after hair removal. For tachyon dust we give the characteristic flow, the corrected Hessian sign criterion, and precise hypotheses under which the first focusing time is attained. We also separate the D7 divisor on the F-theory base from its singular pullback to the orientifold cover and give a local weak-coupling family with an $I_0^*$ divisor. These calculations delimit claims; they do not disprove the homogeneous rolling solution or Sen's positivity argument under its stated assumptions. The accompanying formal certificates check specified finite computations and algebraic identities, rather than the catalogue's physical interpretations. Established results and later corrections are credited to their sources.
 \end{abstract}
 
-\keywords{S-duality; tachyon condensation; black hole entropy; Siegel modular forms}
-
 \maketitle
-\makeatletter\renewcommand\l@subsection[2]{}\renewcommand\l@subsubsection[2]{}\makeatother
-\tableofcontents
+
+\begin{quote}
+\small\sloppy
+\noindent\textbf{Note.} This paper was first made public on 25 October 2026, as release \texttt{v1.0.0} of the repository \url{https://github.com/creelie/paper_11} (concept DOI \href{https://doi.org/10.5281/zenodo.23652472}{10.5281/zenodo.23652472}, version DOI \href{https://doi.org/10.5281/zenodo.23652473}{10.5281/zenodo.23652473}); it was revised there on 26 October 2026 as \texttt{v1.0.1} (\href{https://doi.org/10.5281/zenodo.23652641}{10.5281/zenodo.23652641}) and \texttt{v1.1.0} (\href{https://doi.org/10.5281/zenodo.23656435}{10.5281/zenodo.23656435}). The first version counted two of the thirty-six statements as false and twenty-one negative charge triples; it used a charge cone with the discriminant in place of the linear inequality of Sen's equation (3.9), and its dust theorem replaced a supremum by a maximum without an attainment hypothesis. The later versions corrected the cone, extended the scan to thirty triples, restated the two verdicts as limits of scope, since the negative indices are full indices that the hair analysis of Chattopadhyaya and David already accounts for and the caustic concerns the pressureless effective equations rather than the homogeneous solution, and added the infrared appendices. This version is the same mathematics in a single-column form for submission; its source is release \texttt{v2.0.0} of the same repository, archived as \href{https://doi.org/\zenodoCodeID}{\zenodoCodeID}, with the exact program that computes every table, the Lean~4 certificates of the finite statements, and the scripts that check the explicit constants of the appendices.
+\end{quote}
 
 \input{sections/sec01_intro}
 \input{sections/sec02_catalogue}

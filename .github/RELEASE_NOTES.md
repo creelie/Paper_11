@@ -1,0 +1,3 @@
+The paper *Conjectures of Ashoke Sen: Scope, Exact Tests and Analytic Limits* by Deep Bhattacharjee: the compiled PDF, the LaTeX source, the exact-arithmetic program that computes every table, the Lean 4 certificates of the finite statements, and the scripts that check the explicit constants of the appendices. Concept DOI of the archive, resolving to the latest version: 10.5281/zenodo.23652472.
+
+Author: Deep Bhattacharjee (ORCID 0000-0003-0466-750X; formerly EGSPL, Bhubaneswar, and formerly University of Calcutta, Senate House, Kolkata; d.bhattacharjee@erl-forschung.de, itsdeep@live.com, egspl@proton.me). For anything related to this repository write to egspl@proton.me.
