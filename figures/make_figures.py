@@ -171,7 +171,7 @@ def fig_weakcoupling():
     ax.view_init(elev=24, azim=-72)
     ax.set_box_aspect((2.2, 1.2, 1.0))
     fig.text(0.5, 0.94, r"Sen's weak-coupling limit over $\mathbb{P}^1$: $|j|$ grows like $\varepsilon^{-2}$ away from the O7-planes", ha="center", fontsize=12)
-    fig.text(0.5, 0.05, r"orange: O7-planes $h=0$, where $j\to1728$; black dashed: D7-branes $\eta^2=h\chi$, where $j=\infty$", ha="center", fontsize=10)
+    fig.text(0.5, 0.05, r"orange: O7-planes $h=0$, where $j\to1728$; black dashed: D7-branes $\eta^2=h\chi$, limit of the poles of $j$ as $\varepsilon\to0$", ha="center", fontsize=10)
     fig.subplots_adjust(left=0.02, right=0.98, bottom=0.06, top=0.95)
     save(fig, "fig_weakcoupling.png")
 
