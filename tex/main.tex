@@ -20,6 +20,11 @@
 \sethlcolor{softyellow}
 \newcommand{\fatal}[1]{\textcolor{burntorange}{#1}}
 \newcommand{\gap}[1]{\hl{#1}}
+\definecolor{rosewrong}{RGB}{255,196,204}
+\newcommand{\wrong}[1]{{\sethlcolor{rosewrong}\hl{#1}}}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\newtcolorbox{closurebox}[1]{breakable,enhanced jigsaw,parbox=false,colback=blue!3,colframe=blue!45!black,boxrule=0.6pt,arc=1.5mm,fonttitle=\bfseries,title={#1}}
 
 \theoremstyle{plain}
 \newtheorem{theorem}{Theorem}[section]
@@ -45,7 +50,7 @@
 \newcommand{\Phit}{\widetilde{\Phi}}
 \newcommand{\anaxiaDOIlink}{\href{https://doi.org/10.5281/zenodo.23484160}{\nolinkurl{doi:10.5281/zenodo.23484160}}}
 \renewcommand{\st}{\textsc}
-\newcommand{\zenodoCodeID}{10.5281/zenodo.23652472}
+\newcommand{\zenodoCodeID}{10.5281/zenodo.23746042}
 \newcommand{\paragraphx}[1]{\medskip\noindent\textbf{#1}\ }
 \tolerance=2000
 \emergencystretch=2em
@@ -79,7 +84,7 @@ We examine thirty-six statements of Ashoke Sen on duality, dyon indices, tachyon
 
 \begin{quote}
 \small\sloppy
-\noindent\textbf{Note.} This paper was first made public on 25 October 2026, as release \texttt{v1.0.0} of the repository \url{https://github.com/creelie/paper_11} (concept DOI \href{https://doi.org/10.5281/zenodo.23652472}{10.5281/zenodo.23652472}, version DOI \href{https://doi.org/10.5281/zenodo.23652473}{10.5281/zenodo.23652473}); it was revised there on 26 October 2026 as \texttt{v1.0.1} (\href{https://doi.org/10.5281/zenodo.23652641}{10.5281/zenodo.23652641}) and \texttt{v1.1.0} (\href{https://doi.org/10.5281/zenodo.23656435}{10.5281/zenodo.23656435}). The first version counted two of the thirty-six statements as false and twenty-one negative charge triples; it used a charge cone with the discriminant in place of the linear inequality of Sen's equation (3.9), and its dust theorem replaced a supremum by a maximum without an attainment hypothesis. The later versions corrected the cone, extended the scan to thirty triples, restated the two verdicts as limits of scope, since the negative indices are full indices that the hair analysis of Chattopadhyaya and David already accounts for and the caustic concerns the pressureless effective equations rather than the homogeneous solution, and added the infrared appendices. The same mathematics was set in a single-column form for submission as release \texttt{v2.0.0} of the same repository (\href{https://doi.org/10.5281/zenodo.23669248}{10.5281/zenodo.23669248}); the two misprints of Chattopadhyaya and David recorded in Section~\ref{sec:positivity} and Appendix~\ref{app:computation} were added in release \texttt{v2.0.1} (\href{https://doi.org/10.5281/zenodo.23670581}{10.5281/zenodo.23670581}), with the exact program that computes every table, the Lean~4 certificates of the finite statements, and the scripts that check the explicit constants of the appendices. This version, release \texttt{v2.1.0}, proves claims~23 and~26, which the earlier versions recorded as limits of scope: Theorem~\ref{thm:normalform} with Corollaries~\ref{cor:existence} and~\ref{cor:k3cover}, and Theorems~\ref{thm:twocharge}, \ref{thm:prester} and~\ref{thm:rigidity}, with full proofs in Appendix~\ref{app:closures}.
+\noindent\textbf{Note.} This paper was first made public on 25 October 2026, as release \texttt{v1.0.0} of the repository \url{https://github.com/creelie/paper_11} (concept DOI \href{https://doi.org/10.5281/zenodo.23652472}{10.5281/zenodo.23652472}, version DOI \href{https://doi.org/10.5281/zenodo.23652473}{10.5281/zenodo.23652473}); it was revised there on 26 October 2026 as \texttt{v1.0.1} (\href{https://doi.org/10.5281/zenodo.23652641}{10.5281/zenodo.23652641}) and \texttt{v1.1.0} (\href{https://doi.org/10.5281/zenodo.23656435}{10.5281/zenodo.23656435}). The first version counted two of the thirty-six statements as false and twenty-one negative charge triples; it used a charge cone with the discriminant in place of the linear inequality of Sen's equation (3.9), and its dust theorem replaced a supremum by a maximum without an attainment hypothesis. The later versions corrected the cone, extended the scan to thirty triples, restated the two verdicts as limits of scope, since the negative indices are full indices that the hair analysis of Chattopadhyaya and David already accounts for and the caustic concerns the pressureless effective equations rather than the homogeneous solution, and added the infrared appendices. The same mathematics was set in a single-column form for submission as release \texttt{v2.0.0} of the same repository (\href{https://doi.org/10.5281/zenodo.23669248}{10.5281/zenodo.23669248}); the two misprints of Chattopadhyaya and David recorded in Section~\ref{sec:positivity} and Appendix~\ref{app:computation} were added in release \texttt{v2.0.1} (\href{https://doi.org/10.5281/zenodo.23670581}{10.5281/zenodo.23670581}), with the exact program that computes every table, the Lean~4 certificates of the finite statements, and the scripts that check the explicit constants of the appendices. Release \texttt{v2.1.0} (\href{https://doi.org/10.5281/zenodo.23746042}{10.5281/zenodo.23746042}) proved claims~23 and~26, which the earlier versions recorded as limits of scope: Theorem~\ref{thm:normalform} with Corollaries~\ref{cor:existence} and~\ref{cor:k3cover}, and Theorems~\ref{thm:twocharge}, \ref{thm:prester} and~\ref{thm:rigidity}, with full proofs in Appendix~\ref{app:closures}. This version, release \texttt{v2.2.0}, defines the three highlights of the introduction, lists in Table~\ref{tab:unproved} what is left unproved, proves Theorem~\ref{thm:centralcharge} on the central charges of the heterotic string in $D\ge6$, and corrects the footnote on Sen's normalisation of the Gauss--Bonnet coupling, whose equation~(3.15) sets $C=1$.
 \end{quote}
 
 \input{sections/sec01_intro}

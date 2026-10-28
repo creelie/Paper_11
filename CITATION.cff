@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this archive, cite it with the version DOI of the release you used."
 title: "Conjectures of Ashoke Sen: Scope, Exact Tests and Analytic Limits"
-version: 2.1.0
+version: 2.2.0
 date-released: 2026-10-28
 authors:
   - family-names: Bhattacharjee
@@ -19,3 +19,6 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.23670581
     description: Version DOI of release v2.0.1
+  - type: doi
+    value: 10.5281/zenodo.23746042
+    description: Version DOI of release v2.1.0
