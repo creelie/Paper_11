@@ -38,5 +38,5 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh release create "${{ github.event.inputs.tag }}" dist/ConjecturesOfAshokeSen_final2.pdf dist/ConjecturesOfAshokeSen-tex.zip dist/ConjecturesOfAshokeSen-arxiv.tar.gz \
-            --title "Conjectures of Ashoke Sen: Scope, Exact Tests and Analytic Limits ${{ github.event.inputs.tag }}" \
+            --title "The Conjectures of Ashoke Sen: Proofs, Exact Tests and Open Limits ${{ github.event.inputs.tag }}" \
             --notes-file .github/RELEASE_NOTES.md
