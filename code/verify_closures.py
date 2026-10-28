@@ -6,14 +6,19 @@ Part A, the entropy of small black holes (Section 10, Appendix G):
   A3  the identity H = 2(G - 2) for the Lovelock family lambda_m = 4^(1-m)/m!;
   A4  its Hermite form and the unique root of H = 4, D = 4..40;
   A5  the large-D expansion of that root;
-  A6  rigidity of the top Lovelock coefficient.
+  A6  rigidity of the top Lovelock coefficient;
+  A7  the limits of Phi at the two endpoints.
 Part B, the weak-coupling limit (Section 9, Appendix G):
   B1  the discriminant of Sen's family;
   B2  the reconstruction of h and of the normal form;
   B3  the first-order discriminant of a general family;
   B4  the isotrivial family;
   B5  the vanishing orders along a curve of self-intersection -n;
-  B6  the Euler characteristics of the tadpole identity.
+  B6  the Euler characteristics of the tadpole identity;
+  B7  the orders on F_12, where the D7 divisor contains 7C;
+  B8  the discriminant on the leading D7 locus at finite t;
+  B9  base change of order at most two.
+Part C, the half-BPS coefficients of eta^-24.
 Run: python3 verify_closures.py  (sympy, mpmath).
 """
 import json
@@ -191,6 +196,53 @@ ok('B6 genus of O in |-2K|', sp.expand(-(chiO) - (-2) * (-2 + 1) * K2) == 0)
 ok('B6 genus of D_B in |-8K|', sp.expand(-(chiDB) - (-8) * (-8 + 1) * K2) == 0)
 ok('B6 tangency points h = eta = 0: (-2K)(-4K) = 8K^2', (-2) * (-4) == 8)
 ok('B6 2 chi(Y) = 4 chi(O) + chi(D~)', sp.expand(2 * chiY - (4 * chiO + 2 * chiDB)) == 0)
+
+# ---------------- A7 the upper endpoint of Phi ----------------
+uu = sp.symbols('uu', positive=True)
+for D in range(4, 13):
+    a, b = (D - 2) * (D - 3), (D - 4) * (D - 5)
+    rho = sp.Rational(b, 8 * a)
+    Phi_u = (2 + uu / 2) ** 2 / (uu * (1 + rho * uu))
+    lim = sp.limit(Phi_u, uu, sp.oo)
+    star = 4 - sp.Rational(2 * b, a)
+    ok(f'A7 Phi* at u = 4a/(a-b) D={D}', sp.simplify(Phi_u.subs(uu, sp.Rational(4 * a, a - b)) - star) == 0)
+    if b == 0:
+        ok(f'A7 Phi -> oo as u -> oo D={D}', lim == sp.oo)
+    else:
+        ok(f'A7 Phi -> 2a/b > Phi* as u -> oo D={D}',
+           lim == sp.Rational(2 * a, b) and sp.Rational(2 * a, b) - star == sp.Rational(2 * (a - b) ** 2, a * b) > 0)
+
+# ---------------- B7 F_12: the D7 divisor contains 7C ----------------
+def least_order(k):
+    # monomials (a, b) of -kK on F_12: a >= -k, b <= k, 12 b >= a - k; order b + k on the (-12)-curve
+    return min(b + k for a in range(-k, 13 * k + 1) for b in range(-k, k + 1) if 12 * b >= a - k)
+orders = [least_order(k) for k in (2, 4, 6)]
+ok('B7 least orders of h, eta, chi on F_12 are 2, 4, 5', orders == [2, 4, 5])
+ok('B7 the same from ceil(10k/12)', [sp.ceiling(sp.Rational(10 * k, 12)) for k in (2, 4, 6)] == [2, 4, 5])
+ok('B7 ord(eta^2) = 8 > ord(h chi) = 7, so D_B contains 7C', 2 * orders[1] == 8 and orders[0] + orders[2] == 7)
+ok('B7 witness eta = h^2, chi = 0 has orders (4, 6) on C: nonminimal', (2 * orders[0], 3 * orders[0]) == (4, 6))
+
+# ---------------- B8 the leading D7 locus is not the pole locus at finite t ----------------
+D_on = Delta.subs({h: 1, eta: 1, chi: 1})
+ok('B8 constant family h = eta = chi = 1: Delta = -t^3/2 + 3t^4/16', sp.expand(D_on - (-t ** 3 / 2 + sp.Rational(3, 16) * t ** 4)) == 0)
+ok('B8 at t = 1/10 on eta^2 = h chi, Delta = -77/160000 and 4f^3 is finite',
+   D_on.subs(t, sp.Rational(1, 10)) == sp.Rational(-77, 160000) and f.subs({h: 1, eta: 1, t: sp.Rational(1, 10)}) != 0)
+
+# ---------------- B9 k <= 2: after eps = t^2 the first-order terms vanish ----------------
+eps = sp.symbols('eps')
+cs = sp.symbols('f0:4 g0:4')
+for c in (1, 3):
+    fe = eps ** (2 * c) * sum(cs[i] * eps ** i for i in range(4))
+    ge = eps ** (3 * c) * sum(cs[4 + i] * eps ** i for i in range(4))
+    ft = sp.expand(fe.subs(eps, t ** 2) / t ** (4 * c))
+    gt = sp.expand(ge.subs(eps, t ** 2) / t ** (6 * c))
+    ok(f'B9 c = {c}: rescaled f, g have no t^1 term, so G_0 = h F_0', ft.coeff(t, 1) == 0 and gt.coeff(t, 1) == 0)
+
+# ---------------- C the half-BPS coefficients ----------------
+qq = sp.symbols('qq')
+ser = sp.expand(sp.series(sp.prod([(1 - qq ** m) ** -24 for m in range(1, 6)]), qq, 0, 5).removeO())
+ok('C coefficients of eta^-24 at q^-1..q^3 are 1, 24, 324, 3200, 25650', [ser.coeff(qq, i) for i in range(5)] == [1, 24, 324, 3200, 25650])
+ok('C q eta^-24 has zero coefficient at q^-1', sp.expand(qq * ser).coeff(qq, 0) == 0)
 
 out = {'checks': len(checks), 'parts': sorted({c.split()[0] for c in checks})}
 Path(__file__).with_name('closure-checks.json').write_text(json.dumps(out, indent=2) + '\n')
