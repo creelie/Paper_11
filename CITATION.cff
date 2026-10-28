@@ -25,3 +25,6 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.23747112
     description: Version DOI of release v2.2.0
+  - type: doi
+    value: 10.5281/zenodo.23749469
+    description: Version DOI of release v2.2.1
