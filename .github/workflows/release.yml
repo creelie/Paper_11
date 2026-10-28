@@ -25,6 +25,8 @@ jobs:
           python3 -c "import json; a=json.load(open('/tmp/out.json')); b=json.load(open('siegel_dyons_out.json')); assert a==b, 'tables differ'; print('tables agree')"
           python3 verify_revision.py
           python3 verify_infrared_estimates.py
+          pip install sympy==1.14.0 mpmath==1.3.0
+          python3 verify_closures.py
 
   release:
     needs: checks
