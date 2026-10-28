@@ -35,7 +35,7 @@ The concept DOI of all versions is [10.5281/zenodo.23652472](https://doi.org/10.
 
 ## Contact
 
-Deep Bhattacharjee, d.bhattacharjee@erl-forschung.de, itsdeep@live.com, egspl@proton.me. For anything related to this repository write to egspl@proton.me.
+Deep Bhattacharjee, d.bhattacharjee@erl-forschung.de, itsdeep@live.com, egspl@proton.me; formerly EGSPL, Bhubaneswar, and formerly University of Calcutta (Heramba Chandra College), Golpark, Kolkata; GitHub [creelie](https://github.com/creelie). For anything related to this repository (GitHub-related contact) write to egspl@proton.me.
 
 ## Licence
 
