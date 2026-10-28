@@ -80,7 +80,7 @@ For $\lambda_2=1/8$ and $\lambda_m=0$ for $m\ge3$, with $a=(D-2)(D-3)$ and $b=(D
 The ratio is $1$ for $D=4,5$, it is $\sqrt{11/12}$, $\sqrt{17/20}$, $\sqrt{4/5}$ for $D=6,7,8$, and it decreases to $1/\sqrt2$ as $D\to\infty$. It is the ratio $a_D/a_4$ of Sen's coefficients \eqref{eq:sen320}, for every value of $C$.
 \end{corollary}
 
-The corollary turns Sen's statement into a formula with its domain: the Gauss--Bonnet truncation fixes the horizon in every dimension, the entropy is below the statistical value for every $D\ge6$, and it never falls below $1/\sqrt2$ of it.\footnote{Sen prints \eqref{eq:sen320} with $C=1$ beside it, while his~(3.15) gives $C=1/8$ for the heterotic string; the two differ by the choice of $\alpha'$. Since $a\propto\sqrt C$, the ratio $a_D/a_4$ does not depend on this choice, and $a_4=4\pi$ by Sen's own statement fixes the normalisation.} The solution is the minimum of $\Phi$, and the critical point equation is linear in $1/y$, which is why it can be solved in every dimension.
+The corollary turns Sen's statement into a formula with its domain: the Gauss--Bonnet truncation fixes the horizon in every dimension, the entropy is below the statistical value for every $D\ge6$, and it never falls below $1/\sqrt2$ of it.\footnote{Sen works in units $\alpha'=16$ and sets $C=1$ for the heterotic string in his~(3.15). In his Lagrangian density~(3.16) the Gauss--Bonnet density then has the coefficient $2C=2=\alpha'/8$ relative to the Einstein term, which is the value $\lambda_2=1/8$ of the corollary at $\alpha'=1$, and \eqref{eq:sen320} gives $a_4=4\pi$. Since $a\propto\sqrt C$, the ratio $a_D/a_4$ does not depend on the normalisation.} The solution is the minimum of $\Phi$, and the critical point equation is linear in $1/y$, which is why it can be solved in every dimension.
 
 \begin{theorem}[Prester's completion in every dimension]\label{thm:prester}
 Let $\lambda_m=4^{1-m}/m!$ for every $m\ge1$, and $D\ge4$.
@@ -130,9 +130,68 @@ In $D=4$ the agreement extends to all orders in $1/\sqrt{nw}$ when the supersymm
 \end{remark}
 
 \begin{remark}[what remains open for the heterotic string]\label{rem:heterotic}
-\gap{The heterotic effective action in $D\ge6$ is not the Lovelock action.} It contains no cubic Gauss--Bonnet density, its quartic terms carry $\zeta(3)$, and it has higher-derivative terms in the gauge fields \cite[Section~6]{Prester06} and gravitational Chern--Simons terms \cite[footnote~6]{Prester13}. Theorem~\ref{thm:twocharge} still applies to its pure-curvature part, so the open question is the single statement $R_*=\alpha'$ for the complete action on $AdS_2\times S^{D-2}$, and that requires the full $\alpha'$ expansion, which is not known. The holographic arguments of \cite{DM08,KLS07,LSS07}, which obtain the entropy from the central charge of an $AdS_3$ near-horizon region fixed by symmetries and anomalies, support the statistical value in every dimension; they do not compute $R_*$ from an action.
+The heterotic effective action in $D\ge6$ is not the Lovelock action. It contains no cubic Gauss--Bonnet density, its quartic terms carry $\zeta(3)$, and it has higher-derivative terms in the gauge fields \cite[Section~6]{Prester06} and gravitational Chern--Simons terms \cite[footnote~6]{Prester13}. Theorem~\ref{thm:twocharge} still applies to its pure-curvature part, so the open question is a single statement, \gap{that the complete action on $AdS_2\times S^{D-2}$ has $R_*=\alpha'$ in every $D\ge6$}, and deciding it requires the full $\alpha'$ expansion, which is not known. The holographic arguments of \cite{DM08,KLS07,LSS07} avoid the action: they obtain the entropy from the central charges of an $AdS_3$ near-horizon region, fixed by symmetries and anomalies. In five dimensions this gives the statistical value \cite{DM08}. Theorem~\ref{thm:centralcharge} works out, step by step, what the same argument gives in $D\ge6$.\footnote{The question is not one of Sen's claims. Sen's statement, claim~26, is the Gauss--Bonnet computation of \cite{Sen05stretching}, which Corollary~\ref{cor:gb} proves in every dimension, and Sen attributes the disagreement in $D\ge6$ to the use of an action that is not fully supersymmetric.}
 \end{remark}
 
+\begin{closurebox}{The heterotic string in $D\ge6$: what the central charges decide}
+\begin{theorem}[the central-charge route]\label{thm:centralcharge}
+Let $N=w$ be the winding number, $n$ the momentum and $p=D-3$, so that $D\ge6$ means $3\le p\le7$. Assume, as in \cite{DM08,KLS07}:
+\begin{enumerate}[label=\textup{(A\arabic*)},leftmargin=2.8em]
+\item the near-horizon region of the $N$ strings is $AdS_3\times S^p\times T^{7-p}$, dual to a two-dimensional conformal field theory with Virasoro central charges $c_L$, $c_R$ and an affine $SO(p+1)$ algebra of level $k$ coming from the isometries of $S^p$;
+\item the Chern--Simons terms on $AdS_3$ come only from the Green--Schwarz term of the three-form, so that $c_L-c_R=12N$ and $k=N$ for $p\ge3$ \cite[Eq.~(3.12)]{KLS07};
+\item for $n\gg N$ the number of states of momentum $n$ is given by Cardy's formula, $S=2\pi\sqrt{c_Ln/6}$.
+\end{enumerate}
+Then the following hold.
+\begin{enumerate}[label=\textup{(\roman*)},leftmargin=2em]
+\item $S=4\pi\sqrt{nN}$ if and only if $c_L=24N$, and if and only if $c_R=12N$.
+\item Suppose in addition that the right movers carry the nonlinear superconformal algebra with sixteen supercharges whose $R$-symmetry has the isometry group of $S^p$ as a simple factor, at level $N$: $OSp(4^*|4)$ with $Sp(4)\cong Spin(5)$ for $p=4$, $SU(1,1|4)$ with $SU(4)\cong Spin(6)$ for $p=5$, $F(4)$ with $Spin(7)$ for $p=6$, and $OSp(8|2)$ with $SO(8)$ for $p=7$. Then
+\[
+\begin{aligned}
+p&=4:\ c_R=6N+6, & p&=5:\ c_R=\frac{3(2N^2+9N+1)}{N+3},\\
+p&=6:\ c_R=\frac{2N(2N+11)}{N+4}, & p&=7:\ c_R=\frac{3N(N+9)}{N+5}.
+\end{aligned}
+\]
+For $p=4$ and $p=5$ the algebra has an affine level of negative sign, so no unitary conformal field theory carries it. For $p=5,6,7$, $c_R\ne12N$ for every $N\ge1$, and $c_R/(12N)$ tends to $\tfrac12,\tfrac13,\tfrac14$ as $N\to\infty$.
+\item For $p=3$, that is $D=6$, none of the four superconformal algebras with sixteen supercharges has $SU(2)\times SU(2)$, the isometry group of $S^3$ up to a finite quotient, as its $R$-symmetry; the route of~(ii) has no algebra to use.
+\end{enumerate}
+Hence, under \textup{(A1)}--\textup{(A3)} and the identification of~(ii), the central charges do not give Sen's statistical value $4\pi\sqrt{nw}$ in any dimension $D\ge6$.
+\end{theorem}
+
+\begin{proof}
+(i) By (A3), $S=4\pi\sqrt{nN}$ means $2\pi\sqrt{c_Ln/6}=4\pi\sqrt{nN}$. Both sides are positive, so we may square: $4\pi^2c_Ln/6=16\pi^2nN$. Dividing by $4\pi^2n$ gives $c_L/6=4N$, that is $c_L=24N$. By (A2), $c_R=c_L-12N$, so $c_L=24N$ is the same as $c_R=12N$.
+
+(ii) A nonlinear superconformal algebra is generated by the stress tensor, the supercurrents and the currents of the $R$-symmetry, and the operator product of two supercurrents contains products of two currents. The Jacobi identities of these products fix the Virasoro central charge as a function of the affine level $k$, normalised with long roots of squared length two; the four functions are collected in \cite[Table~2]{KLS07}, from the classification of the nonlinear algebras cited there. We take them one at a time.
+
+For $OSp(4^*|2m)$ the $R$-symmetry is $SU(2)\times Sp(2m)$. Let $k$ be the level of $SU(2)$ and $k_1$ that of $Sp(2m)$. The Jacobi identities give $k_1=-(k+m+2)$ and
+\[
+c=-\frac{[6k-(2m+1)(m-2)](k+m+2)-6k}{k-m+2}.
+\]
+For $m=2$ the factor $(2m+1)(m-2)$ vanishes, and $c=-\big(6k(k+4)-6k\big)/k=-6(k+4)+6=-6k-18$. The isometry group of $S^4$ is $SO(5)$, whose Lie algebra is that of $Sp(4)$, so (ii) sets $k_1=N$. Then $k=-k_1-4=-N-4$ and $c_R=6(N+4)-18=6N+6$. The level $k=-N-4$ is negative. In a unitary theory the state $J^a_{-1}|0\rangle$ of a current $J^a$ has squared norm equal to the level, up to a positive normalisation, so a negative level is excluded.
+
+For $SU(1,1|n)$ with $n\ne2$ the $R$-symmetry is $U(1)\times SU(n)$ with $SU(n)$ at level $k$, and
+\[
+c=\frac{3k(n+2k)+(n-1)\big(1+(n+1)k\big)}{k+n-1}.
+\]
+For $n=4$ the numerator is $6k^2+12k+3+15k=6k^2+27k+3=3(2k^2+9k+1)$ and the denominator is $k+3$. The isometry group of $S^5$ is $SO(6)$, with the Lie algebra of $SU(4)$, so $k=N$, which gives the second formula. The Jacobi identities fix the level of the $U(1)$ current to $-(k+n)=-(N+4)<0$, which excludes unitarity as before. The equation $c_R=12N$ reads $3(2N^2+9N+1)=12N(N+3)$, that is $6N^2+9N-3=0$, or $2N^2+3N-1=0$. Its roots are $(-3\pm\sqrt{17})/4$, which are not integers, so $c_R\ne12N$ for every $N\ge1$.
+
+For $F(4)$ the $R$-symmetry is $Spin(7)$, whose Lie algebra is that of $SO(7)$, the isometry group of $S^6$; with $k=N$,
+\[
+c=\frac{2N(2N+11)}{N+4},
+\]
+and $c_R=12N$ would mean $2(2N+11)=12(N+4)$, that is $8N=-26$, which has no positive solution.
+
+For $OSp(n|2)$ the $R$-symmetry is $SO(n)$ and $c=k(6k+n^2-10)/\big(2(k+n-3)\big)$. For $n=8$, the isometry group of $S^7$, this is $k(6k+54)/\big(2(k+5)\big)=3k(k+9)/(k+5)$, and with $k=N$ the equation $c_R=12N$ would mean $3(N+9)=12(N+5)$, that is $9N=-33$, again with no positive solution.
+
+The limits of $c_R/(12N)$ follow from the leading terms $6N$, $4N$ and $3N$ of the last three formulas.
+
+(iii) The supergroups with sixteen supercharges whose bosonic part is the conformal group $SL(2,\mathbb R)$ times a compact $R$-symmetry are $OSp(8|2)$, $F(4)$, $SU(1,1|4)$ and $OSp(4^*|4)$, with $R$-symmetries $SO(8)$, $Spin(7)$, $U(1)\times SU(4)$ and $SU(2)\times Sp(4)$ \cite[Table~1]{KLS07}. None of these is $SU(2)\times SU(2)$. The algebra with that $R$-symmetry, the large $\mathcal N=4$ algebra $D(2,1;\alpha)$, has eight supercharges.
+
+The final statement combines (i) with (ii) and (iii): in each dimension $D=6,\dots,10$ the route either has no algebra, or has one with no unitary representation, or gives $c_R\ne12N$, while (i) requires $c_R=12N$.
+\end{proof}
+
+The theorem settles the central-charge route under its own hypotheses, and nothing more. In five dimensions the same table shows why the route works there: at $p=2$, where $k=2N$, the algebra $OSp(4^*|4)$ gives $c_R=-6k-18=-12N-18$, while the small $\mathcal N=4$ algebra used in \cite{DM08} gives $c_R=6k=12N$ and therefore Sen's value, in agreement with Corollary~\ref{cor:gb}.\footnote{The superisometry group of the five-dimensional near-horizon solution is $OSp(4^*|4)$ \cite{LSS07}; \cite{KLS07} note the sign of $c_R$ it gives and the non-unitarity of its levels.} The hypotheses (A2) and the choice of algebra in (ii) are not proved: \cite{KLS07} note that the reduction to three dimensions could generate further Chern--Simons terms, and the algebra realised by the near-horizon region in $D\ge6$ has not been derived. \gap{Whether the complete heterotic effective action gives $4\pi\sqrt{nw}$ in $D\ge6$ therefore remains open.}
+\end{closurebox}
+
 \begin{verdict}[claim 26]
-Proved, for the statements Sen makes. The Gauss--Bonnet truncation gives a finite horizon in every dimension, with the entropy \eqref{eq:gbratio} in closed form, equal to the statistical value exactly for $D=4,5$ (Corollary~\ref{cor:gb}). For every action whose corrections are built from curvature, the comparison is the single condition $R_*=\alpha'$ (Theorem~\ref{thm:twocharge}); Prester's Lovelock completion satisfies it with a unique solution in every dimension, and its coefficients are the only ones that do (Theorems~\ref{thm:prester} and~\ref{thm:rigidity}). The statement that the complete heterotic effective action gives $4\pi\sqrt{nw}$ in every $D\ge6$ remains open (Remark~\ref{rem:heterotic}).
+Proved, for the statements Sen makes. The Gauss--Bonnet truncation gives a finite horizon in every dimension, with the entropy \eqref{eq:gbratio} in closed form, equal to the statistical value exactly for $D=4,5$ (Corollary~\ref{cor:gb}). For every action whose corrections are built from curvature, the comparison is the single condition $R_*=\alpha'$ (Theorem~\ref{thm:twocharge}); Prester's Lovelock completion satisfies it with a unique solution in every dimension, and its coefficients are the only ones that do (Theorems~\ref{thm:prester} and~\ref{thm:rigidity}). \gap{The statement that the complete heterotic effective action gives $4\pi\sqrt{nw}$ in every $D\ge6$ remains open.} It is not a statement of Sen, and Theorem~\ref{thm:centralcharge} shows that the central charges of the near-horizon region do not supply it (Remark~\ref{rem:heterotic}).
 \end{verdict}
