@@ -45,7 +45,7 @@
 \newcommand{\Phit}{\widetilde{\Phi}}
 \newcommand{\anaxiaDOIlink}{\href{https://doi.org/10.5281/zenodo.23484160}{\nolinkurl{doi:10.5281/zenodo.23484160}}}
 \renewcommand{\st}{\textsc}
-\newcommand{\zenodoCodeID}{10.5281/zenodo.23670581}
+\newcommand{\zenodoCodeID}{10.5281/zenodo.23652472}
 \newcommand{\paragraphx}[1]{\medskip\noindent\textbf{#1}\ }
 \tolerance=2000
 \emergencystretch=2em
@@ -66,20 +66,20 @@
 
 \subjclass[2020]{81T30; 81T13; 83C57; 11F46; 35L67; 53C26}
 \keywords{S-duality; tachyon condensation; black hole entropy; Siegel modular forms}
-\date{26 October 2026}
+\date{28 October 2026}
 
 \begin{document}
 
 \begin{abstract}
 \itshape
-We examine thirty-six selected statements associated with Ashoke Sen's work on duality, tachyon condensation, black hole indices and string field theory. The purpose is to distinguish mathematical results within a specified framework, physical conjectures, and extensions beyond the assumptions used in a derivation. Exact product expansions reproduce known negative dyon indices in toroidal orbifolds; with the charge cone transcribed correctly, a finite scan contains thirty negative-index charge triples. These numbers concern the full index, whose sign need not agree with a horizon index after hair removal. For tachyon dust we give the characteristic flow, the corrected Hessian sign criterion, and precise hypotheses under which the first focusing time is attained. We also separate the D7 divisor on the F-theory base from its singular pullback to the orientifold cover and give a local weak-coupling family with an $I_0^*$ divisor. These calculations delimit claims; they do not disprove the homogeneous rolling solution or Sen's positivity argument under its stated assumptions. The accompanying formal certificates check specified finite computations and algebraic identities, rather than the catalogue's physical interpretations. Established results and later corrections are credited to their sources.
+We examine thirty-six statements of Ashoke Sen on duality, dyon indices, tachyon condensation, F-theory and black hole entropy, and decide which are proved, which are supported but unproved, and where each stops. We prove that every weak coupling degeneration of F-theory on an elliptic Calabi--Yau variety is, after base change and rescaling, Sen's family, and that one exists exactly when $-2K_B$ has a section. We prove that the entropy of a two-charge small black hole is fixed by one critical value for every curvature-corrected action, so that the Gauss--Bonnet truncation matches the microscopic count only in four and five dimensions and Prester's Lovelock completion is the unique one that matches it in every dimension. Exact product expansions reproduce the known negative dyon indices, and the tachyon-dust caustic concerns the pressureless equations, not the rolling solution.
 \end{abstract}
 
 \maketitle
 
 \begin{quote}
 \small\sloppy
-\noindent\textbf{Note.} This paper was first made public on 25 October 2026, as release \texttt{v1.0.0} of the repository \url{https://github.com/creelie/paper_11} (concept DOI \href{https://doi.org/10.5281/zenodo.23652472}{10.5281/zenodo.23652472}, version DOI \href{https://doi.org/10.5281/zenodo.23652473}{10.5281/zenodo.23652473}); it was revised there on 26 October 2026 as \texttt{v1.0.1} (\href{https://doi.org/10.5281/zenodo.23652641}{10.5281/zenodo.23652641}) and \texttt{v1.1.0} (\href{https://doi.org/10.5281/zenodo.23656435}{10.5281/zenodo.23656435}). The first version counted two of the thirty-six statements as false and twenty-one negative charge triples; it used a charge cone with the discriminant in place of the linear inequality of Sen's equation (3.9), and its dust theorem replaced a supremum by a maximum without an attainment hypothesis. The later versions corrected the cone, extended the scan to thirty triples, restated the two verdicts as limits of scope, since the negative indices are full indices that the hair analysis of Chattopadhyaya and David already accounts for and the caustic concerns the pressureless effective equations rather than the homogeneous solution, and added the infrared appendices. This version is the same mathematics in a single-column form for submission, released as \texttt{v2.0.0} of the same repository (\href{https://doi.org/10.5281/zenodo.23669248}{10.5281/zenodo.23669248}); the two misprints of Chattopadhyaya and David recorded in Section~\ref{sec:positivity} and Appendix~\ref{app:computation} were added in release \texttt{v2.0.1}, archived as \href{https://doi.org/\zenodoCodeID}{\zenodoCodeID}, with the exact program that computes every table, the Lean~4 certificates of the finite statements, and the scripts that check the explicit constants of the appendices.
+\noindent\textbf{Note.} This paper was first made public on 25 October 2026, as release \texttt{v1.0.0} of the repository \url{https://github.com/creelie/paper_11} (concept DOI \href{https://doi.org/10.5281/zenodo.23652472}{10.5281/zenodo.23652472}, version DOI \href{https://doi.org/10.5281/zenodo.23652473}{10.5281/zenodo.23652473}); it was revised there on 26 October 2026 as \texttt{v1.0.1} (\href{https://doi.org/10.5281/zenodo.23652641}{10.5281/zenodo.23652641}) and \texttt{v1.1.0} (\href{https://doi.org/10.5281/zenodo.23656435}{10.5281/zenodo.23656435}). The first version counted two of the thirty-six statements as false and twenty-one negative charge triples; it used a charge cone with the discriminant in place of the linear inequality of Sen's equation (3.9), and its dust theorem replaced a supremum by a maximum without an attainment hypothesis. The later versions corrected the cone, extended the scan to thirty triples, restated the two verdicts as limits of scope, since the negative indices are full indices that the hair analysis of Chattopadhyaya and David already accounts for and the caustic concerns the pressureless effective equations rather than the homogeneous solution, and added the infrared appendices. The same mathematics was set in a single-column form for submission as release \texttt{v2.0.0} of the same repository (\href{https://doi.org/10.5281/zenodo.23669248}{10.5281/zenodo.23669248}); the two misprints of Chattopadhyaya and David recorded in Section~\ref{sec:positivity} and Appendix~\ref{app:computation} were added in release \texttt{v2.0.1} (\href{https://doi.org/10.5281/zenodo.23670581}{10.5281/zenodo.23670581}), with the exact program that computes every table, the Lean~4 certificates of the finite statements, and the scripts that check the explicit constants of the appendices. This version, release \texttt{v2.1.0}, proves claims~23 and~26, which the earlier versions recorded as limits of scope: Theorem~\ref{thm:normalform} with Corollaries~\ref{cor:existence} and~\ref{cor:k3cover}, and Theorems~\ref{thm:twocharge}, \ref{thm:prester} and~\ref{thm:rigidity}, with full proofs in Appendix~\ref{app:closures}.
 \end{quote}
 
 \input{sections/sec01_intro}
@@ -103,6 +103,7 @@ We examine thirty-six selected statements associated with Ashoke Sen's work on d
 \input{sections/appD_perturbative}
 \input{sections/appE_infrared}
 \input{sections/appF_softremainder}
+\input{sections/appG_closures}
 
 \input{sections/declarations}
 \begingroup\sloppy\emergencystretch=5em\input{sections/bibliography}\endgroup

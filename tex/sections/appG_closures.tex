@@ -1,0 +1,148 @@
+\section{Proofs for the Sen limit and the small black holes}\label{app:closures}
+
+This appendix proves the results of Sections~\ref{ssec:normalform} and~\ref{ssec:small}. Every step is written out; the only external inputs are the adjunction formula, the standard facts on double covers of surfaces recalled in the proof of Corollary~\ref{cor:k3cover}, and the Euler numbers of the Kodaira fibres $I_1$ and $II$.
+
+\subsection{The weak coupling limit}
+
+Throughout, $B$ is a normal projective variety, $L$ a line bundle on $B$, and $v$ the $\eps$-adic valuation: for a series $s=\sum_is_i\eps^i$ with coefficients $s_i\in H^0(B,L^k)$, $v(s)=\min\{i:s_i\ne0\}$. Since $B$ is irreducible, the ring $\bigoplus_kH^0(B,L^k)$ has no zero divisors, so $v(st)=v(s)+v(t)$ and $v(s+t)\ge\min(v(s),v(t))$, with equality when $v(s)\ne v(t)$.
+
+\begin{proof}[Proof of Theorem~\ref{thm:normalform}]
+\emph{Step 1.} Neither $f$ nor $g$ vanishes identically: if $f\equiv0$ then $j\equiv0$, and if $g\equiv0$ then $j\equiv1728$. Put $a=v(f)$, $b=v(g)$, $d=v(\Delta)$, so that $v(j)=3a-d$.
+
+\emph{Step 2.} If $3a<2b$, the term $4f^3$ has the smaller valuation, $d=3a$ and $v(j)=0$. If $3a>2b$, then $d=2b$ and $v(j)=3a-2b>0$. Neither is weakly coupled, so $3a=2b$; hence $a=2c$, $b=3c$ for an integer $c\ge0$, and $d>3a$ because $v(j)<0$.
+
+\emph{Step 3.} If $c$ is odd, the base change $\eps=t^2$ doubles every valuation and makes $c$ even. With $c=2r$, the rescaling $(f,g)\mapsto(t^{-4r}f,t^{-6r}g)$ gives $v(f)=v(g)=0$ and $v(\Delta)>0$. The coefficients are still sections of $L^4$ and $L^6$, and no negative powers of $t$ occur because $a$ and $b$ were the least exponents. The order of the base change so far is $k_1\in\{1,2\}$.
+
+\emph{Step 4.} Let $f_0,g_0$ be the coefficients of $t^0$. They are nonzero, and the coefficient of $t^0$ in $\Delta$ gives $4f_0^3+27g_0^2=0$. The quotient $h=3g_0/(2f_0)$ is a rational section of $L^2$, and
+\[
+h^2=\frac{9g_0^2}{4f_0^2}=\frac{9}{4f_0^2}\cdot\Big(-\frac{4f_0^3}{27}\Big)=-\frac{f_0}{3},\qquad h^3=h\cdot h^2=-\frac{g_0}{2}.
+\]
+In a trivialisation of $L$ near a point of $B$, $h$ is a rational function whose square is regular, so it is a root of the monic polynomial $X^2-h^2$ over the local ring. The local ring of a normal variety is integrally closed, so $h$ is regular. Thus $h\in H^0(B,L^2)$, $h\ne0$, $f_0=-3h^2$ and $g_0=-2h^3$, which also proves part~(iii).
+
+\emph{Step 5.} Write $f=-3h^2+tF$ and $g=-2h^3+tG$ with $F\in H^0(L^4)[[t]]$ and $G\in H^0(L^6)[[t]]$. Expanding,
+\[
+\Delta=4(-3h^2+tF)^3+27(-2h^3+tG)^2=108\,t\,h^3\big(hF_0-G_0\big)+O(t^2),
+\]
+since $4\cdot3\cdot9h^4=108h^4$ and $27\cdot2\cdot2h^3=108h^3$. If $G_0=hF_0$, then $G-hF=t\Psi$ for a series $\Psi$, and $\eta_t=F$, $\chi_t=-12\Psi$ give
+\[
+-2h^3+t\,h\,\eta_t-\tfrac1{12}t^2\chi_t=-2h^3+t\,hF+t^2\Psi=-2h^3+tG=g,
+\]
+which is \eqref{eq:normalform} with $k=k_1$. If $G_0\ne hF_0$, make the base change $t=s^2$ and put $\eta_s=sF(s^2)$, $\chi_s=-12\big(G(s^2)-hF(s^2)\big)$. Then $-3h^2+s\eta_s=-3h^2+s^2F(s^2)=f$ and
+\[
+-2h^3+s\,h\,\eta_s-\tfrac1{12}s^2\chi_s=-2h^3+s^2hF(s^2)+s^2\big(G(s^2)-hF(s^2)\big)=-2h^3+s^2G(s^2)=g,
+\]
+which is \eqref{eq:normalform} in the parameter $s$, with $k=2k_1\in\{2,4\}$. This proves part~(i).
+
+\emph{Part (ii).} If $h\ne0$, then $f_0=-3h^2\ne0$ and $v(f)=0$. The identity of Theorem~\ref{thm:senlimitk3} is a polynomial identity in $t,h,\eta,\chi$, so it holds with $\eta_t,\chi_t$ in place of $\eta,\chi$: $\Delta$ is divisible by $t^2$. Hence $v(j)=-v(\Delta)\le-2$.
+\end{proof}
+
+\begin{proof}[Proof of Corollary~\ref{cor:existence}]
+A weakly coupled degeneration produces $h\in H^0(L^2)\setminus0$ by Theorem~\ref{thm:normalform}(i). Conversely, for $h\ne0$ take $\eta=h^2$ and $\chi=0$. Theorem~\ref{thm:senlimitk3} gives $\Delta=-9t^2h^6+4t^3h^6=h^6t^2(4t-9)\not\equiv0$, so the family is weakly coupled by Theorem~\ref{thm:normalform}(ii). Since $f=(t-3)h^2$, $4f^3=4(t-3)^3h^6$, and the factor $h^6$ cancels in $j=1728\cdot4f^3/\Delta$.
+\end{proof}
+
+\begin{proof}[Proof of Proposition~\ref{prop:rigidcurves}]
+(i) By adjunction $K_B\cdot C+C^2=2g(C)-2=-2$, so $L\cdot C=-K_B\cdot C=2-n$. Let $s\in H^0(L^k)$ vanish to order exactly $a$ on $C$, and write $s=\sigma^as'$ with $\sigma$ a section of $\mathcal O(C)$ defining $C$. Then $s'$ is a section of $L^k(-aC)$ that does not vanish identically on $C\cong\PP^1$, so its restriction is a nonzero section of a line bundle of degree $(kL-aC)\cdot C=k(2-n)+an$. This degree is nonnegative, so $a\ge k(n-2)/n$. For $n\ge5$, $4(n-2)/n\ge12/5$ and $6(n-2)/n\ge18/5$, so $\operatorname{ord}_Cf\ge3$ and $\operatorname{ord}_Cg\ge4$.
+
+(ii) Let $a=\operatorname{ord}_Cf\ge3$ and $b=\operatorname{ord}_Cg\ge4$. If $3a=2b$, then $a$ is even, so $a\ge4$ and $b=3a/2\ge6$, and the model is not minimal along $C$. If $3a<2b$, then $\Delta=\sigma^{3a}\Delta'$ with $\Delta'\equiv4f'^3\pmod\sigma$ where $f=\sigma^af'$, and $j=1728\cdot4f'^3/\Delta'$ equals $1728$ at the generic point of $C$. If $3a>2b$, then $\Delta=\sigma^{2b}\Delta'$ with $\Delta'\equiv27g'^2\pmod\sigma$ and $j=1728\cdot4\sigma^{3a-2b}f'^3/\Delta'$ vanishes on $C$.
+
+(iii) In the normal form $h$ is a section of $L^2$, so by part~(i) with $k=2$ it vanishes on $C$ to order at least $\lceil2(n-2)/n\rceil$, which is $2$ for $n\ge5$ and $1$ for $n=3,4$. Base change and rescaling do not change $h$ (Step~4 above).
+\end{proof}
+
+\begin{proof}[Proof of Corollary~\ref{cor:k3cover}]
+We use the following facts on a double cover $\pi:X\to B$ of a smooth surface branched along a divisor $O\in|L^2|$, given by $\xi^2=h$ in the total space of $L$ \cite[Chapters~I and~III]{BHPV04}: $\pi_*\mathcal O_X=\mathcal O_B\oplus L^{-1}$; $X$ is normal if and only if $O$ is reduced; if $O$ is reduced with at most simple singularities, $X$ has at most rational double points; and the dualising sheaf is $\omega_X=\pi^*(K_B\otimes L)$.
+
+(i) With $L=K_B^{-1}$, $\omega_X=\pi^*\mathcal O_B=\mathcal O_X$. Rational double points are canonical, so the minimal resolution $\widetilde X$ has trivial canonical bundle. For rational $B$, $h^1(\mathcal O_X)=h^1(\mathcal O_B)+h^1(K_B)=0+h^1(\mathcal O_B)=0$ by Serre duality, so $\widetilde X$ is a K3 surface.
+
+(ii) On an Enriques surface $K_B\ne0$ and $2K_B=0$, so $L^2$, $L^4$ and $L^6$ are trivial and their sections are constants. Thus $h$ is a nonzero constant, $f$ and $g$ are series with constant coefficients, and $j$ does not depend on the point of $B$. The equation $\xi^2=h$ with $\xi$ a section of $K_B$ defines the unramified double cover attached to the two-torsion class $K_B$, which is the K3 surface covering $B$. The discriminant is a nonzero constant for $\eps\ne0$ small, so there is no seven-brane, and $O=\emptyset$.
+
+(iii) We assume, as for $\PP^2$ and the del Pezzo surfaces of degree at least two, that $|{-K_B}|$ has no base points, so that $|{-kK_B}|$ has none for $k\ge1$. By Bertini's theorem a general $h$ defines a smooth curve $O$, and a general $\eta_0$ meets it transversally in $(-2K_B)\cdot(-4K_B)=8K_B^2$ points, at which a general $\chi_0$ does not vanish. The linear system of the curves $\eta_0^2=h\chi_0$, with $h$ fixed, has no base points: at a point with $h\ne0$ some member does not vanish, and at a point with $h=0$ the member $\eta_0^2$ does not vanish for a suitable $\eta_0$. By Bertini's theorem its general member $D_B$ is smooth. A point of $D_B\cap O$ has $h=0$ and hence $\eta_0=0$. Near such a point $(h,\eta_0)$ are local coordinates and $D_B$ is the graph $h=\eta_0^2/\chi_0$, which is tangent to $O=\{h=0\}$ with intersection multiplicity $2$; this accounts for $D_B\cdot O=16K_B^2=2\cdot8K_B^2$. On $X$, $(\xi,\eta_0)$ are local coordinates and $D_X=\{\eta_0^2=\xi^2\chi_0\}$ has the two branches $\eta_0=\pm\xi\sqrt{\chi_0}$, a node. Each branch, parametrised by $\xi$, maps to $D_B$, parametrised by $\eta_0=\pm\xi\sqrt{\chi_0}$, isomorphically. Away from $O$ the map $\pi$ is unramified. Hence the normalisation $\widetilde D$ of $D_X$ is an unramified double cover of $D_B$.
+
+(iv) For a curve $\Gamma$ on $B$ of arithmetic genus $p_a$, $2p_a-2=\Gamma\cdot(\Gamma+K_B)$. For the smooth curves $O\in|{-2K_B}|$ and $D_B\in|{-8K_B}|$ this gives $\chi(O)=-(-2K_B)\cdot(-K_B)=-2K_B^2$ and $\chi(D_B)=-(-8K_B)\cdot(-7K_B)=-56K_B^2$, and an unramified double cover doubles the Euler characteristic, $\chi(\widetilde D)=-112K_B^2$. For general $f,g$ the discriminant $\Delta\in|{-12K_B}|$ has ordinary cusps at the $(-4K_B)\cdot(-6K_B)=24K_B^2$ points $f=g=0$, with fibres of type $II$ and Euler number $2$, and is smooth elsewhere, with fibres of type $I_1$ and Euler number $1$. Its arithmetic genus satisfies $2p_a-2=132K_B^2$; each cusp lowers the geometric genus by one and has one preimage in the normalisation, so $\chi(\Delta)=2-2(p_a-24K_B^2)=-84K_B^2$. The smooth fibres have Euler number $0$, so
+\[
+\chi(Y)=1\cdot\big(\chi(\Delta)-24K_B^2\big)+2\cdot24K_B^2=-108K_B^2+48K_B^2=-60K_B^2.
+\]
+Finally $4\chi(O)+\chi(\widetilde D)=-8K_B^2-112K_B^2=-120K_B^2=2\chi(Y)$. For $B=\PP^2$, $K_B^2=9$ and $\chi(Y)=-540$.
+\end{proof}
+
+\subsection{The small black holes}
+
+\begin{proof}[Proof of Theorem~\ref{thm:twocharge}]
+Write $P=2(u_T^2e_1^2+e_2^2u_T^{-2})$ and $F=v_1v_2^{n_D/2}\big[P/v_1^2+Q\big]=v_2^{n_D/2}v_1^{-1}\big(P-R\big)$, so that $f=Ku_SF$. The equations of the entropy function \cite[Section~3]{Prester06} are $\partial f/\partial u_S=\partial f/\partial u_T=\partial f/\partial v_1=\partial f/\partial v_2=0$ and $\partial f/\partial e_i=q_i$, and the entropy is $2\pi(e_1q_1+e_2q_2-f)$.
+
+The equation for $u_S$ is $F=0$, that is $P=R$; in particular $f=0$ on a solution. The equation for $u_T$ is $\partial P/\partial u_T=0$, that is $u_T^2e_1^2=e_2^2u_T^{-2}$, so $u_T^2=e_2/e_1$ and $P=4e_1e_2$. The charges are
+\[
+q_1=Ku_Sv_2^{n_D/2}\frac{4u_T^2e_1}{v_1},\qquad q_2=Ku_Sv_2^{n_D/2}\frac{4e_2}{u_T^2v_1},
+\]
+so with $\kappa=Ku_Sv_2^{n_D/2}/v_1$ one has $e_1q_1=e_2q_2=4\kappa u_T^2e_1^2=\kappa P$ and $q_1q_2=16\kappa^2e_1e_2=4\kappa^2P$. Hence
+\[
+S_{\rm BH}=2\pi(e_1q_1+e_2q_2)=4\pi\kappa P=2\pi\sqrt{q_1q_2P}=4\pi\sqrt{nw\,P/\alpha'}.
+\]
+At fixed $u_S,u_T,e_i$ and on the locus $P=R$,
+\[
+\frac{\partial F}{\partial v_1}=-\frac{v_2^{n_D/2}}{v_1}\frac{\partial R}{\partial v_1},\qquad\frac{\partial F}{\partial v_2}=-\frac{v_2^{n_D/2}}{v_1}\frac{\partial R}{\partial v_2},
+\]
+because the derivatives of the prefactor multiply $P-R=0$. So a solution is a critical point of $R$ with $R=P=4e_1e_2>0$, and $S_{\rm BH}=4\pi\sqrt{nwR_*/\alpha'}$.
+
+Conversely, given a critical point with $R_*>0$ and charges $n,w>0$, the equations $P=R_*$, $u_T^2=e_2/e_1$ and $q_1/q_2=e_2/e_1$ determine $e_1e_2=R_*/4$ and $e_2/e_1=n/w$, hence $e_1,e_2,u_T$, and then $q_1$ determines $u_S>0$. So the correspondence is a bijection. The statistical value requires $R_*=\alpha'$, that is $e_1e_2=\alpha'/4$.
+\end{proof}
+
+\begin{proof}[Proof of Corollary~\ref{cor:lovelock}]
+With $Q=H-G/v_1$, $R=v_1G-v_1^2H$, so $\partial_{v_1}R=G-2v_1H$ and $\partial_{v_2}R=v_1(G'-v_1H')$. At a critical point $G=2v_1H$, and then $R=v_1^2H$; since $R>0$ and $v_1>0$, $H>0$ and $G>0$. Substituting $v_1=G/(2H)$, $R_*=G^2/(4H)=\Phi/4$, and
+\[
+G'-v_1H'=\frac{2G'H-GH'}{2H}=\frac{H^2\Phi'}{2GH},\qquad\Phi'=\frac{G\,(2G'H-GH')}{H^2},
+\]
+so $\partial_{v_2}R=0$ if and only if $\Phi'=0$. Conversely a critical point of $\Phi$ with $G,H>0$ gives $v_1=G/(2H)>0$ and a critical point of $R$ with $R_*=\Phi/4>0$. By Theorem~\ref{thm:twocharge}, $S_{\rm BH}=4\pi\sqrt{nw\Phi/4}=2\pi\sqrt{nw\Phi}$.
+\end{proof}
+
+\begin{proof}[Proof of Corollary~\ref{cor:gb}]
+For $\lambda_1=1$, $\lambda_2=1/8$, \eqref{eq:GH} gives $G=2+a/(2y)$ and $H=(a/y)\big(1+b/(8y)\big)$, since $n_D(n_D-1)=a$ and $n_D(n_D-1)(n_D-2)(n_D-3)=ab$. Put $u=a/y$ and $\rho=b/(8a)$, so that $\Phi=(2+u/2)^2/\big(u(1+\rho u)\big)$. Both $G$ and $H$ are positive for $y>0$. The logarithmic derivative in $u$ vanishes when
+\[
+\frac{1}{2+u/2}=\frac1u+\frac{\rho}{1+\rho u}=\frac{1+2\rho u}{u(1+\rho u)},
+\]
+that is $2u(1+\rho u)=(4+u)(1+2\rho u)$, which reduces to $u(1-8\rho)=4$. Since $8\rho=b/a<1$, there is exactly one solution, $u=4a/(a-b)$, so $y=(a-b)/4$. There
+\[
+G=\frac{2(2a-b)}{a-b},\qquad H=\frac{4a}{a-b}\cdot\frac{2a-b}{2(a-b)},\qquad \Phi_*=\frac{G^2}{H}=\frac{2(2a-b)}{a}=4-\frac{2b}{a},
+\]
+and $v_1=G/(2H)=(a-b)/(2a)=2y/a$. By Corollary~\ref{cor:lovelock}, $S_{\rm BH}/(4\pi\sqrt{nw})=\sqrt{\Phi_*/4}=\sqrt{1-b/(2a)}$. Since $\Phi\to\infty$ as $u\to0$ and as $u\to\infty$, the critical point is the minimum. The ratio $b/a$ increases with $D\ge5$ and tends to $1$, which gives the limit $1/\sqrt2$. In \eqref{eq:sen320}, $a_D/a_4=\big\{(2/a)(8a-4b)\big\}^{1/2}/4=\sqrt{1-b/(2a)}$, independently of $C$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:prester}]
+(i) Shifting the index by one in $G$,
+\[
+G=2\lambda_1+\sum_{k\ge1}\frac{2(k+1)\lambda_{k+1}n_D!}{(n_D-2k)!}\,y^{-k},\qquad H=\sum_{k\ge1}\frac{\lambda_k\,n_D!}{(n_D-2k)!}\,y^{-k},
+\]
+both sums running over $1\le k\le\lfloor n_D/2\rfloor$. So $H=2(G-2\lambda_1)$ if and only if $\lambda_k=4(k+1)\lambda_{k+1}$ for these $k$, which holds for $\lambda_k=4^{1-k}/k!$.
+
+(ii) With $H=2(G-2)$, $R=v_1G-2v_1^2(G-2)=4v_1^2+v_1G\,(1-2v_1)$. On $v_1=1/2$ this is $1$. Moreover $\partial_{v_2}R=v_1G'(1-2v_1)$, and $G'<0$ because every term of $G-2$ is a positive multiple of a negative power of $y$, and the term $k=1$ is present for $n_D\ge2$. So a critical point with $v_1>0$ has $v_1=1/2$. Then $\partial_{v_1}R=8v_1+G(1-4v_1)=4-G$ vanishes when $G=4$, equivalently $H=4$, and $R_*=1$. Theorem~\ref{thm:twocharge} gives $S_{\rm BH}=4\pi\sqrt{nw}$.
+
+(iii) $H(y)=\sum_{k=1}^{\lfloor n_D/2\rfloor}c_ky^{-k}$ with every $c_k>0$, so $H$ decreases strictly from $+\infty$ to $0$ on $(0,\infty)$ and $H=4$ has exactly one positive root. Since $\lambda_mn_D!/(n_D-2m)!=4\,(n_D)_{2m}/(m!\,4^m)$ with $(N)_{j}=N(N-1)\cdots(N-j+1)$, and $(2m)!/m!=2^m(2m-1)!!$,
+\[
+\frac H4+1=\sum_{m\ge0}\frac{(n_D)_{2m}}{m!\,(4y)^m}=\sum_{m\ge0}\binom{n_D}{2m}(2m-1)!!\Big(\frac1{2y}\Big)^m=I_{n_D}\Big(\frac1{2y}\Big).
+\]
+A set of $m$ disjoint pairs in an $N$-element set is chosen in $\binom N{2m}(2m-1)!!$ ways, which is the stated count of involutions. With $\operatorname{He}_N(x)=\sum_m(-1)^m\binom N{2m}(2m-1)!!\,x^{N-2m}$ one has $i^{-N}\operatorname{He}_N(ix)=\sum_m\binom N{2m}(2m-1)!!\,x^{N-2m}=x^NI_N(x^{-2})$, and $x=\sqrt{2y}$ gives the Hermite form.
+
+(iv) Put $N=n_D$ and $x=N^2/(4y)$, so that $I_N(1/(2y))=F_N(x)$ with
+\[
+F_N(x)=\sum_{m\le N/2}\frac{x^m}{m!}\prod_{j=0}^{2m-1}\Big(1-\frac jN\Big).
+\]
+For numbers $a_j\in[0,1]$ with sum $\sigma$, $1-\sigma\le\prod(1-a_j)\le1-\sigma+\sigma^2/2$. Here $\sigma=m(2m-1)/N$, so the product is $1-m(2m-1)/N+O(m^4/N^2)$ with an absolute constant. Since $\sum_m m(2m-1)x^m/m!=(2x^2+x)e^x$ and $\sum_m m^4x^m/m!$ is bounded on $[0,2]$, and since the terms with $m>N/2$ of these series and of $e^x$ are at most $\sum_{m>N/2}m^4 2^m/m!=O(N^{-2})$ for $x\in[0,2]$,
+\[
+F_N(x)=e^x\Big(1-\frac{2x^2+x}{N}\Big)+O(N^{-2})\quad\text{uniformly on }[0,2].
+\]
+$F_N$ is increasing, $F_N(0)=1$ and $F_N(2)\to e^2>2$, so the root $x_N$ of $F_N=2$ lies in $(0,2)$ for large $N$, and the derivative of the right-hand side is bounded away from $0$ near $\ln2$. Hence $x_N=\ln2+(2\ln^22+\ln2)/N+O(N^{-2})$, and
+\[
+y_D=\frac{N^2}{4x_N}=\frac{N^2}{4\ln2}\Big(1-\frac{2\ln2+1}{N}+O(N^{-2})\Big)=\frac{N^2}{4\ln2}-\frac{(2\ln2+1)N}{4\ln2}+O(1).\qedhere
+\]
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:rigidity}]
+Write $p_k=4^{1-k}/k!$ and $N=n_D$.
+
+(i) The coefficient $\lambda_m$ enters $H$ only if $N-2m\ge0$, and $N-2m=-2$ for $D=2m$ and $-1$ for $D=2m+1$. It enters $G$ through the term $2m\lambda_mN!/(N+2-2m)!\,y^{1-m}$, with $N+2-2m=0$ or $1$. Hence $G_\beta=G_1+(\beta-1)c\,y^{1-m}$ with $c>0$, and $H$ does not depend on $\beta$. All coefficients of $G_\beta$ and $H$ are positive, so both are positive on $(0,\infty)$. As $y\to\infty$, $G_\beta\to2$ and $H\to0^+$, so $\Phi_\beta\to\infty$. As $y\to0$, $G_\beta\sim\beta c\,y^{1-m}$ and $H\sim c'y^{1-m}$ with $c'>0$, the leading term of $H$ having index $m-1$ in both parities, so $\Phi_\beta\sim(\beta c)^2y^{1-m}/c'\to\infty$ since $m\ge2$. The minimum is attained.
+
+(ii) By Theorem~\ref{thm:prester}(i), $H=2(G_1-2)$, so $\Phi_1-4=(G_1^2-8G_1+16)/H=(G_1-4)^2/H\ge0$ for all $y>0$. If $\beta>1$, then $G_\beta>G_1>0$ and $\Phi_\beta>\Phi_1\ge4$ everywhere, so every critical point has $\Phi_\beta>4$ and, by Corollary~\ref{cor:lovelock}, $S_{\rm BH}>4\pi\sqrt{nw}$.
+
+(iii) If $0<\beta<1$, then at the root $y_D$ of Theorem~\ref{thm:prester}, $0<G_\beta(y_D)<G_1(y_D)=4$ and $\Phi_\beta(y_D)<16/4=4$. So the minimum of $\Phi_\beta$ is below $4$, and the solution there has $S_{\rm BH}<4\pi\sqrt{nw}$.
+
+For the last statement, argue by induction on $m\ge2$ in $D=2m$, where $\lambda_1,\dots,\lambda_m$ are the only coefficients present. If $\lambda_k=p_k$ for $k<m$, write $\lambda_m=\beta p_m$ with $\beta>0$; parts~(ii) and~(iii) leave only $\beta=1$.
+\end{proof}

@@ -2,7 +2,8 @@
 
 Run from the repository root:  python3 figures/make_figures.py
 Reads code/siegel_dyons_out.json for the orbifold indices and writes
-figures/fig_indices.png, figures/fig_caustic.png, figures/fig_verdicts.png.
+figures/fig_indices.png, figures/fig_caustic.png, figures/fig_verdicts.png,
+figures/fig_weakcoupling.png, figures/fig_valley.png, figures/fig_rigidity.png.
 """
 import json
 import os
@@ -103,8 +104,8 @@ def fig_caustic():
 
 def fig_verdicts():
     verdict = {1: "c", 2: "p", 3: "c", 4: "p", 5: "p", 6: "p", 7: "p", 8: "p", 9: "i", 10: "c", 11: "p", 12: "p", 13: "p",
-               14: "p", 15: "c", 16: "p", 17: "i", 18: "c", 19: "p", 20: "p", 21: "p", 22: "p", 23: "i", 24: "p", 25: "p",
-               26: "i", 27: "c", 28: "p", 29: "c", 30: "p", 31: "p", 32: "c", 33: "p", 34: "c", 35: "p", 36: "c"}
+               14: "p", 15: "c", 16: "p", 17: "i", 18: "c", 19: "p", 20: "p", 21: "p", 22: "p", 23: "p", 24: "p", 25: "p",
+               26: "p", 27: "c", 28: "p", 29: "c", 30: "p", 31: "p", 32: "c", 33: "p", 34: "c", 35: "p", 36: "c"}
     areas = [("Duality", [1, 2, 3, 4, 5]), ("Dyons", [6, 7, 8, 9, 10, 36]), ("Tachyons", list(range(11, 22))),
              ("F-theory", [22, 23]), ("Entropy", list(range(24, 30))), ("SFT, soft, networks", list(range(30, 36)))]
     colour = {"p": GREEN, "c": BLUE, "i": YELLOW, "f": BURNT}
@@ -126,8 +127,8 @@ def fig_verdicts():
     ax.view_init(elev=62, azim=-38)
     ax.set_box_aspect((1.3, 2.0, 0.45))
     from matplotlib.patches import Patch
-    ax.legend(handles=[Patch(color=GREEN, label="proved (22)"), Patch(color=BLUE, label="confirmed, unproved (10)"),
-                       Patch(color=YELLOW, label="scope limited (4)")],
+    ax.legend(handles=[Patch(color=GREEN, label="proved (24)"), Patch(color=BLUE, label="confirmed, unproved (10)"),
+                       Patch(color=YELLOW, label="scope limited (2)")],
               loc="upper left", fontsize=8, frameon=False)
     fig.text(0.5, 0.94, "Selected statements: established, supported, scope limited", ha="center", fontsize=12)
     fig.subplots_adjust(left=0.02, right=0.98, bottom=0.04, top=0.95)
@@ -140,7 +141,118 @@ def fig_verdicts():
     save(fig, "fig_verdicts.png")
 
 
+def fig_weakcoupling():
+    P = np.polynomial.Polynomial
+    x = P([0, 1])
+    h, eta, chi = x**4 - 3 * x**2 + 1, x**8 + 2, 3 * x**12 + 5
+    xs = np.linspace(-2.3, 2.3, 461)
+    les = np.linspace(-3.0, -0.5, 51)
+    XX, LE = np.meshgrid(xs, les, indexing="ij")
+    E = 10.0 ** LE
+
+    def logj(xv, ev):
+        f = -3 * h(xv)**2 + ev * eta(xv)
+        g = -2 * h(xv)**3 + ev * h(xv) * eta(xv) - ev**2 * chi(xv) / 12
+        return np.log10(1 + np.abs(1728 * 4 * f**3 / (4 * f**3 + 27 * g**2)))
+    Z = np.clip(logj(XX, E), 3, 11)  # values below 10^3 are drawn on the floor
+    fig = plt.figure(figsize=(W, H))
+    ax = fig.add_subplot(111, projection="3d")
+    ax.plot_surface(XX, LE, Z, cmap="Blues", linewidth=0, antialiased=False, rstride=1, cstride=2, shade=True, alpha=0.6, vmin=0, vmax=11)
+    for r in h.roots():
+        ax.plot([r.real] * len(les), les, np.clip(logj(r.real, 10.0 ** les), 3, 11) + 0.08, color=BURNT, linewidth=2.6, zorder=10)
+    for r in (eta**2 - h * chi).roots():
+        if abs(r.imag) < 1e-9 and abs(r.real) <= 2.3:
+            ax.plot([r.real] * len(les), les, np.full(len(les), 11.0), color="black", linewidth=1.4, linestyle="--", zorder=10)
+            ax.plot([r.real] * len(les), les, np.full(len(les), 3.0), color="black", linewidth=1.0, linestyle=":", zorder=10)
+    ax.set_xlabel(r"base coordinate $x$", labelpad=8)
+    ax.set_ylabel(r"$\log_{10}\varepsilon$", labelpad=8)
+    ax.set_zlabel(r"$\log_{10}(1+|j|)$", labelpad=6)
+    ax.set_zlim(3, 11.5)
+    ax.view_init(elev=24, azim=-72)
+    ax.set_box_aspect((2.2, 1.2, 1.0))
+    fig.text(0.5, 0.94, r"Sen's weak-coupling limit over $\mathbb{P}^1$: $|j|$ grows like $\varepsilon^{-2}$ away from the O7-planes", ha="center", fontsize=12)
+    fig.text(0.5, 0.05, r"orange: O7-planes $h=0$, where $j\to1728$; black dashed: D7-branes $\eta^2=h\chi$, where $j=\infty$", ha="center", fontsize=10)
+    fig.subplots_adjust(left=0.02, right=0.98, bottom=0.06, top=0.95)
+    save(fig, "fig_weakcoupling.png")
+
+
+def lovelock_GH(D, lam):
+    from math import factorial
+    n = D - 2
+
+    def G(y):
+        return sum(2 * m * lam[m - 1] * factorial(n) / factorial(n + 2 - 2 * m) * y ** (1 - m)
+                   for m in range(1, len(lam) + 1) if n + 2 - 2 * m >= 0)
+
+    def H(y):
+        return sum(lam[m - 1] * factorial(n) / factorial(n - 2 * m) * y ** (-m)
+                   for m in range(1, len(lam) + 1) if n - 2 * m >= 0)
+    return G, H
+
+
+def prester_coefficients(M):
+    from math import factorial
+    return [4.0 ** (1 - m) / factorial(m) for m in range(1, M + 1)]
+
+
+def fig_valley():
+    G, H = lovelock_GH(6, prester_coefficients(3))
+    v1 = np.linspace(0.2, 0.85, 120)
+    v2 = np.linspace(1.0, 8.0, 160)
+    V1, V2 = np.meshgrid(v1, v2, indexing="ij")
+    R = -V1**2 * H(V2) + V1 * G(V2)
+    fig = plt.figure(figsize=(W, H_FIG))
+    ax = fig.add_subplot(111, projection="3d")
+    ax.plot_surface(V1, V2, R, cmap="viridis", linewidth=0, antialiased=False, rstride=2, cstride=2, shade=True, alpha=0.9)
+    ax.plot([0.5] * len(v2), v2, np.ones_like(v2), color=BURNT, linewidth=2.4)
+    ys = 1.5 + np.sqrt(3.0)
+    ax.scatter([0.5], [ys], [1.0], color="black", s=30, depthshade=False)
+    ax.text(0.52, ys, 1.25, r"$v_2=\frac{3}{2}+\sqrt{3}$", fontsize=10)
+    ax.set_xlabel(r"$v_1$ ($AdS_2$)", labelpad=8)
+    ax.set_ylabel(r"$v_2$ ($S^4$)", labelpad=8)
+    ax.set_zlabel(r"$R(v_1,v_2)$", labelpad=6)
+    ax.view_init(elev=26, azim=-130)
+    ax.set_box_aspect((1.3, 1.8, 1.0))
+    fig.text(0.5, 0.94, r"Prester's Lovelock action in $D=6$: $R\equiv\alpha'$ along $v_1=\alpha'/2$", ha="center", fontsize=12)
+    fig.text(0.5, 0.05, r"every near-horizon solution lies on the orange line, so $S_{\rm BH}=4\pi\sqrt{nw}$; the solution is the saddle point", ha="center", fontsize=10)
+    fig.subplots_adjust(left=0.02, right=0.98, bottom=0.06, top=0.95)
+    save(fig, "fig_valley.png")
+
+
+def fig_rigidity():
+    Ds = np.arange(4, 17)
+    lb = np.linspace(np.log10(0.25), np.log10(4.0), 61)
+    ygrid = 10.0 ** np.linspace(-3, 3.5, 4000)
+    Z = np.zeros((len(Ds), len(lb)))
+    for i, D in enumerate(Ds):
+        m = D // 2
+        base = prester_coefficients(m)
+        for k, l in enumerate(lb):
+            lam = base[:-1] + [base[-1] * 10.0 ** l]
+            G, Hf = lovelock_GH(int(D), lam)
+            Z[i, k] = np.sqrt(np.min(G(ygrid) ** 2 / Hf(ygrid)) / 4)
+    DD, LB = np.meshgrid(Ds, lb, indexing="ij")
+    fig = plt.figure(figsize=(W, H_FIG))
+    ax = fig.add_subplot(111, projection="3d")
+    ax.plot_surface(DD, LB, Z, cmap="coolwarm", linewidth=0.2, edgecolor=(0, 0, 0, 0.25), antialiased=False, shade=True, alpha=0.95)
+    ax.plot(Ds, np.zeros_like(Ds, dtype=float), np.ones(len(Ds)), color=BURNT, linewidth=2.6)
+    ax.set_xlabel(r"dimension $D$", labelpad=8)
+    ax.set_ylabel(r"$\log_{10}\beta$", labelpad=8)
+    ax.set_zlabel(r"$S_{\rm BH}/4\pi\sqrt{nw}$", labelpad=8)
+    ax.view_init(elev=22, azim=-55)
+    ax.set_box_aspect((1.8, 1.4, 1.0))
+    fig.text(0.5, 0.94, r"Top Lovelock coefficient $\lambda_{\lfloor D/2\rfloor}=\beta\,4^{1-m}/m!$: entropy at the minimum of $\Phi_\beta$", ha="center", fontsize=12)
+    fig.text(0.5, 0.05, r"the statistical value $1$ is reached only at $\beta=1$ (orange), in every dimension", ha="center", fontsize=10)
+    fig.subplots_adjust(left=0.02, right=0.98, bottom=0.06, top=0.95)
+    save(fig, "fig_rigidity.png")
+
+
+H_FIG = H
+
 if __name__ == "__main__":
     fig_indices()
     fig_caustic()
     fig_verdicts()
+    fig_weakcoupling()
+    fig_valley()
+    fig_rigidity()
