@@ -38,5 +38,5 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh release create "${{ github.event.inputs.tag }}" dist/ConjecturesOfAshokeSen_final2.pdf dist/ConjecturesOfAshokeSen-tex.zip dist/ConjecturesOfAshokeSen-arxiv.tar.gz \
-            --title "Proving Conjectures of Ashoke Sen: F-Theory Limits, Small Black Holes and Dyon Indices ${{ github.event.inputs.tag }}" \
+            --title "Positive Dyon Indices in CHL Models and Other Conjectures of Ashoke Sen ${{ github.event.inputs.tag }}" \
             --notes-file .github/RELEASE_NOTES.md

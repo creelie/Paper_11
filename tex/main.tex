@@ -14,14 +14,7 @@
 \usepackage{orcidlink}
 \usepackage[protrusion=true,expansion=false]{microtype}
 \usepackage{xurl}
-\usepackage{soul}
-\definecolor{burntorange}{RGB}{204,85,0}
-\definecolor{softyellow}{RGB}{255,241,168}
-\sethlcolor{softyellow}
-\newcommand{\fatal}[1]{\textcolor{burntorange}{#1}}
-\newcommand{\gap}[1]{\hl{#1}}
-\definecolor{rosewrong}{RGB}{255,196,204}
-\newcommand{\wrong}[1]{{\sethlcolor{rosewrong}\hl{#1}}}
+\newcommand{\gap}[1]{#1}
 \usepackage{tcolorbox}
 \tcbuselibrary{skins,breakable}
 \newtcolorbox{closurebox}[1]{breakable,enhanced jigsaw,parbox=false,colback=blue!3,colframe=blue!45!black,boxrule=0.6pt,arc=1.5mm,fonttitle=\bfseries,title={#1}}
@@ -49,17 +42,17 @@
 \newcommand{\dd}{\mathrm{d}}
 \newcommand{\Phit}{\widetilde{\Phi}}
 \newcommand{\anaxiaDOIlink}{\href{https://doi.org/10.5281/zenodo.23484160}{\nolinkurl{doi:10.5281/zenodo.23484160}}}
-\renewcommand{\st}{\textsc}
-\newcommand{\zenodoCodeID}{10.5281/zenodo.23790654}
+\newcommand{\st}{\textsc}
+\newcommand{\zenodoCodeID}{10.5281/zenodo.23652472}
 \newcommand{\paragraphx}[1]{\medskip\noindent\textbf{#1}\ }
 \tolerance=2000
 \emergencystretch=2em
 \raggedbottom
 \allowdisplaybreaks
 
-\hypersetup{pdftitle={Proving Conjectures of Ashoke Sen: F-Theory Limits, Small Black Holes and Dyon Indices},pdfauthor={Deep Bhattacharjee}}
+\hypersetup{pdftitle={Positive Dyon Indices in CHL Models and Other Conjectures of Ashoke Sen},pdfauthor={Deep Bhattacharjee}}
 
-\title[Proving Conjectures of Ashoke Sen]{Proving Conjectures of Ashoke Sen:\\ F-Theory Limits, Small Black Holes and Dyon Indices}
+\title[Positive Dyon Indices and Conjectures of Ashoke Sen]{Positive Dyon Indices in CHL Models\\ and Other Conjectures of Ashoke Sen}
 
 \author{Deep Bhattacharjee\,\orcidlink{0000-0003-0466-750X}}
 \address{Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India}
@@ -70,7 +63,7 @@
 \urladdr{https://github.com/creelie}
 \thanks{\sloppy Corresponding author: Deep Bhattacharjee. Email: \href{mailto:d.bhattacharjee@erl-forschung.de}{d.bhattacharjee@erl-forschung.de}, \href{mailto:itsdeep@live.com}{itsdeep@live.com}, \href{mailto:egspl@proton.me}{egspl@proton.me} (GitHub-related contact); GitHub \href{https://github.com/creelie}{creelie}; ORCID \href{https://orcid.org/0000-0003-0466-750X}{0000-0003-0466-750X}. Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India, and formerly, University of Calcutta (Heramba Chandra College), 23/49 Gariahat Road, Golpark, Kolkata 700029, West Bengal, India.}
 
-\thanks{Preprint: Hexagon \href{https://hexagonmath.org/2610.00564}{2610.00564v3}.}
+\thanks{This is a substantially revised and improved version of the preprint Hexagon \href{https://hexagonmath.org/2610.00564}{2610.00564v2}.}
 
 \subjclass[2020]{81T30; 81T13; 83C57; 11F46; 35L67; 53C26}
 \keywords{S-duality; tachyon condensation; black hole entropy; Siegel modular forms}
@@ -80,7 +73,7 @@
 
 \begin{abstract}
 \itshape
-We prove two statements of Ashoke Sen in general form and two new cases of a third. Every degeneration of F-theory on an elliptic Calabi--Yau variety that is weakly coupled at the generic point of the base is, after base change and rescaling, Sen's family, and one exists exactly when $-2K_B$ has a section. The entropy of a two-charge small black hole is fixed by one critical value for every curvature-corrected action; the Gauss--Bonnet truncation matches the microscopic count only in four and five dimensions, and Prester's Lovelock completion is the only one that matches it in every dimension. In the $\ZZ_2$ CHL model the single-centred dyon index is positive for every charge with $P^2=2$ and for every charge with $NQ^2/2=1$. For thirty-six statements of Sen we record what is proved and what is left open.
+We prove two statements of Ashoke Sen in general form and new cases of a third. Every degeneration of F-theory on an elliptic Calabi--Yau variety that is weakly coupled at the generic point of the base is, after base change and rescaling, Sen's family, and one exists exactly when $-2K_B$ has a section. The entropy of a two-charge small black hole is fixed by one critical value for every curvature-corrected action; the Gauss--Bonnet truncation matches the microscopic count only in four and five dimensions, and Prester's Lovelock completion is the only one that matches it in every dimension. In the $\ZZ_N$ CHL models with $N=2,3,5,7$ the single-centred dyon index is positive for every charge with $NQ^2/2=1$, and for $N=2$ also for every charge with $P^2=2$. For thirty-six statements of Sen we record what is proved and what is left open.
 \end{abstract}
 
 \maketitle
