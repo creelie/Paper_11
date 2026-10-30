@@ -19,20 +19,84 @@ P^2\ge Q\cdot P,\qquad Q\cdot P\ge 0
 \end{equation}
 (equation (3.9) there, with $Q^2$ normalised so that $NQ^2/2\in\ZZ$). The fourth condition is linear in $Q\cdot P$: it is the image of the wall $Q\cdot P\ge0$ under the second matrix of Sen's equation (3.8), $(Q,P)\mapsto(-Q+P,-2Q+P)$, whose inner product is $2Q^2-3\,Q\cdot P+P^2$. Equations (3.25) and (4.7) of \cite{CD19} print it as $2Q^2+P^2-3(Q\cdot P)^2\ge0$; that squared form is a misprint of the same condition, and it would exclude, for instance, the triple $(Q^2,P^2,Q\cdot P)=(3,2,2)$ of Table~\ref{tab:violations}. Sen verified the positivity of $d(Q,P)$ on these cones for the heterotic string and for the CHL models $N=2,3,5,7$ in the range of charges of his Tables~1 to~5, and stated the conjecture for all charges in the cone. We have reproduced his Tables~1 and~2 exactly (Appendix~\ref{app:computation}).
 
-The hypothesis of the argument is explicit in \cite{Sen11positivity}: the conclusion requires ``some duality frame in which only single centered black hole solution, whose only hair are the fermion zero modes associated with broken supersymmetry, contributes'' to the index. In the heterotic frame the quarter-BPS black hole does have hair beyond the fermion zero modes (the hair modes identified in \cite{BMS09hair}), but there is a frame, the type IIB frame on $K3\times T^2$, in which the hair reduces to the fermion zero modes; this is what makes the conjecture consistent there, and what was proved later.
+The hypothesis of the argument is explicit in \cite{Sen11positivity}: the conclusion requires ``some duality frame in which only single centered black hole solution, whose only hair are the fermion zero modes associated with broken supersymmetry, contributes'' to the index. In the heterotic frame the quarter-BPS black hole does have hair beyond the fermion zero modes (the hair modes identified in \cite{BMS09hair}), but there is a frame, the type IIB frame on $K3\times T^2$, in which the hair reduces to the fermion zero modes; this is what makes the conjecture consistent there, and it is in this frame that it was later proved for the first two magnetic charges.
 
-\begin{theorem}[Bringmann--Murthy 2013]\label{thm:bringmannmurthy}
-For type II string theory on $K3\times T^2$ (equivalently the heterotic string on $T^6$, the form $1/\Phi_{10}$) and on $T^6$ (the $\mathcal N=8$ theory), the single-centred indices in the attractor region are positive for the classes of charges treated in \cite{BringmannMurthy13}; the proof uses the mock modular decomposition of the Fourier--Jacobi coefficients of $1/\Phi_{10}$ \cite{DMZ12}.
+\begin{theorem}[Bringmann--Murthy]\label{thm:bringmannmurthy}
+For type II string theory on $K3\times T^2$, equivalently the heterotic string on $T^6$ with the form $1/\Phi_{10}$, the single-centred index $d^*(Q,P)$ is positive for every charge with $P^2\in\{2,4\}$ and $Q^2P^2-(Q\cdot P)^2>0$, and for every charge in the $SL(2,\ZZ)$ orbit of such a charge. For type II string theory on $T^6$ the index of every single-centred one-eighth BPS black hole is positive.
 \end{theorem}
 
-The restriction to classes of charges was removed by Rossell\'o \cite{Rossello24}, who bounds the tail of the Rademacher expansion of the mock Jacobi forms $\psi^F_m$ of \cite{DMZ12} against its leading term.
+\begin{proof}
+Write $m=P^2/2$, $n=Q^2/2$, $\ell=Q\cdot P$, and let $\psi^F_m=\sum c^F_m(n,\ell)q^n\zeta^\ell$ be the finite part of the Fourier--Jacobi coefficient $\psi_m$ of $1/\Phi_{10}$, the difference between $\psi_m$ and its Appell--Lerch polar part. Bringmann and Murthy prove $(-1)^{\ell+1}c^F_m(n,\ell)>0$ for $m\in\{1,2\}$ and $4mn-\ell^2>0$ \cite[(3.8) and Sections~4--6]{BringmannMurthy13}, and the positivity of the one-eighth BPS indices, which are coefficients of $\theta_1(\tau,z)^2/\eta(\tau)^6$ \cite[case (1a)]{BringmannMurthy13}. That $(-1)^{\ell+1}c^F_m(n,\ell)$ is the single-centred index of the charge is the theorem of Bhand, Sen and Singh \cite[Theorem~5.4(a)]{BSS25} with $N=1$, whose set $A_1$ \cite[(5.64)]{BSS25} contains every charge with $4mn-\ell^2\ge m^2$, $m$ being the index of the form; for $m\le 2$ this holds whenever $4mn-\ell^2>0$. The single-centred index is invariant under $SL(2,\ZZ)$ \cite[Section~5.3]{BSS25}, which gives the statement on orbits.
+\end{proof}
 
-\begin{theorem}[Rossell\'o 2024]\label{thm:rossello}
-For type II string theory on $K3\times T^2$, the single-centred index $d^*(m,n,\ell)$, with $m = P^2/2$, $n = Q^2/2$, $\ell = Q\cdot P$, is positive for every $m,n\ge 1$ with $4mn-\ell^2>0$: for $n\ge m$ and $0\le \ell\le m$ one has $(-1)^{\ell+1}c^F_m(n,\ell)>0$, and the general case follows by the $S$-duality invariance of the single-centred index.
+The proof of \cite{BringmannMurthy13} is written for each index separately, and the cases $P^2\ge 6$ are not covered by it.
+
+\subsection{The \texorpdfstring{$\ZZ_2$}{Z2} CHL model at \texorpdfstring{$P^2=2$}{P2=2}}\label{ssec:chlpositivity}
+
+For the CHL models the decomposition into polar and finite parts is \cite{BSS25}. We use it to prove positivity at the first magnetic charge of the $\ZZ_2$ model. Write $q=e^{2\pi i\tau}$, $\zeta=e^{2\pi iz}$, let $A$, $B$ and the weight-two form $E_2(\tau)=2E(2\tau)-E(\tau)=1+24\sum_{n\ge1}\sigma_{\rm odd}(n)q^n$ of $\Gamma_0(2)$ be as in \eqref{eq:tor2genera}, let $E_4=1+240\sum\sigma_3(n)q^n$, $g(\tau)=\eta(\tau)^8\eta(2\tau)^8$, and let
+\[
+\mathcal H(\tau,z)=\sum_{n\ge0}\sum_{r\in\ZZ}H(4n-r^2)\,q^n\zeta^r
+\]
+be the generating function of the Hurwitz class numbers, with $H(0)=-\tfrac1{12}$ and $H(N)=0$ for $N<0$. Let $\psi_1$ be the Fourier--Jacobi coefficient of $1/\Phit_6$ at $P^2=2$, in the normalisation of \cite{BSS25}, in which $q$ carries $Q^2$ and $\zeta$ carries $Q\cdot P$.
+
+\begin{theorem}\label{thm:chlpositivity}
+In the $\ZZ_2$ CHL model the single-centred index $d^*(Q,P)$ is positive for every charge with $P^2=2$ and $Q^2P^2>(Q\cdot P)^2$, and for every charge in the $\Gamma_1(2)$ orbit of such a charge.
 \end{theorem}
+
+The proof occupies the rest of this subsection. Its first two steps identify the generating function, the remaining ones prove the signs.
+
+\paragraphx{Step 1: the single-centred index.} Bhand, Sen and Singh \cite[(5.45)]{BSS25} give the polar part
+\begin{equation}\label{eq:chlpolar}
+\psi_1^P(\tau,z)=\frac{52}{g(\tau)}\sum_{s\in\ZZ}\frac{q^{2(s^2+s)}\zeta^{2s+1}}{(1-q^{2s}\zeta)^2},
+\end{equation}
+where $52$ is the coefficient of $p^{1/2}$ in $1/g(\sigma/2)$, $p=e^{2\pi i\sigma}$, namely $\binom92+8+8$. Write $\psi_1^F=\psi_1-\psi_1^P=\sum c^F(m,\ell)q^m\zeta^\ell$. By \cite[Theorem~5.4(b)]{BSS25}, for a charge with $Q^2=m$, $P^2=2$, $Q\cdot P=\ell$ in their set $B$, $d^*=\tfrac12(-1)^{\ell+1}c^F(m,\ell)$. Their set $B_1$ \cite[(5.65)]{BSS25} at $N=2$ and $P^2/2=1$ is the condition $2m-\ell^2\ge\tfrac14$, which for integers is $Q^2P^2-(Q\cdot P)^2=2(2m-\ell^2)>0$. The theorem is therefore the statement $(-1)^{\ell+1}c^F(m,\ell)>0$ for $2m-\ell^2>0$; the orbits follow from the $\Gamma_1(2)$ invariance of $d^*$.
+
+\paragraphx{Step 2: the finite part in closed form.} Chattopadhyaya and David \cite[(3.12)--(3.22)]{CD19} reduce $\psi_1$ to the forms $A$, $B$, $E_2$, $E_4$ through the twisted elliptic genera of the model, separate the double pole with the identity $\phi_{0,1}^2/\phi_{-2,1}=144\sum_s q^{s^2+s}\zeta^{2s+1}(1-q^s\zeta)^{-2}+E_4\phi_{-2,1}-288\,\mathcal H$ for the weak Jacobi forms $\phi_{0,1}=4A$, $\phi_{-2,1}=-B$ \cite[Section~3]{BringmannMurthy13}, taken at $2\tau$, and find
+\begin{equation}\label{eq:chlclosed}
+g\,\psi_1^F=-\tfrac{20}{9}\,A(2\tau,z)\,E_2(\tau)-B(2\tau,z)\big(\tfrac4{45}E_4(\tau)+\tfrac7{15}E_4(2\tau)\big)-104\,\mathcal H(2\tau,z).
+\end{equation}
+This is their (3.22) after the relation $E_4(2\tau)=-\tfrac14E_4(\tau)+\tfrac54E_2(\tau)^2$ of their (3.21). In the printed (3.22) the factor of $A(2\tau,z)$ is $E_2(2\tau)$; it is $E_2(\tau)$, as in the line before it; with $E_2(2\tau)$ the coefficient of $\zeta$ in $\psi^F_1$ would be $\tfrac{64}{3}$ instead of $8$. We checked \eqref{eq:chlpolar} and \eqref{eq:chlclosed} against the product formula \eqref{eq:product} in exact arithmetic for $Q^2\le28$, $|Q\cdot P|\le7$ \cite{Bha26}.
+
+The identity $4\theta_4(\tau,z)^2/\theta_4(\tau)^2=\tfrac43A(\tau,z)+\tfrac13B(\tau,z)E_2(\tau/2)$ \cite[(3.14)]{CD19}, taken at $2\tau$, gives $A(2\tau,z)=3T-\tfrac14B(2\tau,z)E_2(\tau)$ with $T=\theta_4(2\tau,z)^2/\theta_4(2\tau)^2$, and $E_2(\tau)^2=\tfrac15\big(E_4(\tau)+4E_4(2\tau)\big)$. Substituting,
+\begin{equation}\label{eq:chlclosed2}
+g\,\psi_1^F=-\tfrac{20}3\,E_2(\tau)\,T+\tfrac{16}3\,M(\tau)\,B(2\tau,z)-104\,\mathcal H(2\tau,z),\qquad M=\frac{E_4(\tau)-E_4(2\tau)}{240}.
+\end{equation}
+
+\paragraphx{Step 3: theta components.} Put $x=q^{1/2}$. Each of $T$, $B(2\tau,z)$ and $\mathcal H(2\tau,z)$ is a sum $\sum_\ell q^{\ell^2/2}\zeta^\ell f_{\ell\bmod2}(x)$, and so is the right side of \eqref{eq:chlclosed2}; call its components $n_0$, $n_1$ and write $n_j=\sum_t n_j(t)x^t$, where $t\equiv j \pmod 2$. Then $\psi_1^F=\sum_\ell q^{\ell^2/2}\zeta^\ell h_{\ell\bmod 2}$ with $h_j=n_j/g$, and $c^F(m,\ell)$ is the coefficient of $x^{2m-\ell^2}$ in $h_{\ell\bmod2}$. Expanding the squares, with $\ell=a+b$ and $u=a-b$,
+\[
+\theta_4(2\tau,z)^2=\sum_\ell(-1)^\ell q^{\ell^2/2}\zeta^\ell\!\!\sum_{u\equiv\ell\,(2)}\!\!x^{u^2},\qquad
+\theta_1(2\tau,z)^2=\sum_\ell(-1)^\ell q^{\ell^2/2}\zeta^\ell\!\!\sum_{u\not\equiv\ell\,(2)}\!\!x^{u^2},
+\]
+so that the combination $-f_0+f_1$ is $-\theta_3(x)/\theta_4(2\tau)^2$ for $T$ and $-\theta_3(x)/\eta(2\tau)^6$ for $B(2\tau,z)$, where $\theta_3(x)=\sum_{n\in\ZZ}x^{n^2}$. The components of $\mathcal H(2\tau,z)$ are $\sum_t H(t)x^t$ over $t\equiv j$. With $\theta_4(2\tau)=\eta(\tau)^2/\eta(2\tau)$, the numbers $u(t)$ defined by $u(t)=-n_0(t)-104H(t)$ for even $t$ and $u(t)=n_1(t)+104H(t)$ for odd $t$ are the coefficients of
+\begin{equation}\label{eq:chlS}
+\sum_{t\ge0}u(t)x^t=\frac{\theta_3(x)\,G}{\eta(2\tau)^6},\qquad G=\tfrac{20}3\,E_2(\tau)\frac{\eta(2\tau)^8}{\eta(\tau)^4}-\tfrac{16}3\,M(\tau).
+\end{equation}
+
+\paragraphx{Step 4: the form $G$.} As a function of $\tau/2$, $G$ is a modular form of weight four for $\Gamma_0(4)$, a space of dimension three with Sturm bound two. Comparing the coefficients of $x^0$, $x^1$, $x^2$,
+\begin{equation}\label{eq:chlG}
+G=\tfrac1{36}E_4(x)-\tfrac{49}{180}E_4(x^2)+\tfrac{11}{45}E_4(x^4)=\sum_{j\ge1}\gamma(j)x^j,
+\end{equation}
+where $E_4(x)=1+240\sum\sigma_3(j)x^j$. Since $\sigma_3(2^am)=\sigma_3(m)(8^{a+1}-1)/7$ for odd $m$, this gives $\gamma(j)=\tfrac{20}3\sigma_3(j)$ for odd $j$ and $\gamma(j)=-\tfrac{16}3\,8^{a-1}\sigma_3(m)$ for $j=2^am$, $a\ge1$, $m$ odd. Hence $\gamma(j)\ge\tfrac{20}3j^3$ for odd $j$, and $\gamma(j)\ge-\tfrac23\zeta(3)j^3$ for even $j$, because $8^{a-1}\sigma_3(m)=\tfrac18 j^3\,\sigma_3(m)/m^3$.
+
+\paragraphx{Step 5: $\theta_3G$ has positive coefficients.} Let $\kappa(k)=\sum_{n\in\ZZ}\gamma(k-n^2)$, with $\gamma(j)=0$ for $j\le0$, be the coefficients of $\theta_3(x)G$. Put $f(y)=(k-y^2)^3$ for $|y|\le\sqrt k$ and $f=0$ otherwise. The integers $n$ with $k-n^2$ odd form one class modulo two, and those with $k-n^2$ even the other. For a function that increases and then decreases, a sum over a class of step two differs from half the integral by at most the maximum, here $k^3$; the integral of $f$ is $\tfrac{32}{35}k^{7/2}$. By Step~4,
+\begin{equation}\label{eq:chlbound}
+\kappa(k)\ \ge\ \tfrac{20}3\big(I-k^3\big)-\tfrac23\zeta(3)\big(I+k^3\big)=k^3\big(\lambda\sqrt k-\mu\big),\qquad I=\tfrac{16}{35}k^{7/2},
+\end{equation}
+with $\lambda=\tfrac{16}{35}\big(\tfrac{20}3-\tfrac23\zeta(3)\big)>2.681$ and $\mu=\tfrac{20}3+\tfrac23\zeta(3)<7.469$. The right side is positive for $k\ge8$, and $\kappa(1),\dots,\kappa(7)=\tfrac{20}{3},\,8,\,176,\,\tfrac{992}{3},\,768,\,1520,\,2368$ are positive. So $\kappa(k)>0$ for every $k\ge1$, and $\kappa(0)=0$.
+
+\paragraphx{Step 6: the components.} The coefficients of $x/\eta(2\tau)^6=\prod(1-x^{4r})^{-6}$ are nonnegative with constant term one, so \eqref{eq:chlS} gives $u(t)\ge\kappa(t+1)>0$ for every $t\ge0$. Since $H(t)\ge0$ for $t>0$, $n_0(t)=-u(t)-104H(t)<0$ for even $t\ge2$, while $n_0(0)=-\tfrac{20}3+\tfrac{104}{12}=2$. For odd $t$, $n_1(t)=u(t)-104H(t)$. Here $H(1)=0$, and $H(t)\le t$ for $t\ge3$: a reduced form $(a,b,c)$ of discriminant $-t$ has $|b|\le a\le\sqrt{t/3}$ and is fixed by $(a,b)$, so $H(t)\le\sqrt{t/3}\,\big(2\sqrt{t/3}+1\big)\le t$. For $t\ge10$, \eqref{eq:chlbound} at $k=t+1\ge11$ gives $u(t)\ge k^3(\lambda\sqrt k-\mu)>104k>104H(t)$, and for $t\le9$ the inequality $n_1(t)>0$ is read off the values $n_1(1),n_1(3),\dots,n_1(9)=8,\ 296,\ 1568,\ 6040,\ 18472$. Thus every coefficient of $n_1$ is positive, and $-n_0=-2+\sum_{k\ge1}a_kq^k$ with $a_k=-n_0(2k)>0$.
+
+\paragraphx{Step 7: division by $g$.} The function $1/g=q^{-1}\prod_r(1-q^r)^{-8}(1-q^{2r})^{-8}$ has positive coefficients, so $h_1=n_1/g$ does, and $c^F(m,\ell)>0$ for every odd $\ell$. For even $\ell$, write $\Pi=\prod_r(1-q^r)^{-8}(1-q^{2r})^{-8}=\sum p(m)q^m$. Its logarithmic derivative gives $m\,p(m)=\sum_{k=1}^m s(k)p(m-k)$ with $s(k)=8\sigma(k)+16\sigma(k/2)$. Suppose $a_k>2s(k)/k$ for every $k$. Then for $m\ge1$ the coefficient of $q^m$ in $(-2+\sum a_kq^k)\Pi$ is
+\[
+-2p(m)+\sum_{k=1}^ma_kp(m-k)\ >\ -2p(m)+\frac2m\sum_{k=1}^m s(k)p(m-k)=0,
+\]
+and $-h_0=q^{-1}(-2+\sum a_kq^k)\Pi$ has positive coefficients at every exponent $q^{(2m-\ell^2)/2}$ with $2m-\ell^2\ge0$. The hypothesis holds: $a_1,a_2,a_3=176,\ 860,\ 3424$ exceed $2s(k)/k=16,\ 40,\ \tfrac{64}{3}$, and for $k\ge4$, $a_k\ge u(2k)\ge\kappa(2k+1)\ge(2k+1)^3(3\lambda-\mu)>\tfrac{23}{40}(2k+1)^3>32(1+k)$, while $s(k)/k\le16(1+\log k)$ because $\sigma(k)/k\le1+\log k$. So $(-1)^{\ell+1}c^F(m,\ell)=-c^F(m,\ell)>0$ for even $\ell$, which completes the proof.\qed
+
+\smallskip
+The exact computations behind the values quoted in Steps~5 to~7 and the comparison of Step~2 are the checks of \cite{Bha26}. The same method applies to each further magnetic charge once the finite part is known in closed form; we have not carried it out beyond $P^2=2$.
 
 \begin{verdict}[claim 9, heterotic and CHL]
-Proved for the heterotic string on $T^6$, by Theorems~\ref{thm:bringmannmurthy} and~\ref{thm:rossello}; our scan of the single-centred cone up to $Q^2\le 12$, $P^2\le 6$, $Q\cdot P\le 4$ (Appendix~\ref{app:computation}) agrees. For the CHL orbifolds no counterexample is known, our scan for $N=2$ finds only positive indices, while \gap{a general proof of positivity in the CHL models is not known}: the Rademacher bound of \cite{Rossello24} has not been carried out for the mock Jacobi forms of $1/\Phit_k$, and \cite{Rossello24} names this as the next case. The conjecture is proved in the model in which it was first stated and confirmed in the CHL models.
+Proved for the heterotic string on $T^6$ at $P^2\in\{2,4\}$, with all $Q$ and $Q\cdot P$ satisfying $Q^2P^2>(Q\cdot P)^2$, and on the $SL(2,\ZZ)$ orbits of these charges (Theorem~\ref{thm:bringmannmurthy}). Proved for the $\ZZ_2$ CHL model at $P^2=2$ and on the $\Gamma_1(2)$ orbits (Theorem~\ref{thm:chlpositivity}). Our scan of the heterotic cone up to $Q^2\le 12$, $P^2\le 6$, $Q\cdot P\le 4$ (Appendix~\ref{app:computation}) and our scan for $N=2$ find only positive indices. \gap{A proof of positivity for every magnetic charge is not known, neither for the heterotic string nor for the CHL models.}
 \end{verdict}
 
 \subsection{Full and horizon indices in the toroidal orbifolds}\label{ssec:toroidal}
@@ -121,7 +185,7 @@ Confirmed. The hair modes of the quarter-BPS black hole were identified in the t
 \end{verdict}
 
 \begin{verdict}[claim 36]
-Confirmed. The companion of the positivity conjecture is the statement of \cite{CGMS16} that every microstate of a single-centred BPS black hole, once the fermion zero modes of broken supersymmetry are removed, carries zero angular momentum, so that the index counts the states with sign $+1$ and positivity follows. It was tested in \cite{CGMS16} on the quarter-BPS states of type IIB on $T^6$ at low charges by an explicit enumeration of the supersymmetric configurations of D-branes, and in \cite{HeidmannMondal19} on multi-centred configurations with pure D-brane charges, and holds in every case computed. \gap{It is not proved}, and the toroidal orbifolds show what its proof must contain: there the index of the full dyon is negative, so either some microstates carry angular momentum or the hair modes do, and \cite{CD21} locates the sign in the hair. Later tests at higher charges \cite{ChowdhuryMaji24,ChowdhuryMaji26} reproduce the index of the pure D-brane system by algebraic geometry and find no state of nonzero angular momentum. Positivity of the index, now a theorem for $K3\times T^2$ (Theorem~\ref{thm:rossello}), does not imply the statement, as \cite{Rossello24} notes: an index that is positive can still count fermionic states. The sources examined here do not supply a general proof; the statement for the horizon states remains open and consistent with every test.
+Confirmed. The companion of the positivity conjecture is the statement of \cite{CGMS16} that every microstate of a single-centred BPS black hole, once the fermion zero modes of broken supersymmetry are removed, carries zero angular momentum, so that the index counts the states with sign $+1$ and positivity follows. It was tested in \cite{CGMS16} on the quarter-BPS states of type IIB on $T^6$ at low charges by an explicit enumeration of the supersymmetric configurations of D-branes, and in \cite{HeidmannMondal19} on multi-centred configurations with pure D-brane charges, and holds in every case computed. \gap{It is not proved}, and the toroidal orbifolds show what its proof must contain: there the index of the full dyon is negative, so either some microstates carry angular momentum or the hair modes do, and \cite{CD21} locates the sign in the hair. Later tests at higher charges \cite{ChowdhuryMaji24,ChowdhuryMaji26} reproduce the index of the pure D-brane system by algebraic geometry and find no state of nonzero angular momentum. Positivity of the index, a theorem in the cases of Theorems~\ref{thm:bringmannmurthy} and~\ref{thm:chlpositivity}, does not imply the statement: an index that is positive can still count fermionic states. The sources examined here do not supply a general proof; the statement for the horizon states remains open and consistent with every test.
 \end{verdict}
 
 \begin{remark}\label{rem:normalisation}

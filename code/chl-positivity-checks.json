@@ -1,0 +1,22 @@
+{
+ "checks": [
+  "C1 product formula minus the polar part 52 AL/g equals the closed form, Q^2 <= 28, |Q.P| <= 7",
+  "C2a A(2tau,z) = 3 T - B(2tau,z) E(tau)/4",
+  "C2b E(tau)^2 = (E_4(tau) + 4 E_4(2tau))/5",
+  "C2c the closed form equals -20/3 E T + 16/3 M B(2tau,z) - 104 H(2tau,z)",
+  "C3a G = E4(x)/36 - 49 E4(x^2)/180 + 11 E4(x^4)/45 on x^0, x^1, x^2 (Sturm bound for M_4(Gamma_0(4)))",
+  "C3b the same identity to order x^K",
+  "C4 -j_0 + j_1 = theta_3 G / eta(2tau)^6 on the theta components",
+  "C5 g(j) = 20/3 sigma_3(j) for odd j and -16/3 8^(a-1) sigma_3(m) for j = 2^a m",
+  "C6a c(k) > 0 for 1 <= k <= K",
+  "C6b the bound (14) is positive for k >= 8: lo^2 * 8 > hi^2",
+  "C7a H(N) <= N for 3 <= N <= 400",
+  "C7b H(N) = 0 for N = 1, 2",
+  "C7c a_k = -n_0(2k) > 2 s(k)/k for k <= 29",
+  "C7d 3 lo - hi > 23/40 and 23/40 (2k+1)^3 > 32 (1 + k) for k >= 4",
+  "C7e s(k)/k <= 16 (1 + log k) for k <= 2000",
+  "C7f n_1(t) > 0 for odd t <= 59",
+  "C7g 11 lo^2 > (hi + 104/121)^2, so k^3 (lo sqrt k - hi) > 104 k for k >= 11",
+  "C8 (-1)^(Q.P+1) c^F(Q^2, Q.P) > 0 for the 291 charges with P^2 = 2, 2 Q^2 >= (Q.P)^2, Q^2 <= 28"
+ ]
+}

@@ -57,3 +57,7 @@ jobs:
         run: |
           pip install sympy==1.14.0 mpmath==1.3.0
           python3 verify_closures.py
+
+      - name: check the CHL positivity proof
+        working-directory: code
+        run: python3 verify_chl_positivity.py
