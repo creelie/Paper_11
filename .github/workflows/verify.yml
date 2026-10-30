@@ -61,3 +61,10 @@ jobs:
       - name: check the CHL positivity proof
         working-directory: code
         run: python3 verify_chl_positivity.py
+
+      - name: check the CHL positivity proof at unit electric charge
+        working-directory: code
+        run: |
+          python3 chl_unit_identities.py 48
+          python3 chl_unit_positivity.py
+          python3 chl_unit_fullcheck.py
