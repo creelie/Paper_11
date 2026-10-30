@@ -68,3 +68,9 @@ jobs:
           python3 chl_unit_identities.py 48
           python3 chl_unit_positivity.py
           python3 chl_unit_fullcheck.py
+
+      - name: check the CHL positivity proof at unit electric charge for N = 3, 5, 7
+        working-directory: code
+        run: |
+          pip install python-flint==0.9.0 numpy
+          python3 chl_unit_odd.py

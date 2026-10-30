@@ -216,12 +216,152 @@ d^*=360,\ 2164,\ 4352,\ 18944,\ 36024,\ 125860,\ 233080,\ 705536\quad(\Delta=1,\
 \]
 in agreement with the product formula for $P^2\le48$ and $0\le Q\cdot P\le2$ \cite{Bha26}. The charge $(Q^2,P^2,Q\cdot P)=(1,2,1)$, with $d^*=360$, lies in both Theorems~\ref{thm:chlpositivity} and~\ref{thm:chlunit}.
 
+\subsection{The \texorpdfstring{$\ZZ_N$}{ZN} CHL models with \texorpdfstring{$N=3,5,7$}{N=3,5,7} at \texorpdfstring{$NQ^2/2=1$}{NQ2/2=1}}\label{ssec:chlunitodd}
+
+The argument of Subsection~\ref{ssec:chlunit} extends to the three CHL models of odd prime order. Let $N\in\{3,5,7\}$, $k+2=24/(N+1)\in\{6,4,3\}$, $x=e^{2\pi i\sigma/N}$, $p=x^N$, $y=e^{2\pi iv}$, and expand $1/\Phit_k=\sum_{m\ge-1}\varphi_m(\sigma,v)e^{2\pi im\rho}$. The coefficient of $x^ny^\ell$ in $\varphi_m$ belongs to the charges with $NQ^2/2=m$, $P^2/2=n$ and $Q\cdot P=\ell$ \cite[Theorem~5.4]{BSS25}; at $m=1$ one has $Q^2=2/N$ and
+\[
+Q^2P^2-(Q\cdot P)^2=\Delta/N,\qquad \Delta=4n-N\ell^2 .
+\]
+The twisted genera of the model are \cite{DJS06}
+\[
+\begin{gathered}
+F^{(0,0)}=\tfrac8NA,\qquad F^{(0,s)}=\tfrac8{N(N+1)}A-\tfrac2{N+1}B\,E_N(\tau),\\
+F^{(r,rk')}=\tfrac8{N(N+1)}A+\tfrac2{N(N+1)}B\,E_N\big(\tfrac{\tau+k'}N\big)
+\end{gathered}
+\]
+\enlargethispage{2pt}
+for $s\ne0$, $r\ne0$, with $A$, $B$ as in \eqref{eq:tor2genera} and $E_N(\tau)=1+\frac{24}{N-1}\sum_{n\ge1}\big(\sigma_1(n)-N\sigma_1(n/N)\big)q^n$, the weight-two form of $\Gamma_0(N)$ ($\sigma_1(n/N)=0$ if $N\nmid n$). Let $g(\tau)=\eta(\tau)^{k+2}\eta(N\tau)^{k+2}$ and
+\[
+\frac1{g(\sigma/N)}=\sum_{j\ge0}\beta(j)\,x^{j-1},\qquad \sum_{j\ge0}\beta(j)x^j=\prod_{r\ge1}(1-x^r)^{-e_r},\quad e_r=\begin{cases}k+2,&N\nmid r,\\2(k+2),&N\mid r,\end{cases}
+\]
+so that every $\beta(j)$ is a positive integer. Let $E_4=1+240\sum\sigma_3(n)q^n$, $M_N(\tau)=\sum_{n\ge1}\sigma_3^{(N)}(n)q^n=\frac1{240}\big(E_4(\tau)-E_4(N\tau)\big)$ with $\sigma_3^{(N)}(n)=\sum_{d\mid n,\,N\nmid n/d}d^3$, and let $C_N$ be the normalised cusp form of weight four for $\Gamma_0(N)$: $C_3=0$,
+\[
+C_5(\tau)=\eta(\tau)^4\eta(5\tau)^4,\qquad C_7(\tau)=\eta(\tau)^3\eta(7\tau)^3\sum_{u,w\in\ZZ}q^{u^2+uw+2w^2}.
+\]
+The space $S_4(\Gamma_0(N))$ is zero for $N=3$ and one-dimensional for $N=5,7$ \cite[Theorem~3.5.1]{DiamondShurman05}, and $C_5$, $C_7$ lie in it by \cite[Theorems~1.64 and~1.65]{Ono04} for the eta quotients $\eta(\tau)^4\eta(5\tau)^4\in S_4(\Gamma_0(5))$ and $\eta(\tau)^3\eta(7\tau)^3\in S_3(\Gamma_0(7),(\frac{-7}\cdot))$, and \cite[Theorem~10.9]{Iwaniec97} for the theta series of the form $u^2+uw+2w^2$ of discriminant $-7$, which lies in $M_1(\Gamma_0(7),(\frac{-7}\cdot))$; since $S_4(SL_2(\ZZ))=0$ they are newforms, so Deligne's theorem \cite{Deligne74} gives $|c_N(n)|\le d(n)\,n^{3/2}$ for their coefficients. Finally let $L_N$ be the even lattice of rank four with Gram matrix
+\[
+\begin{pmatrix}2&-1&0&0\\-1&2&0&0\\0&0&2&-1\\0&0&-1&2\end{pmatrix},\qquad
+\begin{pmatrix}2&-1&-1&-1\\-1&2&0&0\\-1&0&4&-1\\-1&0&-1&4\end{pmatrix},\qquad
+\begin{pmatrix}2&0&-1&0\\0&2&0&-1\\-1&0&4&0\\0&-1&0&4\end{pmatrix}
+\]
+for $N=3,5,7$, of determinant $N^2$ and level $N$,\footnote{$L_3$ is $A_2\oplus A_2$. For $N=5,7$ the lattice contains $\bar\pi$ and the orthogonal sublattice $\bar\pi^\perp\cap L_N$ of rank three; the Gram matrices are chosen so that $\langle L_N,\bar\pi\rangle=N\ZZ$, which makes $\langle\lambda,\bar\pi\rangle/N$ an integer power of $y$.} with quadratic form $Q(\lambda)=\frac12\lambda^{\mathsf T}G\lambda$ and bilinear form $\langle\ ,\ \rangle$, and let $\bar\pi=(-2,-1,0,0)$, $(-2,-1,-2,-1)$, $(-1,0,-2,0)$, a vector with $Q(\bar\pi)=N$ and $\langle L_N,\bar\pi\rangle=N\ZZ$. Put
+\[
+\Theta_N(\sigma,v)=\sum_{\lambda\in L_N}x^{Q(\lambda)}y^{\langle\lambda,\bar\pi\rangle/N}.
+\]
+Writing $\lambda=\frac\ell2\bar\pi+\lambda^\perp$ with $\ell=\langle\lambda,\bar\pi\rangle/N$ gives $4Q(\lambda)-N\ell^2=4Q(\lambda^\perp)\ge0$, and $\lambda\mapsto\lambda+\bar\pi$ shifts $\ell$ by two at fixed $4Q(\lambda)-N\ell^2$. So the coefficient of $x^ey^\ell$ in $\Theta_N$ is a number $r_N(D)\ge0$ depending only on $D=4e-N\ell^2$, which fixes $\ell$ modulo two because $N$ is odd. The constants of the three models are
+\[
+\begin{array}{c|ccccc}
+N&a_N&c_N&(u_N,w_N,z_N)&(u'_N,w'_N,z'_N)&\kappa_N\\\hline
+3&\frac3{16}&\frac38&(\frac3{160},\frac{27}{160},0)&(-\frac1{20},\frac{21}{20},0)&9\\[2pt]
+5&\frac7{72}&\frac7{36}&(\frac{11}{3744},\frac{353}{3744},\frac6{13})&(-\frac1{104},\frac{105}{104},\frac{108}{13})&\frac{15}{13}\\[2pt]
+7&\frac1{16}&\frac18&(\frac1{1200},\frac{37}{600},\frac3{10})&(-\frac1{300},\frac{301}{300},\frac{24}5)&\frac3{10}
+\end{array}
+\]
+and we write $F_N=u_NE_4(\tfrac\sigma N)+w_NE_4(\sigma)+z_NC_N(\tfrac\sigma N)$ and $W_N=u'_NE_4(\tfrac\sigma N)+w'_NE_4(\sigma)+z'_NC_N(\tfrac\sigma N)$.
+
+\begin{proposition}\label{prop:chluniodd}
+For $N\in\{3,5,7\}$,
+\begin{equation}\label{eq:chlunioddclosed}
+\begin{split}
+g(\tfrac\sigma N)\,\varphi_1(\sigma,v)={}&144a_N\,\mathcal B(\sigma,v)+\kappa_N\big(M_N-C_N\big)(\tfrac\sigma N)\,\phi_{-2,1}(\sigma,v)\\
+&-12c_N\,\Theta_N(\sigma,v)-288a_N\,\mathcal H(\sigma,v),
+\end{split}
+\end{equation}
+with $\mathcal B$ and $\mathcal H$ as in Subsection~\ref{ssec:chlunit}, now with $p=x^N$. The polar part of $\varphi_1$ is $144a_N\,\mathcal B/g(\sigma/N)$, and with $\mu_N(t)=\kappa_N\big(\sigma_3^{(N)}(t)-c_N(t)\big)$ the coefficients of the finite part are
+\begin{equation}\label{eq:chlunioddcoeff}
+\begin{gathered}
+c^F_1(n,\ell)=\mathcal C_N(\Delta):=\sum_{j\ge0}\beta(j)\,\mathcal N_N(\Delta+4-4j),\\
+\mathcal N_N(D)=\sum_{t\ge1}\mu_N(t)\,\alpha\big(\tfrac{D-4t}N\big)-12c_N\,r_N(D)-288a_N\,H\big(\tfrac DN\big),
+\end{gathered}
+\end{equation}
+where $\alpha(\delta)$ and $H(\delta)$ are taken to be zero unless $\delta$ is an integer.
+\end{proposition}
+
+\begin{proof}
+\emph{Step 1.} The factors of \eqref{eq:product} with $l=0$ give $\varphi_{-1}=1/\big(g(\sigma/N)\phi_{-2,1}(\sigma,v)\big)$, and with $\omega=e^{2\pi i/N}$ the logarithm of the factors with $l\ge1$ has the coefficients
+\[
+\begin{aligned}
+L_1&=\frac1N\sum_{r,s}\sum_{t=0}^{N-1}\omega^{-s-rt}F^{(r,s)}(\sigma+t,v),\\
+L_2&=\frac1{2N}\sum_{r,s}\sum_{t=0}^{2N-1}\omega^{-2s-rt}F^{(r,s)}\big(\tfrac{\sigma+t}2,v\big)+\tfrac12L_1(2\sigma,2v)
+\end{aligned}
+\]
+at $e^{2\pi i\rho}$ and $e^{4\pi i\rho}$; the sums over $t$ select the exponents $k'\in\ZZ+r/N$ of \eqref{eq:product}. So $\varphi_1=\varphi_{-1}(L_2+\tfrac12L_1^2)$.
+
+\emph{Step 2.} We claim
+\begin{equation}\label{eq:chlunioddG1}
+L_2+\tfrac12L_1^2=a_N\,\phi_{0,1}^2-c_N\,E_N(\tfrac\sigma N)\,\phi_{-2,1}\phi_{0,1}+F_N\,\phi_{-2,1}^2 .
+\end{equation}
+Each $F^{(r,s)}$ is a weak Jacobi form of weight $0$ and index one for $\Gamma(N)$, and $SL_2(\ZZ)$ permutes them \cite{DJS06}. Let $\gamma\in\Gamma(2N)$. The translates $\gamma'=T^t\gamma T^{-t}$ lie in $\Gamma(2N)$, and with $M_t=\begin{psmallmatrix}1&t\\0&2\end{psmallmatrix}$ one has $M_t\gamma M_t^{-1}\in\Gamma(N)$, since $M_t(\gamma-1)M_t^{-1}=N\,M_tA\begin{psmallmatrix}2&-t\\0&1\end{psmallmatrix}$ for $\gamma-1=2NA$. So every term of $L_1$, $L_2$ is invariant under $\Gamma(2N)$, and the substitutions $v\mapsto v+\lambda\sigma+\mu$ give the elliptic property of index two exactly as in Step~2 of Subsection~\ref{ssec:chlunit}. Every term of \eqref{eq:chlunioddG1} is therefore a Jacobi form of weight $0$ and index two for $\Gamma(2N)$, holomorphic, even in $v$, and weak at every cusp, because $M_t\gamma=\gamma''M'$ with $\gamma''\in SL_2(\ZZ)$ and $M'$ upper triangular of determinant two, and no $F^{(r,s)}$ has a negative power of $q$. Let $G_1=\chi_0(\sigma)+\chi_2(\sigma)v^2+\chi_4(\sigma)v^4+\cdots$ be the difference of the two sides. If $\chi_0=\dots=\chi_{\nu-2}=0$, then $\chi_\nu$ is a modular form of weight $\nu$ for $\Gamma(2N)$, holomorphic at the cusps \cite[\S3]{EZ85}. The index $[PSL_2(\ZZ):\bar\Gamma(2N)]$ is $72$, $360$, $1008$, the width at $\infty$ is $2N$ and the local parameter is $x^{1/2}$, so by Sturm's theorem \cite{Sturm87} a form of weight $\nu\le4$ whose coefficients vanish through $x^{12}$, $x^{60}$, $x^{168}$ is zero. The coefficients of $G_1$ vanish through $x^{14}$, $x^{62}$, $x^{170}$.\footnote{These comparisons, and those of Steps~3 and~4, are finite computations in exact rational arithmetic; the program that carries them out is in \cite{Bha26}.} Hence $\chi_0=\chi_2=\chi_4=0$, so $G_1(\sigma,\cdot)$ vanishes to order at least six at $v=0$; a nonzero function with the elliptic property of index two has four zeros in a period parallelogram \cite[Theorem~1.2]{EZ85}, so $G_1=0$.
+
+\emph{Step 3.} The second identity is
+\begin{equation}\label{eq:chlunioddG3}
+E_N(\tfrac\sigma N)\,\phi_{0,1}=W_N\,\phi_{-2,1}+12\,\Theta_N .
+\end{equation}
+Both sides are even holomorphic Jacobi forms of weight two and index one for $\Gamma^0(N)$: $\Theta_N$ is the theta series of $L_N$ at $\tau=\sigma/N$ with the Jacobi variable on $\bar\pi/N\in L_N^\#$, of index $N\,Q(\bar\pi/N)=1$ in $\sigma$ \cite[\S7]{EZ85}, and $E_4(\sigma)$, $E_4(\sigma/N)$, $C_N(\sigma/N)$ and $E_N(\sigma/N)$ are modular forms for $\Gamma^0(N)$. For the difference $G_3=\chi_0+\chi_2v^2+\cdots$ the forms $\chi_0$, $\chi_2$ have weights two and four for $\Gamma^0(N)$, of index $N+1$ in $PSL_2(\ZZ)$ with width $N$ and local parameter $x$; by Sturm's theorem they vanish once their coefficients vanish through $x^2$. The coefficients of $G_3$ vanish through $x^{40}$, so $G_3(\sigma,\cdot)$ vanishes to order four at $v=0$, against two zeros for index one, and \eqref{eq:chlunioddG3} holds. At $v=0$ it gives $\Theta_N(\sigma,0)=E_N(\sigma/N)$, since $\phi_{0,1}(\sigma,0)=12$ and $\phi_{-2,1}(\sigma,0)=0$.
+
+\emph{Step 4.} Divide \eqref{eq:chlunioddG1} by $\phi_{-2,1}$ and insert \eqref{eq:chlunitBM} and \eqref{eq:chlunioddG3}. The coefficients of $\mathcal B$, $\mathcal H$ and $\Theta_N$ are $144a_N$, $-288a_N$ and $-12c_N$, and that of $\phi_{-2,1}$ is $a_NE_4(\sigma)-c_NW_N+F_N$. This is a modular form of weight four for $\Gamma_0(N)$ in $\sigma/N$, and its coefficients agree with those of $\kappa_N(M_N-C_N)$ through $x^{40}$, beyond the Sturm bound $x^{\lfloor(N+1)/3\rfloor}$. The term $144a_N\mathcal B/g(\sigma/N)$ is the polar part \cite[(5.45)]{BSS25}. In the rest, the coefficient of $x^ey^\ell$ is $\mathcal N_N(4e-N\ell^2)$: the product of $\mu_N(t)x^t$ with the coefficient $\alpha(4a-\ell^2)$ of $p^ay^\ell$ in $\phi_{-2,1}$ sits at $D=4(t+Na)-N\ell^2$, and that of $\mathcal H$ at $D=4Na-N\ell^2$. Multiplying by $1/g(\sigma/N)$ gives \eqref{eq:chlunioddcoeff}.
+\end{proof}
+
+As for $N=2$, the polar part $144a_N\mathcal B/g(\sigma/N)$ contributes nothing at $y^\ell$ with $0\le\ell\le2$ in the expansion of Appendix~\ref{app:computation}, and there \eqref{eq:chlunioddcoeff} agrees with the product formula for $n\le21$, $27$, $39$; it also reproduces the bold entries of Tables~3--5 of \cite{Sen11positivity} with $NQ^2/2=1$.
+
+\begin{lemma}\label{lem:chlunioddsigns}
+Let $N\in\{3,5,7\}$.
+
+\textup{(i)} $\mu_N(t)\ge0$ for $t\ge1$, with $\mu_N(t)>0$ for $t\ge2$; $\mu_3(1)=9$ and $\mu_5(1)=\mu_7(1)=0$.
+
+\textup{(ii)} $\mathcal N_N(D)=0$ for $D\le0$; $\mathcal N_N(D)\le0$ for $D\equiv0\pmod4$, with strict inequality for $D\ge8$; and $\mathcal N_N(D)\ge0$ for $D\equiv-N\pmod4$, with strict inequality for $D\ge5$.
+\end{lemma}
+
+\begin{proof}
+(i) $\sigma_3^{(N)}(t)\ge t^3$ (the divisor $d=t$), so $\mu_N(t)\ge\kappa_N t^{3/2}(t^{3/2}-d(t))$, and $d(t)\le2\sqrt t<t^{3/2}$ for $t\ge2$. At $t=1$, $\sigma_3^{(N)}(1)=1$ and $c_N(1)$ is $0$ for $N=3$ and $1$ otherwise.
+
+(ii) By Lemma~\ref{lem:chlunitsigns}(i), $\alpha(\delta)$ is positive for $\delta\equiv3\pmod 4$, negative for $\delta\equiv0\pmod 4$ with $\delta\ge0$, and zero otherwise, and an integer $\delta=(D-4t)/N$ satisfies $N\delta\equiv D\pmod4$, so $\delta\equiv0$ when $D\equiv0$ and $\delta\equiv3$ when $D\equiv-N\pmod 4$. For $D<0$ the only possible argument $\delta\ge-1$ is $\delta=-1$, at $D=4t-N$ with $t\le1$, where $\mu_N(t)=0$; and $r_N(D)=H(D/N)=0$. At $D=0$, $\mathcal N_N(0)=-12c_N+24a_N=0$. For $D=4e\ge4$ every term is $\le0$, and the term $t=e$ is $\alpha(0)\mu_N(e)=-2\mu_N(e)<0$ for $e\ge2$. For $D\equiv-N\pmod4$ put $e=(D+N)/4$. All terms of the sum are $\ge0$ and the term $t=e$ is $\alpha(-1)\mu_N(e)=\mu_N(e)$. By Step~3, $r_N(D)$ is at most the coefficient $\frac{24}{N-1}\big(\sigma_1(e)-N\sigma_1(e/N)\big)\le\frac{24}{N-1}\,e^2$ of $x^e$ in $\Theta_N(\sigma,0)=E_N(\sigma/N)$, and $H(D/N)\le\frac{4e}{3N}+2\sqrt{\frac{4e}{3N}}$ by the count of reduced forms in the proof of Lemma~\ref{lem:chlunitsigns}. Hence
+\[
+\mathcal N_N(D)\ge\kappa_N\big(e^3-2e^2\big)-\frac{288c_N}{N-1}e^2-288a_N\Big(\frac{4}{3N}+2\sqrt{\frac4{3N}}\Big)e,
+\]
+with $\kappa_3(e^3-2e^2)$ replaced by $9e^3$ for $N=3$. The right side is positive for $e\ge8$, $17$, $25$ when $N=3,5,7$, and for the finitely many $D\ge5$ of the class with $e$ below these bounds an exact evaluation gives $\mathcal N_N(D)>0$.
+\end{proof}
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.94\linewidth,height=0.48\textheight,keepaspectratio]{figures/fig_chloddsigns.png}
+\caption{The numerator $\mathcal N_N(D)$ of \eqref{eq:chlunioddcoeff} for $N=3,5,7$ and $D\le60$, on the scale $\mathrm{sign}\,\mathcal N\,\log_{10}(1+|\mathcal N|)$. It vanishes for $D\le0$ and off the two classes $D\equiv0$, $D\equiv-N\pmod4$; it is negative on the first and positive on the second (Lemma~\ref{lem:chlunioddsigns}).}
+\label{fig:chloddsigns}
+\end{figure}
+
+\begin{theorem}\label{thm:chlunitodd}
+In the $\ZZ_N$ CHL models with $N=3,5,7$ the single-centred index $d^*(Q,P)$ is positive for every charge with $NQ^2/2=1$, $P^2>0$ and $Q^2P^2>(Q\cdot P)^2$, and for every charge in the $\Gamma_1(N)$ orbit of such a charge.
+\end{theorem}
+
+\begin{proof}
+The proof of Lemma~\ref{lem:chlunitsetA} holds for every $N$: at $m=1$ the quantity minimised in \cite[(5.47)]{BSS25} is $(m_1\ell+2s+1)^2+m_1^2\Delta/N$ with $m_1\in N\ZZ$, at least one. So $d^*=(-1)^{\ell+1}\mathcal C_N(\Delta)$ by Proposition~\ref{prop:chluniodd}, with $\Delta=4n-N\ell^2>0$ and $\Delta\equiv-N\ell^2\pmod 4$. Every argument $\Delta+4-4j$ of $\mathcal N_N$ in \eqref{eq:chlunioddcoeff} lies in the class of $\Delta$ modulo four, and every $\beta(j)$ is positive.\footnote{The sign of $d^*$ is thus decided by the term $j=0$ alone; the other terms have the same sign and only increase $|d^*|$. Figure~\ref{fig:chloddsigns} shows the two sign classes of $\mathcal N_N$.} If $\ell$ is odd, then $\Delta\ge1$, every term is $\ge0$ by Lemma~\ref{lem:chlunioddsigns}, and the term $j=0$ is $\mathcal N_N(\Delta+4)>0$. If $\ell$ is even, then $\Delta\ge4$, every term is $\le0$, and the term $j=0$ is $\mathcal N_N(\Delta+4)<0$. In both cases $d^*>0$. The orbits follow from the $\Gamma_1(N)$ invariance of $d^*$ \cite[(5.17)--(5.18)]{BSS25}.
+\end{proof}
+
+The first values, with $\Delta=N\big(Q^2P^2-(Q\cdot P)^2\big)$, are drawn in Figure~\ref{fig:chlodd}:\footnote{The least value is $d^*=3$, at $N=7$ and $\Delta=1$, the charge with $P^2=2$ and $Q\cdot P=1$. There $\mathcal N_7(1)=0$, so $d^*=\mathcal N_7(5)=\mu_7(3)-12c_7\,r_7(5)=9-6$, with $\mu_7(3)=\tfrac3{10}\big(28-c_7(3)\big)$, $c_7(3)=-2$ and $r_7(5)=4$.}
+\[
+\begin{array}{c|cccccccc}
+N=3,\ \Delta&1&4&5&8&9&12&13&16\\
+d^*&27&540&378&3294&2646&16200&14094&68418\\\hline
+N=5,\ \Delta&3&4&7&8&11&12&15&16\\
+d^*&20&100&125&460&588&1720&2191&5544\\\hline
+N=7,\ \Delta&1&4&5&8&9&12&13&16\\
+d^*&3&36&18&138&81&444&273&1242
+\end{array}
+\]
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.94\linewidth,height=0.48\textheight,keepaspectratio]{figures/fig_chlodd.png}
+\caption{The single-centred index $d^*$ at $NQ^2/2=1$ in the $\ZZ_N$ CHL models, $N=3,5,7$, for $\Delta\le40$, on the scale $\log_{10}d^*$. Blue bars have $Q\cdot P$ even, green bars $Q\cdot P$ odd; Theorem~\ref{thm:chlunitodd} proves positivity for every $\Delta$.}
+\label{fig:chlodd}
+\end{figure}
+
 \begin{remark}\label{rem:chlunitopen}
-At $NQ^2/2=1$ the mock and holomorphic pieces of the finite part are the class numbers $H$ and the theta coefficients $r_3$, both dominated by a cubic divisor sum of fixed sign, and the same holds at $P^2=2$ in Subsection~\ref{ssec:chlpositivity}. For $NQ^2/2\ge2$ and $P^2\ge4$ the finite parts contain mock pieces of higher index for $\Gamma^0(2)$ that are not class number generating functions. A proof there needs an explicit bound of the Rademacher tail at the two cusps of $\Gamma_0(2)$ against the leading Bessel term, a reduction theory for $\Gamma_1(2)$ acting on $(n,\ell,m)$, and a treatment of the charges outside $\mathcal A$, where the Fourier coefficients of $\varphi^F_m$ need not equal $d^*$ \cite[\S5]{BSS25}.
+At $NQ^2/2=1$ the mock and holomorphic pieces of the finite part are class numbers and theta coefficients of a lattice of rank four, both dominated by a cubic divisor sum of fixed sign; this is the mechanism of Theorems~\ref{thm:chlunit} and~\ref{thm:chlunitodd}, and of Theorem~\ref{thm:chlpositivity} at $P^2=2$. For $NQ^2/2\ge2$ and $P^2\ge4$ the finite parts contain mock pieces of higher index for $\Gamma^0(N)$ that are not class number generating functions. A proof there needs an explicit bound of the Rademacher tail at the cusps of $\Gamma_0(N)$ against the leading Bessel term, a reduction theory for $\Gamma_1(N)$ acting on $(n,\ell,m)$, and a treatment of the charges outside $\mathcal A$, where the Fourier coefficients of $\varphi^F_m$ need not equal $d^*$ \cite[\S5]{BSS25}.
 \end{remark}
 
 \begin{verdict}[claim 9, heterotic and CHL]
-Proved for the heterotic string on $T^6$ at $P^2\in\{2,4\}$, with all $Q$ and $Q\cdot P$ satisfying $Q^2P^2>(Q\cdot P)^2$, and on the $SL(2,\ZZ)$ orbits of these charges (Theorem~\ref{thm:bringmannmurthy}). Proved for the $\ZZ_2$ CHL model at $P^2=2$ with every $Q$, at $NQ^2/2=1$ with every $P$, and on the $\Gamma_1(2)$ orbits of these charges (Theorems~\ref{thm:chlpositivity} and~\ref{thm:chlunit}). Our scan of the heterotic cone up to $Q^2\le 12$, $P^2\le 6$, $Q\cdot P\le 4$ (Appendix~\ref{app:computation}) and our scan for $N=2$ find only positive indices. \gap{A proof of positivity for every charge is not known: for the heterotic string it is open at $P^2\ge6$ outside the $SL(2,\ZZ)$ orbits of the charges with $P^2\le4$, for the $\ZZ_2$ CHL model at $NQ^2/2\ge2$ together with $P^2\ge4$, and for $N=3,5,7$ in general.} Remark~\ref{rem:chlunitopen} lists what a proof of the remaining $\ZZ_2$ cases needs.
+Proved for the heterotic string on $T^6$ at $P^2\in\{2,4\}$, with all $Q$ and $Q\cdot P$ satisfying $Q^2P^2>(Q\cdot P)^2$, and on the $SL(2,\ZZ)$ orbits of these charges (Theorem~\ref{thm:bringmannmurthy}). Proved for the $\ZZ_2$ CHL model at $P^2=2$ with every $Q$, at $NQ^2/2=1$ with every $P$, and on the $\Gamma_1(2)$ orbits of these charges (Theorems~\ref{thm:chlpositivity} and~\ref{thm:chlunit}). Proved for the $\ZZ_N$ CHL models with $N=3,5,7$ at $NQ^2/2=1$ with every $P$, and on the $\Gamma_1(N)$ orbits of these charges (Theorem~\ref{thm:chlunitodd}). Our scan of the heterotic cone up to $Q^2\le 12$, $P^2\le 6$, $Q\cdot P\le 4$ (Appendix~\ref{app:computation}) and our scan for $N=2$ find only positive indices. \gap{A proof of positivity for every charge is not known: for the heterotic string it is open at $P^2\ge6$ outside the $SL(2,\ZZ)$ orbits of the charges with $P^2\le4$, for the $\ZZ_2$ CHL model at $NQ^2/2\ge2$ together with $P^2\ge4$, and for $N=3,5,7$ at $NQ^2/2\ge2$.} Remark~\ref{rem:chlunitopen} lists what a proof of the remaining cases needs.
 \end{verdict}
 
 \subsection{Full and horizon indices in the toroidal orbifolds}\label{ssec:toroidal}
@@ -233,7 +373,7 @@ F^{(0,0)} &= 0,& F^{(0,1)} &= \tfrac83 A - \tfrac43 B\,E_2(\tau),\\
 F^{(1,0)} &= \tfrac83 A + \tfrac23 B\,E_2(\tfrac\tau2),& F^{(1,1)} &= \tfrac83 A + \tfrac23 B\,E_2(\tfrac{\tau+1}2),
 \end{aligned}
 \end{equation}
-where $A = \sum_{i=2}^4\theta_i(\tau,z)^2/\theta_i(\tau,0)^2$, $B = \theta_1(\tau,z)^2/\eta(\tau)^6$, and $E_2(\tau) := 2E(2\tau) - E(\tau)$ is the weight-two form of $\Gamma_0(2)$ built from the Eisenstein series $E(\tau) = 1 - 24\sum\sigma_1(n)q^n$ (this is the $E_N$ of \cite{DJS06}; it is not the quasi-modular Eisenstein series, and the two are easily confused). The Siegel form is $\Phit_2 = \Phit_6^2/\Phit_{10}$, of weight two, with the prefactor $e^{2\pi i(\rho+v)}$ in place of $e^{2\pi i(\rho+\sigma/N+v)}$ in \eqref{eq:product}, and the index is given by \eqref{eq:dvv} with $Q^2\in\ZZ$, $P^2\in 2\ZZ$. The single-centred region is again cut out by \eqref{eq:z2conditions}, since the duality group is again $\Gamma_1(2)$.
+where $A = \sum_{i=2}^4\theta_i(\tau,z)^2/\theta_i(\tau,0)^2$, $B = \theta_1(\tau,z)^2/\eta(\tau)^6$, and $E_2(\tau) := 2E(2\tau) - E(\tau)$ is the weight-two form of $\Gamma_0(2)$ built from the Eisenstein series $E(\tau) = 1 - 24\sum\sigma_1(n)q^n$ (the $E_N$ of \cite{DJS06}, not the quasi-modular Eisenstein series). The Siegel form is $\Phit_2 = \Phit_6^2/\Phit_{10}$, of weight two, with the prefactor $e^{2\pi i(\rho+v)}$ in place of $e^{2\pi i(\rho+\sigma/N+v)}$ in \eqref{eq:product}, and the index is given by \eqref{eq:dvv} with $Q^2\in\ZZ$, $P^2\in 2\ZZ$. The single-centred region is again cut out by \eqref{eq:z2conditions}, since the duality group is again $\Gamma_1(2)$.
 
 \begin{theorem}[known negative full indices; finite exact test]\label{thm:positivityfails}
 In the $\ZZ_2$ toroidal orbifold of type IIB on $T^6$, the index $d(Q,P)$ computed from \eqref{eq:dvv} with the contour of the attractor region is negative for infinitely many charges satisfying the single-centred conditions \eqref{eq:z2conditions}. In the range $Q^2\le 12$, $P^2\le 8$, $Q\cdot P\le 4$ there are exactly thirty such charge triples, listed in Table~\ref{tab:violations}; the first ones are

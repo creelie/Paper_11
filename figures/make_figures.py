@@ -3,7 +3,9 @@
 Run from the repository root:  python3 figures/make_figures.py
 Reads code/siegel_dyons_out.json for the orbifold indices and writes
 figures/fig_indices.png, figures/fig_caustic.png, figures/fig_verdicts.png,
-figures/fig_weakcoupling.png, figures/fig_valley.png, figures/fig_rigidity.png.
+figures/fig_weakcoupling.png, figures/fig_valley.png, figures/fig_rigidity.png,
+figures/fig_chlodd.png, figures/fig_chloddsigns.png (the last two compute with the modules
+code/chl_odd_*.py, which need python-flint).
 """
 import json
 import os
@@ -247,6 +249,82 @@ def fig_rigidity():
     save(fig, "fig_rigidity.png")
 
 
+def _chl_odd(N, Dmax):
+    import sys
+    sys.path.insert(0, os.path.join(ROOT, "code"))
+    from chl_odd_positivity import Num, ginv
+    P = Num(N, Dmax + 8)
+    b = ginv(N, Dmax // 4 + 4)
+    cache = {}
+
+    def calN(D):
+        if D not in cache:
+            cache[D] = P.calN(D)
+        return cache[D]
+
+    def cF(D):
+        return sum(b[j] * calN(D + 4 - 4 * j) for j in range(0, (D + 4 + N) // 4 + 1))
+    return calN, cF
+
+
+def fig_chlodd():
+    fig = plt.figure(figsize=(W, H))
+    ax = fig.add_subplot(111, projection="3d")
+    Dmax = 40
+    for i, N in enumerate((3, 5, 7)):
+        calN, cF = _chl_odd(N, Dmax)
+        for D in range(1, Dmax + 1):
+            if D % 4 == 0:
+                d, col = -cF(D), BLUE
+            elif D % 4 == (-N) % 4:
+                d, col = cF(D), GREEN
+            else:
+                continue
+            h = float(np.log10(float(d)))
+            ax.bar3d(D - 0.4, i - 0.18, 0, 0.8, 0.36, h, color=col, edgecolor="black", linewidth=0.25, shade=True)
+    ax.set_xlabel(r"$\Delta=N\,(Q^2P^2-(Q\cdot P)^2)$", labelpad=10)
+    ax.set_ylabel(r"$N$", labelpad=6)
+    ax.set_yticks([0, 1, 2])
+    ax.set_yticklabels(["3", "5", "7"])
+    ax.set_zlabel(r"$\log_{10} d^*$", labelpad=6)
+    ax.set_xticks(range(0, Dmax + 1, 8))
+    ax.view_init(elev=32, azim=-38)
+    ax.set_box_aspect((2.2, 1.5, 1.0))
+    fig.text(0.5, 0.94, r"Single-centred index $d^*$ at $NQ^2/2=1$ in the $\mathbb{Z}_N$ CHL models", ha="center", fontsize=12)
+    fig.text(0.5, 0.05, r"blue: $Q\cdot P$ even ($\Delta\equiv0$ mod 4); green: $Q\cdot P$ odd ($\Delta\equiv-N$ mod 4); every bar is positive", ha="center", fontsize=10)
+    fig.subplots_adjust(left=0.02, right=0.98, bottom=0.06, top=0.95)
+    save(fig, "fig_chlodd.png")
+
+
+def fig_chloddsigns():
+    fig = plt.figure(figsize=(W, H))
+    ax = fig.add_subplot(111, projection="3d")
+    Dmax = 60
+    for i, N in enumerate((3, 5, 7)):
+        calN, cF = _chl_odd(N, Dmax)
+        for D in range(1, Dmax + 1):
+            if D % 4 not in (0, (-N) % 4):
+                continue
+            v = float(calN(D))
+            if v == 0:
+                continue
+            h = np.sign(v) * np.log10(1 + abs(v))
+            col = BURNT if v < 0 else GREY
+            ax.bar3d(D - 0.45, i - 0.18, min(0, h), 0.9, 0.36, abs(h), color=col, edgecolor="black", linewidth=0.2, shade=True)
+    ax.set_xlabel(r"$D$", labelpad=8)
+    ax.set_ylabel(r"$N$", labelpad=6)
+    ax.set_yticks([0, 1, 2])
+    ax.set_yticklabels(["3", "5", "7"])
+    ax.set_zlabel(r"$\mathrm{sign}\,\mathcal{N}_N(D)\,\log_{10}(1+|\mathcal{N}_N(D)|)$", labelpad=8)
+    ax.set_xticks(range(0, Dmax + 1, 10))
+    ax.view_init(elev=26, azim=-38)
+    ax.set_box_aspect((2.2, 1.5, 1.1))
+    fig.text(0.5, 0.94, r"The numerator $\mathcal{N}_N(D)$ of the finite part, $N=3,5,7$", ha="center", fontsize=12)
+    fig.text(0.5, 0.05, r"burnt orange: $D\equiv0$ mod 4, negative; grey: $D\equiv-N$ mod 4, positive; one sign in each class", ha="center", fontsize=10)
+    fig.subplots_adjust(left=0.02, right=0.98, bottom=0.06, top=0.95)
+    save(fig, "fig_chloddsigns.png")
+
+
 H_FIG = H
 
 if __name__ == "__main__":
@@ -256,3 +334,5 @@ if __name__ == "__main__":
     fig_weakcoupling()
     fig_valley()
     fig_rigidity()
+    fig_chlodd()
+    fig_chloddsigns()
