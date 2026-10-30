@@ -31,7 +31,8 @@ The Lean run prints the axioms of each of the fifty-seven theorems; every one is
 | v2.1.0 (28 October 2026) | [10.5281/zenodo.23746042](https://doi.org/10.5281/zenodo.23746042) |
 | v2.2.0 (28 October 2026) | [10.5281/zenodo.23747112](https://doi.org/10.5281/zenodo.23747112) |
 | v2.2.1 (28 October 2026) | [10.5281/zenodo.23749469](https://doi.org/10.5281/zenodo.23749469) |
-| v3.0.0 (30 October 2026, this revision) | [10.5281/zenodo.23789251](https://doi.org/10.5281/zenodo.23789251) |
+| v3.0.0 (30 October 2026) | [10.5281/zenodo.23789251](https://doi.org/10.5281/zenodo.23789251) |
+| v3.1.0 (30 October 2026, this revision) | [10.5281/zenodo.23790654](https://doi.org/10.5281/zenodo.23790654) |
 
 The concept DOI of all versions is [10.5281/zenodo.23652472](https://doi.org/10.5281/zenodo.23652472).
 
