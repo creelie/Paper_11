@@ -14,14 +14,7 @@
 \usepackage{orcidlink}
 \usepackage[protrusion=true,expansion=false]{microtype}
 \usepackage{xurl}
-\usepackage{soul}
-\definecolor{burntorange}{RGB}{204,85,0}
-\definecolor{softyellow}{RGB}{255,241,168}
-\sethlcolor{softyellow}
-\newcommand{\fatal}[1]{\textcolor{burntorange}{#1}}
-\newcommand{\gap}[1]{\hl{#1}}
-\definecolor{rosewrong}{RGB}{255,196,204}
-\newcommand{\wrong}[1]{{\sethlcolor{rosewrong}\hl{#1}}}
+\newcommand{\gap}[1]{#1}
 \usepackage{tcolorbox}
 \tcbuselibrary{skins,breakable}
 \newtcolorbox{closurebox}[1]{breakable,enhanced jigsaw,parbox=false,colback=blue!3,colframe=blue!45!black,boxrule=0.6pt,arc=1.5mm,fonttitle=\bfseries,title={#1}}
@@ -49,7 +42,7 @@
 \newcommand{\dd}{\mathrm{d}}
 \newcommand{\Phit}{\widetilde{\Phi}}
 \newcommand{\anaxiaDOIlink}{\href{https://doi.org/10.5281/zenodo.23484160}{\nolinkurl{doi:10.5281/zenodo.23484160}}}
-\renewcommand{\st}{\textsc}
+\newcommand{\st}{\textsc}
 \newcommand{\zenodoCodeID}{10.5281/zenodo.23790654}
 \newcommand{\paragraphx}[1]{\medskip\noindent\textbf{#1}\ }
 \tolerance=2000
