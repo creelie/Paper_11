@@ -49,7 +49,7 @@ The proof occupies the rest of this subsection. Its first two steps identify the
 \begin{equation}\label{eq:chlpolar}
 \psi_1^P(\tau,z)=\frac{52}{g(\tau)}\sum_{s\in\ZZ}\frac{q^{2(s^2+s)}\zeta^{2s+1}}{(1-q^{2s}\zeta)^2},
 \end{equation}
-where $52$ is the coefficient of $p^{1/2}$ in $1/g(\sigma/2)$, $p=e^{2\pi i\sigma}$, namely $\binom92+8+8$. Write $\psi_1^F=\psi_1-\psi_1^P=\sum c^F(m,\ell)q^m\zeta^\ell$. By \cite[Theorem~5.4(b)]{BSS25}, for a charge with $Q^2=m$, $P^2=2$, $Q\cdot P=\ell$ in their set $B$, $d^*=\tfrac12(-1)^{\ell+1}c^F(m,\ell)$. Their set $B_1$ \cite[(5.65)]{BSS25} at $N=2$ and $P^2/2=1$ is the condition $2m-\ell^2\ge\tfrac14$, which for integers is $Q^2P^2-(Q\cdot P)^2=2(2m-\ell^2)>0$. The theorem is therefore the statement $(-1)^{\ell+1}c^F(m,\ell)>0$ for $2m-\ell^2>0$; the orbits follow from the $\Gamma_1(2)$ invariance of $d^*$.
+where $52$ is the coefficient of $p^{1/2}$ in $1/g(\sigma/2)$, $p=e^{2\pi i\sigma}$, namely $\binom92+8+8$. Write $\psi_1^F=\psi_1-\psi_1^P=\sum c^F(m,\ell)q^m\zeta^\ell$. By \cite[Theorem~5.4(b)]{BSS25}, for a charge with $Q^2=m$, $P^2=2$, $Q\cdot P=\ell$ in their set $B$, $d^*=\tfrac12(-1)^{\ell+1}c^F(m,\ell)$. Their set $B_1$ \cite[(5.65)]{BSS25} at $N=2$ and $P^2/2=1$ is the condition $2m-\ell^2\ge\tfrac14$, which for integers is $Q^2P^2-(Q\cdot P)^2=2m-\ell^2>0$. The theorem is therefore the statement $(-1)^{\ell+1}c^F(m,\ell)>0$ for $2m-\ell^2>0$; the orbits follow from the $\Gamma_1(2)$ invariance of $d^*$.
 
 \paragraphx{Step 2: the finite part in closed form.} Chattopadhyaya and David \cite[(3.12)--(3.22)]{CD19} reduce $\psi_1$ to the forms $A$, $B$, $E_2$, $E_4$ through the twisted elliptic genera of the model, separate the double pole with the identity $\phi_{0,1}^2/\phi_{-2,1}=144\sum_s q^{s^2+s}\zeta^{2s+1}(1-q^s\zeta)^{-2}+E_4\phi_{-2,1}-288\,\mathcal H$ for the weak Jacobi forms $\phi_{0,1}=4A$, $\phi_{-2,1}=-B$ \cite[Section~3]{BringmannMurthy13}, taken at $2\tau$, and find
 \begin{equation}\label{eq:chlclosed}
@@ -93,10 +93,135 @@ with $\lambda=\tfrac{16}{35}\big(\tfrac{20}3-\tfrac23\zeta(3)\big)>2.681$ and $\
 and $-h_0=q^{-1}(-2+\sum a_kq^k)\Pi$ has positive coefficients at every exponent $q^{(2m-\ell^2)/2}$ with $2m-\ell^2\ge0$. The hypothesis holds: $a_1,a_2,a_3=176,\ 860,\ 3424$ exceed $2s(k)/k=16,\ 40,\ \tfrac{64}{3}$, and for $k\ge4$, $a_k\ge u(2k)\ge\kappa(2k+1)\ge(2k+1)^3(3\lambda-\mu)>\tfrac{23}{40}(2k+1)^3>32(1+k)$, while $s(k)/k\le16(1+\log k)$ because $\sigma(k)/k\le1+\log k$. So $(-1)^{\ell+1}c^F(m,\ell)=-c^F(m,\ell)>0$ for even $\ell$, which completes the proof.\qed
 
 \smallskip
-The exact computations behind the values quoted in Steps~5 to~7 and the comparison of Step~2 are the checks of \cite{Bha26}. The same method applies to each further magnetic charge once the finite part is known in closed form; we have not carried it out beyond $P^2=2$.
+The exact computations behind the values quoted in Steps~5 to~7 and the comparison of Step~2 are the checks of \cite{Bha26}. The same method applies to each further magnetic charge once the finite part is known in closed form; we have not carried it out beyond $P^2=2$. In the other variable it gives every magnetic charge at once, at the first electric charge.
+
+\subsection{The \texorpdfstring{$\ZZ_2$}{Z2} CHL model at \texorpdfstring{$NQ^2/2=1$}{NQ2/2=1}}\label{ssec:chlunit}
+
+The expansion of $1/\Phit_6$ in the other variable gives the first electric charge for every magnetic charge. Write $x=e^{\pi i\sigma}$, $p=x^2$, $y=e^{2\pi iv}$, and expand $1/\Phit_6=\sum_{m\ge-1}\varphi_m(\sigma,v)\,e^{2\pi im\rho}$. In the normalisation of Appendix~\ref{app:computation} the coefficient of $x^ny^\ell$ in $\varphi_m$ belongs to the charges with $NQ^2/2=m$, $P^2/2=n$ and $Q\cdot P=\ell$, and at $m=1$ one has $Q^2=1$ and $Q^2P^2-(Q\cdot P)^2=2n-\ell^2$. By \cite[Theorem~5.2]{BSS25}, $\varphi_m$ is a meromorphic Jacobi form of weight $-6$ and index $m$ with double poles on $\ZZ\sigma+\ZZ$; its polar part is \cite[(5.45)]{BSS25}, and its finite part $\varphi^F_m$ is a mock Jacobi form. By \cite[Theorem~5.4(a)]{BSS25} the single-centred index is $(-1)^{\ell+1}$ times the Fourier coefficient of $\varphi^F_m$ for every charge in the set $\mathcal A$ of \cite[(5.46)--(5.47)]{BSS25}. With $g$ as in Subsection~\ref{ssec:chlpositivity} write
+\[
+\frac1{g(\sigma/2)}=\sum_{j\ge0}\beta(j)\,x^{j-1},\qquad \sum_{j\ge0}\beta(j)\,x^j=\prod_{r\ge1}(1-x^r)^{-e_r},\quad e_r=\begin{cases}8,& r\ \text{odd},\\ 16,& r\ \text{even},\end{cases}
+\]
+so that every $\beta(j)$ is a positive integer.
+
+\begin{lemma}\label{lem:chlunitsetA}
+Every charge with $NQ^2/2=1$, $P^2>0$ and $Q^2P^2-(Q\cdot P)^2>0$ lies in $\mathcal A$. Hence $d^*(Q,P)=(-1)^{\ell+1}c^F_1(n,\ell)$, where $\varphi^F_1=\sum c^F_1(n,\ell)x^ny^\ell$.
+\end{lemma}
+
+\begin{proof}
+Condition (5.46) of \cite{BSS25} is $Q^2P^2-(Q\cdot P)^2>0$. For $m=1$ the quantity minimised in (5.47) is $(m_1\ell+2s+1)^2+m_1^2(2n-\ell^2)$ with $m_1\in 2\ZZ$ and $s\in\ZZ$. The first term is the square of an odd integer and the second is nonnegative, so the minimum is at least one.
+\end{proof}
+
+Let $\phi_{-2,1}=-B$ and $\phi_{0,1}=4A$ be the weak Jacobi forms of weight $-2$ and $0$ and index one \cite{EZ85}, now in the variables $(\sigma,v)$, with $\phi_{-2,1}=\sum\alpha(4a-r^2)p^ay^r$, so that $\alpha(-1)=1$ and $\alpha(0)=-2$. Let $\mathcal H$ be as in Subsection~\ref{ssec:chlpositivity}, in the variables $(\sigma,v)$, let $r_3(D)$ be the number of representations of $D$ as a sum of three squares, $M$ as in \eqref{eq:chlclosed2}, so that $M(\tau)=\sum_{n\ge1}\sigma_3^{\rm odd}(n)q^n$ with $\sigma_3^{\rm odd}(n)=\sum_{d\mid n,\,n/d\ \text{odd}}d^3$, and
+\[
+\mathcal B(\sigma,v)=\sum_{s\in\ZZ}\frac{p^{s^2+s}y^{2s+1}}{(1-p^sy)^2},\qquad
+\Theta(\sigma,v)=\sum_{e,\ell}r_3(2e-\ell^2)\,x^ey^\ell .
+\]
+With $\theta_3(\tau,v)=\sum_kq^{k^2/2}y^k$ and $\theta_4(\tau,v)=\sum_k(-1)^kq^{k^2/2}y^k$,
+\[
+\Theta(\sigma,v)=\tfrac12\big[\theta_3(\tfrac\sigma2,v)\,\theta_3(\tfrac\sigma2,0)^3+\theta_4(\tfrac\sigma2,v)\,\theta_4(\tfrac\sigma2,0)^3\big];
+\]
+it is the theta series of the lattice $D_4$, with the Jacobi variable on one coordinate vector, at $\tau=\sigma/2$.
+
+\begin{proposition}\label{prop:chlunitclosed}
+In the $\ZZ_2$ CHL model,
+\begin{equation}\label{eq:chlunitclosed}
+g(\tfrac\sigma2)\,\varphi_1(\sigma,v)=52\,\mathcal B(\sigma,v)+48\,M(\tfrac\sigma2)\,\phi_{-2,1}(\sigma,v)-\tfrac{20}3\,\Theta(\sigma,v)-104\,\mathcal H(\sigma,v).
+\end{equation}
+The polar part of $\varphi_1$ is $52\,\mathcal B/g(\sigma/2)$, and the coefficients of the finite part depend only on $\Delta=2n-\ell^2$:
+\begin{equation}\label{eq:chlunitcoeff}
+\begin{gathered}
+c^F_1(n,\ell)=\mathcal C(\Delta):=\sum_{j\ge0}\beta(j)\,\mathcal N(\Delta+2-2j),\\
+\mathcal N(D)=48\sum_{t\ge1}\sigma_3^{\rm odd}(t)\,\alpha(D-2t)-\tfrac{20}3\,r_3(D)-104\,H(D).
+\end{gathered}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+\emph{Step 1: the product formula.} In \eqref{eq:product} the factors with $l=0$ have exponents $\sum_sc^{(r,s)}(-j^2)$, equal to $12$, $2$, $8$, $0$ for $(r,|j|)=(0,0),(0,1),(1,0),(1,1)$ and to $0$ for $|j|\ge2$. With the prefactor they give $\varphi_{-1}=1/\big(g(\sigma/2)\,\phi_{-2,1}(\sigma,v)\big)$, since $\phi_{-2,1}=-\theta_1(\sigma,v)^2/\eta(\sigma)^6$. Taking the logarithm of the factors with $l\ge1$, the coefficients of $e^{2\pi i\rho}$ and $e^{4\pi i\rho}$ are
+\[
+\begin{aligned}
+L_1&=\sum_s(-1)^s\Big[F^{(0,s)}(\sigma,v)+\tfrac12\big(F^{(1,s)}(\sigma,v)-F^{(1,s)}(\sigma+1,v)\big)\Big],\\
+L_2&=\tfrac14\sum_{r,s}\sum_{t=0}^3(-1)^{rt}F^{(r,s)}\big(\tfrac{\sigma+t}2,v\big)+\tfrac12L_1(2\sigma,2v),
+\end{aligned}
+\]
+and $\varphi_1=\varphi_{-1}\big(L_2+\tfrac12L_1^2\big)$. Each $L_i$ is a series in $x$ whose coefficients are Laurent polynomials in $y$, hence entire in $v$.
+
+\emph{Step 2: $L_2+\frac12L_1^2$ in terms of $\phi_{-2,1}$ and $\phi_{0,1}$.} We claim that
+\begin{equation}\label{eq:chlunitG1}
+L_2+\tfrac12L_1^2=\tfrac{13}{36}\,\phi_{0,1}^2-\tfrac59\,E_2(\tfrac\sigma2)\,\phi_{-2,1}\phi_{0,1}+\Big(\tfrac4{45}E_4(\tfrac\sigma2)+\tfrac{19}{180}E_4(\sigma)\Big)\phi_{-2,1}^2,
+\end{equation}
+with $E_2$ the form of $\Gamma_0(2)$ of \eqref{eq:tor2genera}. The twisted genera $F^{(r,s)}$ of the model are weak Jacobi forms of weight $0$ and index one for $\Gamma(2)$, combinations of $\phi_{0,1}$ and of $\phi_{-2,1}$ times $E_2$ at $\tau$, $\tau/2$ and $(\tau+1)/2$ \cite{DJS06}. For $M_t=\begin{psmallmatrix}1&t\\0&2\end{psmallmatrix}$ and $\gamma=\begin{psmallmatrix}a&b\\c&d\end{psmallmatrix}\in\Gamma(4)$ the matrices
+\[
+M_t\gamma M_t^{-1}=\begin{pmatrix}a+tc&\tfrac12\big(b+t(d-a)-t^2c\big)\\2c&d-tc\end{pmatrix},\qquad
+\begin{pmatrix}2&0\\0&1\end{pmatrix}\gamma\begin{pmatrix}2&0\\0&1\end{pmatrix}^{-1}=\begin{pmatrix}a&2b\\c/2&d\end{pmatrix}
+\]
+lie in $\Gamma(2)$, so $F^{(r,s)}((\sigma+t)/2,v)$, $F^{(r,s)}(\sigma+1,v)$ and $L_1(2\sigma,2v)$ are invariant under $\Gamma(4)$, and the substitutions $v\mapsto v+\lambda\sigma+\mu$ show that each has the elliptic property of index two (for the first, the shift is $v\mapsto v+2\lambda\tau+(\mu-\lambda t)$ with $\tau=(\sigma+t)/2$). Every term of \eqref{eq:chlunitG1} is therefore a Jacobi form of weight $0$ and index two for $\Gamma(4)$, holomorphic and even in $v$. It is weak at every cusp: for $\gamma\in SL_2(\ZZ)$ one has $M_t\gamma=\gamma'M'$ with $\gamma'\in SL_2(\ZZ)$ and $M'$ one of the three upper triangular matrices of determinant two, and $SL_2(\ZZ)$ permutes the $F^{(r,s)}$, none of which has a negative power of $q$. Let $G_1$ be the difference of the two sides and $G_1=\chi_0(\sigma)+\chi_2(\sigma)v^2+\chi_4(\sigma)v^4+\cdots$. If $\chi_0=\dots=\chi_{\nu-2}=0$, the lowest order in $v$ of the transformation law shows that $\chi_\nu$ is a modular form of weight $\nu$ for $\Gamma(4)$ \cite[\S3]{EZ85}, holomorphic at the cusps because $G_1$ is weak. Since $[PSL_2(\ZZ):\bar\Gamma(4)]=24$ and the width at $\infty$ is four, Sturm's bound \cite{Sturm87} says that a form of weight $\nu$ for $\Gamma(4)$ whose coefficients of $x^0,\dots,x^\nu$ vanish is zero. The coefficients of $G_1$ vanish through $x^{48}$, so $\chi_0=\chi_2=\chi_4=0$. For every $\sigma$ the entire function $G_1(\sigma,\cdot)$ then vanishes to order at least six at $v=0$, while a nonzero function with the elliptic property of index two has exactly four zeros in a period parallelogram \cite[Theorem~1.2]{EZ85}; hence $G_1=0$.
+
+\emph{Step 3: two identities.} The identity of Step~2 of Subsection~\ref{ssec:chlpositivity} \cite[Section~3]{BringmannMurthy13}, in the variables $(\sigma,v)$, is
+\begin{equation}\label{eq:chlunitBM}
+\frac{\phi_{0,1}^2}{\phi_{-2,1}}=144\,\mathcal B+E_4(\sigma)\,\phi_{-2,1}-288\,\mathcal H .
+\end{equation}
+The second identity is
+\begin{equation}\label{eq:chlunitG3}
+E_2(\tfrac\sigma2)\,\phi_{0,1}=\tfrac15\big(6E_4(\sigma)-E_4(\tfrac\sigma2)\big)\phi_{-2,1}+12\,\Theta .
+\end{equation}
+Both sides are even holomorphic Jacobi forms of weight two and index one for $\Gamma^0(2)$: $\Theta$ is the theta series of the even lattice $D_4$, of determinant four and level two, at $\tau=\sigma/2$ \cite[\S7]{EZ85}, and $E_4(\sigma)$, $E_4(\sigma/2)$ and $E_2(\sigma/2)$ are modular forms for $\Gamma^0(2)$. The argument of Step~2 applies with $[PSL_2(\ZZ):\bar\Gamma^0(2)]=3$, width two at $\infty$ and local parameter $x$, Sturm bound $x^{\lfloor\nu/4\rfloor}$, and two zeros in a period parallelogram; the coefficients of the difference vanish through $x^{48}$, so \eqref{eq:chlunitG3} holds.
+
+\emph{Step 4.} Divide \eqref{eq:chlunitG1} by $\phi_{-2,1}$ and insert \eqref{eq:chlunitBM} and \eqref{eq:chlunitG3}. The coefficient of $\mathcal B$ is $\tfrac{13}{36}\cdot144=52$, that of $\mathcal H$ is $-\tfrac{13}{36}\cdot288=-104$, that of $\Theta$ is $-\tfrac59\cdot12=-\tfrac{20}3$, and that of $\phi_{-2,1}$ is
+\[
+\Big(\tfrac{13}{36}-\tfrac23+\tfrac{19}{180}\Big)E_4(\sigma)+\Big(\tfrac19+\tfrac4{45}\Big)E_4(\tfrac\sigma2)=\tfrac15\big(E_4(\tfrac\sigma2)-E_4(\sigma)\big)=48\,M(\tfrac\sigma2).
+\]
+This is \eqref{eq:chlunitclosed}. The term $52\,\mathcal B/g(\sigma/2)$ is the polar part \cite[(5.45)]{BSS25}, and $48M\phi_{-2,1}-\tfrac{20}3\Theta-104\mathcal H$ has the coefficient $\mathcal N(2e-\ell^2)$ at $x^ey^\ell$; multiplying by $1/g(\sigma/2)$ gives \eqref{eq:chlunitcoeff}.
+\end{proof}
+
+The comparisons of the coefficients through $x^{48}$ in Steps~2 and~3, and of \eqref{eq:chlunitclosed} with the product formula on every coefficient $x^ey^\ell$ with $e\le20$ and $|\ell|\le42$, are checks of \cite{Bha26}.
+
+\begin{lemma}\label{lem:chlunitsigns}
+\textup{(i)} $\alpha(D)>0$ for $D\equiv3\pmod4$, $\alpha(D)<0$ for $D\equiv0\pmod4$ with $D\ge0$, and $\alpha(D)=0$ otherwise.
+
+\textup{(ii)} $\mathcal N(D)=0$ for $D<0$, $\mathcal N(0)=2$, $\mathcal N(D)>0$ for odd $D\ge1$, and $-\mathcal N(2t)\ge96\,\sigma_3^{\rm odd}(t)$ for $t\ge1$.
+\end{lemma}
+
+\begin{proof}
+(i) $\phi_{-2,1}(\tau,z)=\big[\vartheta_{1,0}(\tau,0)\vartheta_{1,1}(\tau,z)-\vartheta_{1,1}(\tau,0)\vartheta_{1,0}(\tau,z)\big]/\eta(\tau)^6$ with $\vartheta_{1,\mu}(\tau,z)=\sum_{r\equiv\mu\,(2)}q^{r^2/4}\zeta^r$ \cite[(4.1)]{BringmannMurthy13}. So $\sum_{D\equiv3\,(4)}\alpha(D)q^{(D+1)/4}=\vartheta_{1,0}(\tau,0)\prod(1-q^n)^{-6}$ and $\sum_{D\equiv0\,(4)}\alpha(D)q^{D/4}=-q^{-1/4}\vartheta_{1,1}(\tau,0)\prod(1-q^n)^{-6}$, and both series on the right have positive coefficients at every exponent $\ge0$.
+
+(ii) For $D<0$ every argument $D-2t$ is at most $-3$, and $r_3(D)=H(D)=0$. At $D=0$, $\mathcal N(0)=-\tfrac{20}3+\tfrac{104}{12}=2$. For $D=2t$ every $\alpha(2t-2t')$ is $\le0$ by (i), the term $t'=t$ is $\alpha(0)=-2$, and $r_3,H\ge0$; this gives $-\mathcal N(2t)\ge96\,\sigma_3^{\rm odd}(t)$. For odd $D$ every $\alpha(D-2t)$ is $\ge0$, and the term $t=(D+1)/2$ is $\alpha(-1)\sigma_3^{\rm odd}(t)\ge t^3$, so the sum in $\mathcal N(D)$ is at least $6(D+1)^3$. Further $r_3(D)\le(2\sqrt D+1)\max_{m\le D}r_2(m)\le(2\sqrt D+1)\,8\sqrt D\le24D$, from $r_2(m)\le4d(m)\le8\sqrt m$; and $H(D)$ is at most the number of reduced forms $(a,b,c)$ of discriminant $-D$, which have $|b|\le a\le\sqrt{D/3}$ and are fixed by $(a,b)$, so $H(D)\le D/3+2\sqrt{D/3}\le D$ for $D\ge3$. Hence $\mathcal N(D)\ge6(D+1)^3-264D>0$ for odd $D\ge7$, and $\mathcal N(1),\mathcal N(3),\mathcal N(5)=8,\ 296,\ 1568$.
+\end{proof}
+
+\begin{lemma}\label{lem:chlunitproduct}
+Let $f=-1+\sum_{n\ge1}a_nx^n$ with $a_n>K$ for every $n$, and let $0<e_r\le K$ for every $r\ge1$. Then $f\prod_{r\ge1}(1-x^r)^{-e_r}$ has positive coefficients at every $x^n$ with $n\ge1$.
+\end{lemma}
+
+\begin{proof}
+Let $f_0=f$ and $f_s=f_{s-1}(1-x^s)^{-e_s}=-1+\sum_nb^{(s)}_nx^n$. We show by induction on $s$ that $b^{(s)}_n>0$ for $n\ge1$ and $b^{(s)}_n>K$ for $n>s$; since $f_s$ and the full product agree through $x^s$, this proves the lemma. The case $s=0$ is the hypothesis. Write $e=e_s$ and $b=b^{(s-1)}$. If $s\nmid n$, then $b^{(s)}_n=\sum_k\binom{e+k-1}kb_{n-sk}\ge b_n$, all terms being positive. If $n=sm$, then
+\[
+b^{(s)}_{sm}=\sum_{k=0}^{m-1}\binom{e+k-1}k\,b_{s(m-k)}-\binom{e+m-1}m>\binom{e+m-1}{m-1}\Big(K-\frac em\Big),
+\]
+since every $b_{s(m-k)}$ exceeds $K$ and $\sum_{k=0}^{m-1}\binom{e+k-1}k=\binom{e+m-1}{m-1}$. The right side is $K-e\ge0$ for $m=1$, and at least $(e+1)(K-\tfrac e2)\ge(e+1)\tfrac K2\ge K$ for $m\ge2$.
+\end{proof}
+
+\begin{theorem}\label{thm:chlunit}
+In the $\ZZ_2$ CHL model the single-centred index $d^*(Q,P)$ is positive for every charge with $NQ^2/2=1$, $P^2>0$ and $Q^2P^2>(Q\cdot P)^2$, and for every charge in the $\Gamma_1(2)$ orbit of such a charge.
+\end{theorem}
+
+\begin{proof}
+By Lemma~\ref{lem:chlunitsetA} and Proposition~\ref{prop:chlunitclosed}, $d^*=(-1)^{\ell+1}\mathcal C(\Delta)$ with $\Delta=2n-\ell^2\equiv\ell\pmod2$. If $\Delta$ is odd, every argument of $\mathcal N$ in \eqref{eq:chlunitcoeff} is odd, so every term is nonnegative by Lemma~\ref{lem:chlunitsigns}, and the term $j=0$ is $\mathcal N(\Delta+2)>0$. If $\Delta=2u$ is even, $-\mathcal C(2u)$ is the coefficient of $x^{u+1}$ in $f\prod_r(1-x^r)^{-e_r}$ with $f=\sum_{t\ge0}\big(-\mathcal N(2t)\big)x^t$. By Lemma~\ref{lem:chlunitsigns}, $f/2=-1+\sum_{t\ge1}a_tx^t$ with $a_t\ge48$, and Lemma~\ref{lem:chlunitproduct} with $K=16$ gives $-\mathcal C(2u)>0$. The orbits follow from the $\Gamma_1(2)$ invariance of $d^*$ \cite[(5.17)--(5.18)]{BSS25}.
+\end{proof}
+
+On the row $Q^2=1$ of the cone \eqref{eq:z2conditions}, where $Q\cdot P\in\{0,1,2\}$, the index computed from the product formula as in Appendix~\ref{app:computation} is $d^*$. In the region $-\operatorname{Im}\sigma<\operatorname{Im}v<0$ of that expansion the term $s\ge1$ of $\mathcal B$ is a series in $y^{2s+1+k}$, $k\ge0$, the term $s\le-1$ a series in $y^{2s-1-k}$, and $y/(1-y)^2=\sum_{k\ge0}(k+1)y^{-1-k}$, so $\mathcal B/g(\sigma/2)$ contributes nothing at $y^\ell$ with $0\le\ell\le2$. The first values, with $\Delta=P^2-(Q\cdot P)^2$, are
+\[
+\begin{gathered}
+d^*=360,\ 2164,\ 4352,\ 18944,\ 36024,\ 125860,\ 233080,\ 705536\quad(\Delta=1,\dots,8),
+\end{gathered}
+\]
+in agreement with the product formula for $P^2\le48$ and $0\le Q\cdot P\le2$ \cite{Bha26}. The charge $(Q^2,P^2,Q\cdot P)=(1,2,1)$, with $d^*=360$, lies in both Theorems~\ref{thm:chlpositivity} and~\ref{thm:chlunit}.
+
+\begin{remark}\label{rem:chlunitopen}
+At $NQ^2/2=1$ the mock and holomorphic pieces of the finite part are the class numbers $H$ and the theta coefficients $r_3$, both dominated by a cubic divisor sum of fixed sign, and the same holds at $P^2=2$ in Subsection~\ref{ssec:chlpositivity}. For $NQ^2/2\ge2$ and $P^2\ge4$ the finite parts contain mock pieces of higher index for $\Gamma^0(2)$ that are not class number generating functions. A proof there needs an explicit bound of the Rademacher tail at the two cusps of $\Gamma_0(2)$ against the leading Bessel term, a reduction theory for $\Gamma_1(2)$ acting on $(n,\ell,m)$, and a treatment of the charges outside $\mathcal A$, where the Fourier coefficients of $\varphi^F_m$ need not equal $d^*$ \cite[\S5]{BSS25}.
+\end{remark}
 
 \begin{verdict}[claim 9, heterotic and CHL]
-Proved for the heterotic string on $T^6$ at $P^2\in\{2,4\}$, with all $Q$ and $Q\cdot P$ satisfying $Q^2P^2>(Q\cdot P)^2$, and on the $SL(2,\ZZ)$ orbits of these charges (Theorem~\ref{thm:bringmannmurthy}). Proved for the $\ZZ_2$ CHL model at $P^2=2$ and on the $\Gamma_1(2)$ orbits (Theorem~\ref{thm:chlpositivity}). Our scan of the heterotic cone up to $Q^2\le 12$, $P^2\le 6$, $Q\cdot P\le 4$ (Appendix~\ref{app:computation}) and our scan for $N=2$ find only positive indices. \gap{A proof of positivity for every magnetic charge is not known, neither for the heterotic string nor for the CHL models.}
+Proved for the heterotic string on $T^6$ at $P^2\in\{2,4\}$, with all $Q$ and $Q\cdot P$ satisfying $Q^2P^2>(Q\cdot P)^2$, and on the $SL(2,\ZZ)$ orbits of these charges (Theorem~\ref{thm:bringmannmurthy}). Proved for the $\ZZ_2$ CHL model at $P^2=2$ with every $Q$, at $NQ^2/2=1$ with every $P$, and on the $\Gamma_1(2)$ orbits of these charges (Theorems~\ref{thm:chlpositivity} and~\ref{thm:chlunit}). Our scan of the heterotic cone up to $Q^2\le 12$, $P^2\le 6$, $Q\cdot P\le 4$ (Appendix~\ref{app:computation}) and our scan for $N=2$ find only positive indices. \gap{A proof of positivity for every charge is not known: for the heterotic string it is open at $P^2\ge6$ outside the $SL(2,\ZZ)$ orbits of the charges with $P^2\le4$, for the $\ZZ_2$ CHL model at $NQ^2/2\ge2$ together with $P^2\ge4$, and for $N=3,5,7$ in general.} Remark~\ref{rem:chlunitopen} lists what a proof of the remaining $\ZZ_2$ cases needs.
 \end{verdict}
 
 \subsection{Full and horizon indices in the toroidal orbifolds}\label{ssec:toroidal}
@@ -185,7 +310,7 @@ Confirmed. The hair modes of the quarter-BPS black hole were identified in the t
 \end{verdict}
 
 \begin{verdict}[claim 36]
-Confirmed. The companion of the positivity conjecture is the statement of \cite{CGMS16} that every microstate of a single-centred BPS black hole, once the fermion zero modes of broken supersymmetry are removed, carries zero angular momentum, so that the index counts the states with sign $+1$ and positivity follows. It was tested in \cite{CGMS16} on the quarter-BPS states of type IIB on $T^6$ at low charges by an explicit enumeration of the supersymmetric configurations of D-branes, and in \cite{HeidmannMondal19} on multi-centred configurations with pure D-brane charges, and holds in every case computed. \gap{It is not proved}, and the toroidal orbifolds show what its proof must contain: there the index of the full dyon is negative, so either some microstates carry angular momentum or the hair modes do, and \cite{CD21} locates the sign in the hair. Later tests at higher charges \cite{ChowdhuryMaji24,ChowdhuryMaji26} reproduce the index of the pure D-brane system by algebraic geometry and find no state of nonzero angular momentum. Positivity of the index, a theorem in the cases of Theorems~\ref{thm:bringmannmurthy} and~\ref{thm:chlpositivity}, does not imply the statement: an index that is positive can still count fermionic states. The sources examined here do not supply a general proof; the statement for the horizon states remains open and consistent with every test.
+Confirmed. The companion of the positivity conjecture is the statement of \cite{CGMS16} that every microstate of a single-centred BPS black hole, once the fermion zero modes of broken supersymmetry are removed, carries zero angular momentum, so that the index counts the states with sign $+1$ and positivity follows. It was tested in \cite{CGMS16} on the quarter-BPS states of type IIB on $T^6$ at low charges by an explicit enumeration of the supersymmetric configurations of D-branes, and in \cite{HeidmannMondal19} on multi-centred configurations with pure D-brane charges, and holds in every case computed. \gap{It is not proved}, and the toroidal orbifolds show what its proof must contain: there the index of the full dyon is negative, so either some microstates carry angular momentum or the hair modes do, and \cite{CD21} locates the sign in the hair. Later tests at higher charges \cite{ChowdhuryMaji24,ChowdhuryMaji26} reproduce the index of the pure D-brane system by algebraic geometry and find no state of nonzero angular momentum. Positivity of the index, a theorem in the cases of Theorems~\ref{thm:bringmannmurthy}, \ref{thm:chlpositivity} and~\ref{thm:chlunit}, does not imply the statement: an index that is positive can still count fermionic states. The sources examined here do not supply a general proof; the statement for the horizon states remains open and consistent with every test.
 \end{verdict}
 
 \begin{remark}\label{rem:normalisation}
