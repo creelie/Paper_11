@@ -1,0 +1,138 @@
+[
+ {
+  "N": 2,
+  "Delta_max": 1000,
+  "orbits": 11237,
+  "box": [
+   22,
+   250
+  ],
+  "exponents_checked_symmetric": 582869,
+  "least_charges_in_A_checked": 12023,
+  "second_representatives_agreeing": 4892,
+  "first_values_m1": [
+   360,
+   2164,
+   4352,
+   18944,
+   36024,
+   125860,
+   233080,
+   705536
+  ],
+  "least": {
+   "Delta": 2,
+   "charge_m_n_l": [
+    1,
+    1,
+    1
+   ],
+   "dstar": 360
+  },
+  "all_positive": true,
+  "sha256_of_values": "5856df9195deb1ef5b1930d6fb8b71fb7d0c97b2ef2c4da0e389b13eca7e13d8",
+  "seconds": 461.7
+ },
+ {
+  "N": 3,
+  "Delta_max": 1000,
+  "orbits": 12276,
+  "box": [
+   31,
+   250
+  ],
+  "exponents_checked_symmetric": 775155,
+  "least_charges_in_A_checked": 13141,
+  "second_representatives_agreeing": 8101,
+  "first_values_m1": [
+   27,
+   540,
+   378,
+   3294,
+   2646,
+   16200,
+   14094,
+   68418
+  ],
+  "least": {
+   "Delta": 1,
+   "charge_m_n_l": [
+    1,
+    1,
+    1
+   ],
+   "dstar": 27
+  },
+  "all_positive": true,
+  "sha256_of_values": "bd2bd0a31cca24e9ba71f93b72640d13b9fcaf411cba63d4463d7d44604fbfe6",
+  "seconds": 757.8
+ },
+ {
+  "N": 5,
+  "Delta_max": 100,
+  "orbits": 876,
+  "box": [
+   105,
+   129
+  ],
+  "exponents_checked_symmetric": 1331624,
+  "least_charges_in_A_checked": 1088,
+  "second_representatives_agreeing": 1627,
+  "first_values_m1": [
+   20,
+   100,
+   125,
+   460,
+   588,
+   1720,
+   2191,
+   5544
+  ],
+  "least": {
+   "Delta": 3,
+   "charge_m_n_l": [
+    1,
+    2,
+    1
+   ],
+   "dstar": 20
+  },
+  "all_positive": true,
+  "sha256_of_values": "b2e99520acb00a1f50a8815cdaf6e9e712a4fe49e0456b32f2fff9b6103219c8",
+  "seconds": 2876.5
+ },
+ {
+  "N": 7,
+  "Delta_max": 60,
+  "orbits": 668,
+  "box": [
+   109,
+   142
+  ],
+  "exponents_checked_symmetric": 1374701,
+  "least_charges_in_A_checked": 888,
+  "second_representatives_agreeing": 1003,
+  "first_values_m1": [
+   3,
+   36,
+   18,
+   138,
+   81,
+   444,
+   273,
+   1242
+  ],
+  "least": {
+   "Delta": 1,
+   "charge_m_n_l": [
+    1,
+    2,
+    1
+   ],
+   "dstar": 3
+  },
+  "all_positive": true,
+  "sha256_of_values": "2352c2abed235653adf279de890822c6ced499ce7831244b79a5705739e1a4ce",
+  "seconds": 3385.3
+ }
+]

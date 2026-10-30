@@ -356,12 +356,127 @@ d^*&3&36&18&138&81&444&273&1242
 \label{fig:chlodd}
 \end{figure}
 
+\subsection{Every charge of bounded discriminant}\label{ssec:chlbounded}
+
+The two previous subsections settle the first electric charge. For the remaining charges we reduce the conjecture, discriminant by discriminant, to finitely many Fourier coefficients, and compute them. Let $N\in\{1,2,3,5,7\}$. For a charge write $m=NQ^2/2$, $n=P^2/2$, $\ell=Q\cdot P$, all integers, and
+\[
+\Delta=4mn-N\ell^2=N\big(Q^2P^2-(Q\cdot P)^2\big);
+\]
+for $N$ odd this is the $\Delta$ of Subsection~\ref{ssec:chlunitodd}, and for $N=2$ it is twice the $\Delta$ of Subsection~\ref{ssec:chlunit}. The charge form
+\[
+f_{Q,P}(s,t)=\tfrac N2\,(sQ+tP)^2=ms^2+N\ell\,st+Nn\,t^2
+\]
+has discriminant $-N\Delta$, and is positive definite when $m>0$ and $\Delta>0$; we assume this from now on. For a $2\times2$ matrix $g$ put $(f\circ g)(s,t)=f\big((s,t)g\big)$, so that $(f\circ g)\circ h=f\circ(hg)$. The group $\Gamma_1(N)$ of matrices $\gamma=\begin{psmallmatrix}a&b\\c&d\end{psmallmatrix}\in SL_2(\ZZ)$ with $c\equiv0$, $a\equiv d\equiv1\pmod N$ acts by $(Q,P)\mapsto(aQ+bP,cQ+dP)$, and $f_{\gamma(Q,P)}=f_{Q,P}\circ\gamma$.\footnote{This is the action of \cite[(5.17)--(5.19)]{BSS25} after the relabelling $\begin{psmallmatrix}a&b\\c&d\end{psmallmatrix}\mapsto\begin{psmallmatrix}d&c/N\\bN&a\end{psmallmatrix}$, and for $N=2$ the action of \cite[(3.8)]{Sen11positivity}.} The single-centred index $d^*$ is constant on the orbits \cite[Section~5.3]{BSS25}. A positive definite form $F=(A,B,C)=As^2+Bst+Ct^2$ is reduced if $|B|\le A\le C$, with $B\ge0$ when $|B|=A$ or $A=C$. Every positive definite form is $F\circ g$ for exactly one reduced $F$ and some $g\in SL_2(\ZZ)$ \cite[Theorem~2.8]{Cox13}, applied to the form divided by the greatest common divisor of its coefficients. A reduced form satisfies $3A^2\le4AC-B^2$, and, from the proof of that theorem,
+\begin{equation}\label{eq:chlreduced}
+F(x,y)\ge(A-|B|+C)\min(x^2,y^2),\qquad F(x,y)\ge C\ \text{ when } y\ne0 .
+\end{equation}
+Let $c(m,n,\ell)$ be the coefficient of $x^ny^\ell e^{2\pi im\rho}$ of $1/\Phit$ in the chamber $\operatorname{Im}v<0$ of Appendix~\ref{app:computation}, that is, the coefficient of $x^ny^\ell$ in $\varphi_m$ in the region $-\operatorname{Im}\sigma<\operatorname{Im}v<0$.
+
+\begin{lemma}\label{lem:chlboundedcoef}
+If $(Q,P)$ lies in the set $\mathcal A$ of \cite[(5.46)--(5.47)]{BSS25} and $0\le\ell\le 2m$, then $d^*(Q,P)=(-1)^{\ell+1}c(m,n,\ell)$.
+\end{lemma}
+
+\begin{proof}
+By \cite[Theorem~5.4(a)]{BSS25}, $d^*=(-1)^{\ell+1}$ times the coefficient of $x^ny^\ell$ in the finite part $\varphi^F_m$, which has no poles and therefore one Fourier expansion. The polar part is \cite[(5.45)]{BSS25} a multiple of $g(\sigma/N)^{-1}\sum_{s\in\ZZ}p^{ms^2+s}y^{2ms+1}(1-p^sy)^{-2}$. In the region, $|p^sy|<1$ for $s\ge1$ and $|p^sy|>1$ for $s\le0$, so the term $s\ge1$ is a series in $y^{2ms+1+k}$, the term $s\le-1$ a series in $y^{2ms-1-k}$, and the term $s=0$ a series in $y^{-1-k}$, $k\ge0$. No exponent lies in $[0,2m]$, so at $y^\ell$ the coefficients of $\varphi_m$ and $\varphi^F_m$ agree.
+\end{proof}
+
+\begin{lemma}\label{lem:chlsetA}
+Let $f=f_{Q,P}$. Then $(Q,P)\in\mathcal A$ if and only if $f(j,2k)\ge f(1,0)=m$ for every odd $j$ and every integer $k\ne0$ with $Nk\mid(j^2-1)/4$. A pair $(j,k)$ can violate this only if $|k|<m/\sqrt{N\Delta}$ and $|j+N\ell k/m|<1$, and the pairs $j=\pm1$ give exactly the condition $|\ell|\le2n$.
+\end{lemma}
+
+\begin{proof}
+Condition (5.46) of \cite{BSS25} is $\Delta>0$. Condition (5.47) asks that $\big(N(m_1\ell+jm)^2+m_1^2\Delta\big)/(Nm^2)\ge1$ for every $m_1\in N\ZZ\setminus\{0\}$ and every $j=2s+1$ with $m_1\mid s(s+1)=(j^2-1)/4$; at $m=1$ this is the quantity of Lemma~\ref{lem:chlunitsetA}. With $m_1=Nk$,
+\[
+N(jm+N\ell k)^2+N^2k^2\Delta=Nm\big(mj^2+2N\ell jk+4Nnk^2\big)=Nm\,f(j,2k),
+\]
+which gives the criterion. Both terms on the left are nonnegative, so a violation needs $N^2k^2\Delta<Nm^2$ and $(jm+N\ell k)^2<m^2$. For $j=\pm1$ the condition is $k(\ell\pm2nk)\ge0$ for all $k\ne0$, which at $k=\pm1$ is $|\ell|\le 2n$ and for $|k|\ge2$ follows from it.
+\end{proof}
+
+\begin{theorem}\label{thm:chlleast}
+Let $N\in\{1,2,3,5,7\}$. In every $\Gamma_1(N)$ orbit of charges, every charge whose $m=NQ^2/2$ is least in the orbit lies in $\mathcal A$, and the orbit contains such a charge with $0\le\ell<2m$. Hence $d^*$ of every charge with $Q^2>0$ and $Q^2P^2>(Q\cdot P)^2$ is $(-1)^{\ell+1}c(m,n,\ell)$ for a charge $(m,n,\ell)$ of least $m$ in its orbit.
+\end{theorem}
+
+\begin{proof}
+Let $(Q,P)$ have least $m$, and let $(j,k)$ be as in Lemma~\ref{lem:chlsetA}. Every prime factor of $kN$ divides $(j^2-1)/4$, hence not $j$, and $j$ is odd; so $\gcd(j,2kN)=1$ and there are integers $c'$, $d$ with $jd-2kNc'=1$. Since $N$ divides $(j^2-1)/4$ and is $1$ or a prime, $j\equiv\varepsilon\pmod N$ with $\varepsilon=\pm1$.\footnote{This is the only place where $N$ is $1$ or a prime is used. The congruence $j\equiv\pm1\pmod N$ also follows from $4N\mid j^2-1$ for $N=4,6,8$, but not for $N=12$, where $j=7$.} Then
+\[
+\gamma=\varepsilon\begin{pmatrix}j&2k\\Nc'&d\end{pmatrix}
+\]
+has determinant one, lower left entry divisible by $N$, upper left entry $\varepsilon j\equiv1$, and lower right entry $\varepsilon d\equiv1\pmod N$ because $\varepsilon j\cdot\varepsilon d\equiv1$; so $\gamma\in\Gamma_1(N)$. The first coefficient of $f\circ\gamma$ is $f(\varepsilon j,2\varepsilon k)=f(j,2k)$, the $m$ of the charge $\gamma(Q,P)$, which is at least $m$ by minimality. Lemma~\ref{lem:chlsetA} gives $(Q,P)\in\mathcal A$. The matrix $\begin{psmallmatrix}1&0\\N\lambda&1\end{psmallmatrix}\in\Gamma_1(N)$ maps $(m,n,\ell)$ to $(m,\,n+N\lambda\ell+Nm\lambda^2,\,\ell+2m\lambda)$, the transformation \cite[(5.62)]{BSS25}; it keeps $m$ and moves $\ell$ into $[0,2m)$. The last statement is Lemma~\ref{lem:chlboundedcoef}.
+\end{proof}
+
+So the conjecture for the $\ZZ_N$ CHL model is the positivity of $(-1)^{\ell+1}c(m,n,\ell)$ at the charges of least $m$ in their orbits, and these charges are found by reduction theory.
+
+\begin{lemma}\label{lem:chlorbits}
+Let $N$ be $1$ or a prime, and $f_{Q,P}=F\circ g$ with $F$ reduced and $g\in SL_2(\ZZ)$ of lower row $(c,d)$.
+
+\textup{(i)} The orbit of $(Q,P)$ consists of the charges whose forms are $F\circ g'$, where $g'\in SL_2(\ZZ)$ has lower row congruent modulo $N$ to $(c,d)h$ for some $h$ in the group $\operatorname{Aut}(F)$ of $h\in SL_2(\ZZ)$ with $F\circ h=F$.
+
+\textup{(ii)} For a reduced form $F$ of discriminant $-N\Delta$ and a row $(c,d)$, primitive modulo $N$, with $F(c,d)\equiv0\pmod N$, every $F\circ g'$ with lower row $(c,d)$ is a charge form exactly when its middle coefficient is divisible by $N$, and this does not depend on the upper row of $g'$.
+
+So the orbits of discriminant $\Delta$ correspond to the pairs of a reduced form of discriminant $-N\Delta$ and an admissible row modulo $N$, up to $\operatorname{Aut}(F)$, and there are finitely many.
+\end{lemma}
+
+\begin{proof}
+(i) By $(f\circ g)\circ h=f\circ(hg)$, the forms of the orbit are $F\circ(\gamma g)$, $\gamma\in\Gamma_1(N)$, and $F\circ g'=F\circ g$ exactly when $g'\in g\operatorname{Aut}(F)$. The lower row of $\gamma g$ is $(0,1)\gamma g\equiv(c,d)$, and if $g$, $g'$ have congruent lower rows then $g'g^{-1}$ has lower row congruent to $(0,1)$ and lies in $\Gamma_1(N)$. So the orbit is the set of $F\circ g'$ with $g'\in\Gamma_1(N)\,g\operatorname{Aut}(F)$, whose lower rows are the rows congruent to $(c,d)h$.
+(ii) The last coefficient of $F\circ g'$ is $F(c,d)$. The upper rows with lower row $(c,d)$ differ by multiples of $(c,d)$, and adding $k(c,d)$ changes the middle coefficient by $2kF(c,d)$.
+\end{proof}
+
+\begin{proposition}\label{prop:chlsize}
+\textup{(i)} For $N\in\{2,3\}$ every orbit contains a charge of $\mathcal A$ with $0\le\ell<2m$ and $\min(m,n)\le\sqrt{N\Delta/3}$.
+
+\textup{(ii)} For $N\in\{5,7\}$, $h=(N+1)/2$ and every $j\ge1$, every charge in the orbit of
+\[
+(m,n,\ell)=\big(h^2+Nj,\ N+4j,\ N+1+4j\big),\qquad \Delta=4j,
+\]
+has $m\ge N\Delta/4$ and $n\ge\Delta$.
+\end{proposition}
+
+\begin{proof}
+(i) Let $f_{Q,P}=F\circ g$ as in Lemma~\ref{lem:chlorbits}, $F=(A,B,C)$, so that $A\le\sqrt{N\Delta/3}$. Every nonzero residue modulo $N=2,3$ is $\pm1$. If some row $(c,d)h$, $h\in\operatorname{Aut}(F)$, has second entry not divisible by $N$, call it $(c,d)$ again and take $g'=\begin{psmallmatrix}e&0\\c&e\end{psmallmatrix}$ with $e=\pm1\equiv d$: the charge $F\circ g'$ of the orbit has $m=F(e,0)=A$, the least value of $F$, and Theorem~\ref{thm:chlleast} applies. Otherwise every lower row in the class has $d\equiv0$, so every upper row $(x,y)$ in the orbit has $y\ne0$ (for $y=0$ the determinant forces $d=\pm1$), and every charge has $m\ge C$ by \eqref{eq:chlreduced}. The row $(e,0)$, $e=\pm1\equiv c$, is admissible. If $B\le0$, the matrix $\begin{psmallmatrix}0&-e\\e&0\end{psmallmatrix}$ gives $(m,n,\ell)=(C,A/N,-B/N)$, of least $m$ and with $0\le\ell<2m$. If $B>0$, the matrix $\begin{psmallmatrix}e&-e\\e&0\end{psmallmatrix}$ gives $f(s,t)=F(s+t,-s)$ and $(m,n,\ell)=(A-B+C,\,A/N,\,(2A-B)/N)$, with $0\le\ell<2m$ since $B\le A\le C$. Here $f(j,2k)=F(j+2k,-j)$ with both arguments odd, so $f(j,2k)\ge A-|B|+C=m$ by \eqref{eq:chlreduced}, and the charge lies in $\mathcal A$ by Lemma~\ref{lem:chlsetA}. In each case $\min(m,n)\le A$.
+
+(ii) With $F=(1,0,Nj)$ and $g=\begin{psmallmatrix}h&1\\N&2\end{psmallmatrix}$, $F\circ g=(h^2+Nj,\,N(N+1+4j),\,N(N+4j))$ is the form of the charge, of discriminant $-4Nj$. Here $\operatorname{Aut}(F)=\{\pm1\}$, so every $g'$ of the orbit has lower row $(c',d')\equiv\pm(0,2)$, and its upper row $(x,y)$ satisfies $2x\equiv\pm1$, that is $x\equiv\pm h\pmod N$. Since $h\not\equiv\pm1\pmod N$ for $N=5,7$, $y\ne0$, and $m=x^2+Njy^2\ge Nj$. Since $d'\equiv\pm2$, $|d'|\ge2$, and $n=(c'^2+Njd'^2)/N\ge4j$.
+\end{proof}
+
+So for $N=2,3$ the least $m$ or the least $n$ of an orbit is at most $\sqrt{N\Delta/3}$, while for $N=5,7$ both grow linearly with $\Delta$ along infinitely many orbits.\footnote{For $N=3$ the charge of (ii) is $(4+3j,3+4j,4+4j)$, but $h=2\equiv-1\pmod 3$ and the orbit contains $(1,j,0)$.} The orbits of (ii) are the reason for the different ranges of the next theorem.
+
+\begin{theorem}\label{thm:chlbounded}
+In the $\ZZ_N$ CHL models with $N=2,3,5,7$ the single-centred index $d^*(Q,P)$ is positive for every charge with $Q^2>0$ and
+\[
+0<Q^2P^2-(Q\cdot P)^2\le\frac{\Delta_N}N,\qquad \Delta_2=\Delta_3=1000,\quad\Delta_5=100,\quad \Delta_7=60,
+\]
+that is $Q^2P^2-(Q\cdot P)^2\le500$, $1000/3$, $20$, $60/7$. These charges form $11\,237$, $12\,276$, $876$ and $668$ orbits of $\Gamma_1(N)$, and the least values of $d^*$ are $360$, $27$, $20$ and $3$, at the charges $(m,n,\ell)=(1,1,1)$, $(1,1,1)$, $(1,2,1)$ and $(1,2,1)$ of Theorems~\ref{thm:chlunit} and~\ref{thm:chlunitodd}.
+\end{theorem}
+
+\begin{proof}
+For each $\Delta\le\Delta_N$, Lemma~\ref{lem:chlorbits} lists the orbits. In each orbit we find a charge of $\mathcal A$ with $0\le\ell<2m$: it exists by Theorem~\ref{thm:chlleast}, it is tested by Lemma~\ref{lem:chlsetA}, and for $N=2,3$ Proposition~\ref{prop:chlsize}(i) bounds the search by $\min(m,n)\le\sqrt{N\Delta/3}$. By Lemma~\ref{lem:chlboundedcoef}, $d^*=(-1)^{\ell+1}c(m,n,\ell)$, and $c(m,n,\ell)$ is computed from the product formula \eqref{eq:product} as in Appendix~\ref{app:computation}, in exact integer arithmetic.\footnote{The exponents of \eqref{eq:product} are symmetric under the exchange of their first two indices on the whole range used, and the chamber $\operatorname{Im}v<0$ is the domain of absolute convergence of the product, which is symmetric under $\rho\leftrightarrow\sigma$; so $c(m,n,\ell)=c(n,m,\ell)$ there, and each coefficient is read in the orientation with the smaller first index.} Every value is positive. The program \cite{Bha26} also checks that every second charge of $\mathcal A$ found in an orbit gives the same value, that the values at $m=1$ are those of Theorems~\ref{thm:chlunit} and~\ref{thm:chlunitodd}, and Theorem~\ref{thm:chlleast} itself on the whole range.
+\end{proof}
+
+The theorem contains Theorems~\ref{thm:chlpositivity}, \ref{thm:chlunit} and~\ref{thm:chlunitodd} in its range; outside it, these three hold for every $\Delta$.
+
+\begin{remark}\label{rem:chlbssB}
+Bhand, Sen and Singh also define a set $\mathcal B$ \cite[(5.48)--(5.49)]{BSS25}, like $\mathcal A$ with the roles of $Q$ and $P$ exchanged, on which $d^*$ is a Fourier coefficient of the finite part $\psi^F_n$ of the expansion in $e^{2\pi i\sigma}$, and they state that the set $B_2$ of charges with $Nm\ge n$ and $|\ell|\le2n$ lies in $\mathcal B$ \cite[(5.65) and (B.36)]{BSS25}. For $N\ge2$ this containment fails. For $N=2$ the charges $(m,n,\ell)=(1,1,1)$ and $(5,5,7)$, both with $\Delta=2$, lie in $B_2$ and in one orbit, the second being the image of the first under $\begin{psmallmatrix}-3&1\\-4&1\end{psmallmatrix}\in\Gamma_1(2)$; since $0\le\ell\le2n$, the polar part of $\psi_n$ does not contribute, as in Lemma~\ref{lem:chlboundedcoef}, and the coefficients $(-1)^{\ell+1}c(m,n,\ell)$ are $360$ and $3064$. For $N=7$ the charges $(1,2,1)$ and $(29,44,27)$, with $\Delta=1$, related by $\begin{psmallmatrix}15&-4\\49&-13\end{psmallmatrix}\in\Gamma_1(7)$, give $3$ and $201$. The first charge of each pair lies in $\mathcal A$, so $d^*=360$ and $d^*=3$ on the two orbits, and neither second charge lies in $\mathcal B$. The step of the proof that fails is (B.37), where the quantity $(m_1+jN\ell/2n)/n_1$ is replaced by its quotient by $N^2$, which is smaller when it is positive. At $P^2=2$ the conditions defining $\mathcal B$ are empty, so Theorem~\ref{thm:chlpositivity} does not depend on this step; Theorems~\ref{thm:chlleast} and~\ref{thm:chlbounded} use only $\mathcal A$.
+\end{remark}
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.94\linewidth,height=0.46\textheight,keepaspectratio]{figures/fig_chlbounded.png}
+\caption{The single-centred index of every $\Gamma_1(N)$ orbit with $\Delta=N\big(Q^2P^2-(Q\cdot P)^2\big)\le\Delta_N$, on the scale $\log_{10}d^*$, for $N=2,3$ ($\Delta\le1000$), $N=5$ ($\Delta\le100$) and $N=7$ ($\Delta\le60$). Each point is one orbit; every value is positive (Theorem~\ref{thm:chlbounded}).}
+\label{fig:chlbounded}
+\end{figure}
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.94\linewidth,height=0.46\textheight,keepaspectratio]{figures/fig_chlsize.png}
+\caption{The smaller of $m$ and $n$ at the charge of $\mathcal A$ used for each orbit, against $\Delta$. For $N=2,3$ it stays below $\sqrt{N\Delta/3}$ (Proposition~\ref{prop:chlsize}(i)); for $N=5,7$ the orbits of Proposition~\ref{prop:chlsize}(ii) force growth along the line $\Delta$.}
+\label{fig:chlsize}
+\end{figure}
+
 \begin{remark}\label{rem:chlunitopen}
-At $NQ^2/2=1$ the mock and holomorphic pieces of the finite part are class numbers and theta coefficients of a lattice of rank four, both dominated by a cubic divisor sum of fixed sign; this is the mechanism of Theorems~\ref{thm:chlunit} and~\ref{thm:chlunitodd}, and of Theorem~\ref{thm:chlpositivity} at $P^2=2$. For $NQ^2/2\ge2$ and $P^2\ge4$ the finite parts contain mock pieces of higher index for $\Gamma^0(N)$ that are not class number generating functions. A proof there needs an explicit bound of the Rademacher tail at the cusps of $\Gamma_0(N)$ against the leading Bessel term, a reduction theory for $\Gamma_1(N)$ acting on $(n,\ell,m)$, and a treatment of the charges outside $\mathcal A$, where the Fourier coefficients of $\varphi^F_m$ need not equal $d^*$ \cite[\S5]{BSS25}.
+At $NQ^2/2=1$ the mock and holomorphic pieces of the finite part are class numbers and theta coefficients of a lattice of rank four, both dominated by a cubic divisor sum of fixed sign; this is the mechanism of Theorems~\ref{thm:chlunit} and~\ref{thm:chlunitodd}, and of Theorem~\ref{thm:chlpositivity} at $P^2=2$. Theorem~\ref{thm:chlleast} removes the reduction problem: every orbit meets $\mathcal A$ at its charges of least $NQ^2/2$, where $d^*$ is a Fourier coefficient of $\varphi^F_m$. What remains for every charge is the sign of these coefficients for every $m\ge2$, with $0\le\ell<2m$ and $n$ unbounded. For $m\ge2$ the finite parts contain mock pieces of higher index for $\Gamma^0(N)$ that are not class number generating functions, and a proof needs an explicit bound of their Rademacher tails at the cusps of $\Gamma_0(N)$ against the leading Bessel term, uniform in $m$. For $N=5,7$ a finite set of $m$ does not suffice, since by Proposition~\ref{prop:chlsize}(ii) the least $m$ grows linearly with $\Delta$ along infinitely many orbits.
 \end{remark}
 
 \begin{verdict}[claim 9, heterotic and CHL]
-Proved for the heterotic string on $T^6$ at $P^2\in\{2,4\}$, with all $Q$ and $Q\cdot P$ satisfying $Q^2P^2>(Q\cdot P)^2$, and on the $SL(2,\ZZ)$ orbits of these charges (Theorem~\ref{thm:bringmannmurthy}). Proved for the $\ZZ_2$ CHL model at $P^2=2$ with every $Q$, at $NQ^2/2=1$ with every $P$, and on the $\Gamma_1(2)$ orbits of these charges (Theorems~\ref{thm:chlpositivity} and~\ref{thm:chlunit}). Proved for the $\ZZ_N$ CHL models with $N=3,5,7$ at $NQ^2/2=1$ with every $P$, and on the $\Gamma_1(N)$ orbits of these charges (Theorem~\ref{thm:chlunitodd}). Our scan of the heterotic cone up to $Q^2\le 12$, $P^2\le 6$, $Q\cdot P\le 4$ (Appendix~\ref{app:computation}) and our scan for $N=2$ find only positive indices. \gap{A proof of positivity for every charge is not known: for the heterotic string it is open at $P^2\ge6$ outside the $SL(2,\ZZ)$ orbits of the charges with $P^2\le4$, for the $\ZZ_2$ CHL model at $NQ^2/2\ge2$ together with $P^2\ge4$, and for $N=3,5,7$ at $NQ^2/2\ge2$.} Remark~\ref{rem:chlunitopen} lists what a proof of the remaining cases needs.
+Proved for the heterotic string on $T^6$ at $P^2\in\{2,4\}$, with all $Q$ and $Q\cdot P$ satisfying $Q^2P^2>(Q\cdot P)^2$, and on the $SL(2,\ZZ)$ orbits of these charges (Theorem~\ref{thm:bringmannmurthy}). Proved for the $\ZZ_2$ CHL model at $P^2=2$ with every $Q$, at $NQ^2/2=1$ with every $P$, and on the $\Gamma_1(2)$ orbits of these charges (Theorems~\ref{thm:chlpositivity} and~\ref{thm:chlunit}). Proved for the $\ZZ_N$ CHL models with $N=3,5,7$ at $NQ^2/2=1$ with every $P$, and on the $\Gamma_1(N)$ orbits of these charges (Theorem~\ref{thm:chlunitodd}). For $N=2,3,5,7$ every orbit is reduced to one Fourier coefficient of $\varphi^F_m$ at its least $NQ^2/2=m$ (Theorem~\ref{thm:chlleast}), and positivity is proved, with computer assistance, for every charge with $N\big(Q^2P^2-(Q\cdot P)^2\big)\le1000$ when $N=2,3$, $\le100$ when $N=5$ and $\le60$ when $N=7$ (Theorem~\ref{thm:chlbounded}). Our scan of the heterotic cone up to $Q^2\le 12$, $P^2\le 6$, $Q\cdot P\le 4$ (Appendix~\ref{app:computation}) finds only positive indices. \gap{A proof of positivity for every charge is not known: for the heterotic string it is open at $P^2\ge6$ outside the $SL(2,\ZZ)$ orbits of the charges with $P^2\le4$, and for $N=2,3,5,7$ it is open on the orbits whose least $NQ^2/2$ is at least two (for $N=2$, whose least $P^2$ is also at least four) and whose $N\big(Q^2P^2-(Q\cdot P)^2\big)$ exceeds $1000$, $1000$, $100$, $60$.} Remark~\ref{rem:chlunitopen} lists what a proof of the remaining cases needs.
 \end{verdict}
 
 \subsection{Full and horizon indices in the toroidal orbifolds}\label{ssec:toroidal}

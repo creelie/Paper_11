@@ -4,8 +4,9 @@ Run from the repository root:  python3 figures/make_figures.py
 Reads code/siegel_dyons_out.json for the orbifold indices and writes
 figures/fig_indices.png, figures/fig_caustic.png, figures/fig_verdicts.png,
 figures/fig_weakcoupling.png, figures/fig_valley.png, figures/fig_rigidity.png,
-figures/fig_chlodd.png, figures/fig_chloddsigns.png (the last two compute with the modules
-code/chl_odd_*.py, which need python-flint).
+figures/fig_chlodd.png, figures/fig_chloddsigns.png (these two compute with the modules
+code/chl_odd_*.py, which need python-flint), and figures/fig_chlbounded.png,
+figures/fig_chlsize.png from code/chl-bounded-values.json (written by code/chl_bounded.py).
 """
 import json
 import os
@@ -325,6 +326,68 @@ def fig_chloddsigns():
     save(fig, "fig_chloddsigns.png")
 
 
+def _chl_bounded_values():
+    with open(os.path.join(ROOT, "code", "chl-bounded-values.json")) as fh:
+        return {r["N"]: r["values"] for r in json.load(fh)}
+
+
+DELTA_N = {2: 1000, 3: 1000, 5: 100, 7: 60}
+
+
+def fig_chlbounded():
+    vals = _chl_bounded_values()
+    fig = plt.figure(figsize=(W, H))
+    ax = fig.add_subplot(111, projection="3d")
+    cols = {2: BLUE, 3: GREEN, 5: GREY, 7: BURNT}
+    for i, N in enumerate((2, 3, 5, 7)):
+        rows = vals[N]
+        x = np.array([r[0] / DELTA_N[N] for r in rows])
+        z = np.array([np.log10(float(int(r[4]))) for r in rows])
+        ax.scatter(x, np.full_like(x, i), z, s=1.2, color=cols[N], depthshade=False)
+    ax.set_xlabel(r"$\Delta/\Delta_N$", labelpad=8)
+    ax.set_ylabel(r"$N$", labelpad=6)
+    ax.set_yticks([0, 1, 2, 3])
+    ax.set_yticklabels(["2", "3", "5", "7"])
+    ax.set_zlabel(r"$\log_{10} d^*$", labelpad=6)
+    ax.set_xticks([0, 0.25, 0.5, 0.75, 1.0])
+    ax.view_init(elev=24, azim=-52)
+    ax.set_box_aspect((2.2, 1.6, 1.1))
+    total = sum(len(vals[N]) for N in vals)
+    fig.text(0.5, 0.94, r"Single-centred index of every $\Gamma_1(N)$ orbit with $\Delta=N(Q^2P^2-(Q\cdot P)^2)\leq\Delta_N$", ha="center", fontsize=12)
+    fig.text(0.5, 0.05, r"%d orbits, one point each; every value is positive" % total, ha="center", fontsize=10)
+    fig.subplots_adjust(left=0.02, right=0.98, bottom=0.06, top=0.95)
+    save(fig, "fig_chlbounded.png")
+
+
+def fig_chlsize():
+    vals = _chl_bounded_values()
+    fig = plt.figure(figsize=(W, H))
+    ax = fig.add_subplot(111, projection="3d")
+    cols = {2: BLUE, 3: GREEN, 5: GREY, 7: BURNT}
+    for i, N in enumerate((2, 3, 5, 7)):
+        rows = vals[N]
+        x = np.array([r[0] / DELTA_N[N] for r in rows])
+        z = np.array([min(r[1], r[2]) / np.sqrt(N * DELTA_N[N] / 3.0) for r in rows])
+        ax.scatter(x, np.full_like(x, i), z, s=1.2, color=cols[N], depthshade=False)
+        t = np.linspace(0, 1, 200)
+        if N in (2, 3):
+            ax.plot(t, np.full_like(t, i), np.sqrt(t), color="black", linewidth=1.0)
+        else:
+            ax.plot(t, np.full_like(t, i), t * DELTA_N[N] / np.sqrt(N * DELTA_N[N] / 3.0), color="black", linewidth=1.0, linestyle="--")
+    ax.set_xlabel(r"$\Delta/\Delta_N$", labelpad=8)
+    ax.set_ylabel(r"$N$", labelpad=6)
+    ax.set_yticks([0, 1, 2, 3])
+    ax.set_yticklabels(["2", "3", "5", "7"])
+    ax.set_zlabel(r"$\min(m,n)/\sqrt{N\Delta_N/3}$", labelpad=8)
+    ax.set_xticks([0, 0.25, 0.5, 0.75, 1.0])
+    ax.view_init(elev=22, azim=-56)
+    ax.set_box_aspect((2.2, 1.6, 1.1))
+    fig.text(0.5, 0.94, r"Size of the charge of $\mathcal{A}$ used in each orbit", ha="center", fontsize=12)
+    fig.text(0.5, 0.05, r"solid: the bound $\sqrt{N\Delta/3}$ for $N=2,3$; dashed: the line $\min(m,n)=\Delta$ reached by the orbits of the obstruction for $N=5,7$", ha="center", fontsize=9)
+    fig.subplots_adjust(left=0.02, right=0.98, bottom=0.06, top=0.95)
+    save(fig, "fig_chlsize.png")
+
+
 H_FIG = H
 
 if __name__ == "__main__":
@@ -336,3 +399,5 @@ if __name__ == "__main__":
     fig_rigidity()
     fig_chlodd()
     fig_chloddsigns()
+    fig_chlbounded()
+    fig_chlsize()
