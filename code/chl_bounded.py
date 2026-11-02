@@ -267,8 +267,10 @@ def inA(N, m, n, l):
     m1 = N
     while m1 * m1 * D < N * m * m:
         for M1 in (m1, -m1):
-            c = -l * M1 / m
-            for j in range(int(c) - 2, int(c) + 3):
+            # a violating j has |j m + l M1| < m, so j lies in the open interval of length 2
+            # about -l M1 / m and hence in floor(-l M1 / m) + {0, 1}; integer floor, no rounding
+            c = (-l * M1) // m
+            for j in range(c - 1, c + 3):
                 if j % 2 == 0 or ((j * j - 1) // 4) % M1: continue
                 if N * (j * m + l * M1) ** 2 + M1 * M1 * D < N * m * m: return False
         m1 += N
