@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1793614111.80169 "main.tex" "main.pdf" "main" 1793614119.3925 0
+["pdflatex"] 1793614937.32104 "main.tex" "main.pdf" "main" 1793614944.60624 0
   "/etc/texmf/web2c/texmf.cnf" 1792961480.26496 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1095.tfm" 1136768653 3584 929cdff2b7a8c11bd4d49fd68cb0ae70 ""
@@ -252,9 +252,9 @@
   "figures/fig_valley.png" 1793222117.60827 124997 3067df43e05713786c28d057ebb37d3b ""
   "figures/fig_verdicts.png" 1793222117.60827 107855 9323dc730eb37d15acf46d405e155716 ""
   "figures/fig_weakcoupling.png" 1793230401.34893 172602 8a59f493d9914cb1d8b336ae23dabb4c ""
-  "main.aux" 1793614119.16634 52381 1228a344a30cd118943346a8f6998525 "pdflatex"
-  "main.out" 1793614119.17034 18076 146339673c71753f2087b8017993af1d "pdflatex"
-  "main.tex" 1793614105.03434 6058 70ca01cfad4c080ccf7c965c0d040374 ""
+  "main.aux" 1793614944.28233 52381 1228a344a30cd118943346a8f6998525 "pdflatex"
+  "main.out" 1793614944.28633 18076 146339673c71753f2087b8017993af1d "pdflatex"
+  "main.tex" 1793614922.90225 6058 a59b3e180df49bea1ddca84dec9cc651 ""
   "sections/appA_computation.tex" 1793366328.17795 4468 ae5a90636b124ea3d386cb2c2b4abdc5 ""
   "sections/appB_dust.tex" 1793219045.69609 3683 b7d5803c63cb2829567c5d84e60d9f22 ""
   "sections/appC_scopechecks.tex" 1793330198.47271 5160 b36c95f8862e1fcd852bbd6fce2d5afd ""
